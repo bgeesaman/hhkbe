@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 25.772009,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.221966,
+      "\u001b[?1034h\u001b]0;geese@mb: ~/code/github/kubeatf\u0007\u001b[0;32m~/code/github/kubeatf\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      0.488294,
+      "."
+    ],
+    [
+      6.5e-05,
+      "/ku"
+    ],
+    [
+      4.2e-05,
+      "be"
+    ],
+    [
+      3.4e-05,
+      "at"
+    ],
+    [
+      0.000143,
+      "f"
+    ],
+    [
+      5.5e-05,
+      " au"
+    ],
+    [
+      4.3e-05,
+      "d"
+    ],
+    [
+      3.8e-05,
+      "i"
+    ],
+    [
+      4.5e-05,
+      "t"
+    ],
+    [
+      3.5e-05,
+      "-"
+    ],
+    [
+      4e-05,
+      "c"
+    ],
+    [
+      3.9e-05,
+      "l"
+    ],
+    [
+      4.1e-05,
+      "u"
+    ],
+    [
+      3.7e-05,
+      "s"
+    ],
+    [
+      3.4e-05,
+      "t"
+    ],
+    [
+      3.7e-05,
+      "e"
+    ],
+    [
+      3.7e-05,
+      "r"
+    ],
+    [
+      0.000107,
+      " "
+    ],
+    [
+      4.6e-05,
+      "kop"
+    ],
+    [
+      3.7e-05,
+      "s"
+    ],
+    [
+      4.7e-05,
+      "-"
+    ],
+    [
+      9.8e-05,
+      "1"
+    ],
+    [
+      4.9e-05,
+      ".7"
+    ],
+    [
+      3.7e-05,
+      "."
+    ],
+    [
+      4e-05,
+      "0"
+    ],
+    [
+      0.000158,
+      "-aws"
+    ],
+    [
+      0.548161,
+      " "
+    ],
+    [
+      1.012801,
+      "|"
+    ],
+    [
+      0.111687,
+      " "
+    ],
+    [
+      0.281503,
+      "l"
+    ],
+    [
+      0.056267,
+      "e"
+    ],
+    [
+      0.157584,
+      "s"
+    ],
+    [
+      0.134723,
+      "s"
+    ],
+    [
+      0.088906,
+      "\r\n"
+    ],
+    [
+      0.015063,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.007829,
+      "Run audit cluster kops-1.7.0-aws\r\n"
+    ],
+    [
+      0.686266,
+      "\r\nPLAY [localhost] *************************************************************************\r\n"
+    ],
+    [
+      0.022645,
+      "\r\nTASK [kube-audit : Perform audit] ********************************************************\r\n"
+    ],
+    [
+      0.074725,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/audit.yml for  \blocalhost\r\n"
+    ],
+    [
+      0.011906,
+      "\r\nTASK [kube-audit : audit - kube-audit kops-1.7.0-aws] ************************************\r\n"
+    ],
+    [
+      0.02806,
+      "ok: [localhost] => {\r\n    \"msg\": \"This is audit for kube-audit kops-1.7.0-aws\"\r\n}\r\n"
+    ],
+    [
+      0.009739,
+      "\r\nTASK [kube-audit : include] **************************************************************\r\n"
+    ],
+    [
+      0.039593,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/listallpods.ym \bl for localhost\r\n"
+    ],
+    [
+      0.017733,
+      "\r\nTASK [kube-audit : Get default namespace pods] *******************************************\r\n"
+    ],
+    [
+      0.634955,
+      "changed: [localhost -> localhost]\r\n"
+    ],
+    [
+      0.007618,
+      "\r\nTASK [kube-audit : List all pods] ********************************************************\r\n"
+    ],
+    [
+      0.035309,
+      "ok: [localhost] => {\r\n    \"msg\": [\r\n        \"NAME                        READY     STATUS    RESTARTS   AGE\", \r\n:\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K        \"auditcon-1212018461-w6vnb   1/1       Running   0          2m\"\r\n:\u001b[K"
+    ],
+    [
+      0.583345,
+      "\r\u001b[K    ]\r\n:\u001b[K"
+    ],
+    [
+      0.036305,
+      "\r\u001b[K"
+    ],
+    [
+      2.4e-05,
+      "}\r\n:\u001b[K"
+    ],
+    [
+      0.035668,
+      "\r\u001b[K"
+    ],
+    [
+      4.6e-05,
+      "\r\n:\u001b[K"
+    ],
+    [
+      0.035054,
+      "\r\u001b[K"
+    ],
+    [
+      3.2e-05,
+      "TASK [kube-audit : include] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.035332,
+      "\r\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/launchtestpod. \b:\u001b[K"
+    ],
+    [
+      0.037239,
+      "\r\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "yml for localhost\r\n:\u001b[K"
+    ],
+    [
+      0.035206,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036479,
+      "\r\u001b[K"
+    ],
+    [
+      3.8e-05,
+      "TASK [kube-audit : Launch test pod/container] ********************************************\r\n:\u001b[K"
+    ],
+    [
+      0.035575,
+      "\r\u001b[K"
+    ],
+    [
+      4.5e-05,
+      "skipping: [localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.035499,
+      "\r\u001b[K"
+    ],
+    [
+      2.5e-05,
+      "\r\n:\u001b[K"
+    ],
+    [
+      0.035664,
+      "\r\u001b[K"
+    ],
+    [
+      3.8e-05,
+      "TASK [kube-audit : Run Pod] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.036191,
+      "\r\u001b[K"
+    ],
+    [
+      3.7e-05,
+      "skipping: [localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.036355,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036101,
+      "\r\u001b[KTASK [kube-audit : Get Pod Name] *********************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.036287,
+      "\r\u001b[K"
+    ],
+    [
+      3.8e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.035187,
+      "\r\u001b[K"
+    ],
+    [
+      2.8e-05,
+      "\r\n:\u001b[K"
+    ],
+    [
+      0.035796,
+      "\r\u001b[K"
+    ],
+    [
+      3.6e-05,
+      "TASK [kube-audit : Wait for pod to be running] *******************************************\r\n:\u001b[K"
+    ],
+    [
+      0.035583,
+      "\r\u001b[K"
+    ],
+    [
+      3.6e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.035968,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.035769,
+      "\r\u001b[KTASK [kube-audit : include] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.035378,
+      "\r\u001b[K"
+    ],
+    [
+      6e-05,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/getnodesandips \b:\u001b[K"
+    ],
+    [
+      0.037944,
+      "\r\u001b[K"
+    ],
+    [
+      0.000145,
+      "-kops.yml for localhost\r\n:\u001b[K"
+    ],
+    [
+      0.036288,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036617,
+      "\r\u001b[K"
+    ],
+    [
+      5.1e-05,
+      "TASK [kube-audit : Get Node Name] ********************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.036369,
+      "\r\u001b[K"
+    ],
+    [
+      4.1e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.037709,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.393133,
+      "\r\u001b[K"
+    ],
+    [
+      3.2e-05,
+      "TASK [kube-audit : Get Current Worker Node IP] *******************************************\r\n:\u001b[K"
+    ],
+    [
+      0.269947,
+      "\r\u001b[Kchanged: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.316041,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.168016,
+      "\r\u001b[K"
+    ],
+    [
+      6.7e-05,
+      "TASK [kube-audit : Get Another Worker Node IP] *******************************************\r\n:\u001b[K"
+    ],
+    [
+      0.584007,
+      "\r\u001b[K"
+    ],
+    [
+      3.4e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.037095,
+      "\r\u001b[K"
+    ],
+    [
+      6.1e-05,
+      "\r\n:\u001b[K"
+    ],
+    [
+      0.03627,
+      "\r\u001b[K"
+    ],
+    [
+      9.3e-05,
+      "TASK [kube-audit : Get First Master Node IP] *********************************************\r\n:\u001b[K"
+    ],
+    [
+      0.03619,
+      "\r\u001b[K"
+    ],
+    [
+      6.2e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.036733,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036569,
+      "\r\u001b[K"
+    ],
+    [
+      0.000127,
+      "TASK [kube-audit : Get Kubernetes Dashboard Service Name] ********************************\r\n:\u001b[K"
+    ],
+    [
+      0.036581,
+      "\r\u001b[K"
+    ],
+    [
+      3.9e-05,
+      "skipping: [localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.187788,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.588414,
+      "\r\u001b[K"
+    ],
+    [
+      6.6e-05,
+      "TASK [kube-audit : Get Heapster Service Name] ********************************************\r\n:\u001b[K"
+    ],
+    [
+      0.036803,
+      "\r\u001b[K"
+    ],
+    [
+      3.8e-05,
+      "skipping: [localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.037027,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.038285,
+      "\r\u001b[K"
+    ],
+    [
+      7.9e-05,
+      "TASK [kube-audit : include] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.032625,
+      "\r\u001b[K"
+    ],
+    [
+      5.7e-05,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/uploadtargets. \b:\u001b[K"
+    ],
+    [
+      0.035971,
+      "\r\u001b[K"
+    ],
+    [
+      5.7e-05,
+      "yml for localhost\r\n:\u001b[K"
+    ],
+    [
+      0.037175,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036482,
+      "\r\u001b[K"
+    ],
+    [
+      7.3e-05,
+      "TASK [kube-audit : Template targets vars] ************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.037377,
+      "\r\u001b[K"
+    ],
+    [
+      5.5e-05,
+      "ok: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.037901,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.033256,
+      "\r\u001b[K"
+    ],
+    [
+      9.4e-05,
+      "TASK [kube-audit : Upload targets vars] **************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.034456,
+      "\r\u001b[K"
+    ],
+    [
+      5.3e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.034344,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.032352,
+      "\r\u001b[K"
+    ],
+    [
+      5e-05,
+      "TASK [kube-audit : include] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.033661,
+      "\r\u001b[Kincluded: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/uploadauditscr \b:\u001b[K"
+    ],
+    [
+      0.034902,
+      "\r\u001b[K"
+    ],
+    [
+      5.2e-05,
+      "ipt.yml for localhost\r\n:\u001b[K"
+    ],
+    [
+      0.037728,
+      "\r\u001b[K"
+    ],
+    [
+      5.1e-05,
+      "\r\n:\u001b[K"
+    ],
+    [
+      0.038289,
+      "\r\u001b[K"
+    ],
+    [
+      6.5e-05,
+      "TASK [kube-audit : Upload audit script] **************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.032843,
+      "\r\u001b[K"
+    ],
+    [
+      9.6e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.036917,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.284327,
+      "\r\u001b[K"
+    ],
+    [
+      0.00012,
+      "TASK [kube-audit : Chmod +x audit script] ************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.58826,
+      "\r\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "changed: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.03366,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.038004,
+      "\r\u001b[K"
+    ],
+    [
+      5.5e-05,
+      "TASK [kube-audit : include] **************************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.037833,
+      "\r\u001b[K"
+    ],
+    [
+      6.8e-05,
+      "included: /Users/geese/code/github/kubeatf/playbooks/roles/kube-audit/tasks/runauditscript \b:\u001b[K"
+    ],
+    [
+      0.03378,
+      "\r\u001b[K"
+    ],
+    [
+      8e-05,
+      ".yml for localhost\r\n:\u001b[K"
+    ],
+    [
+      0.0339,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.03461,
+      "\r\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "TASK [kube-audit : Run audit script] *****************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.033859,
+      "\r\u001b[Kchanged: [localhost -> localhost]\r\n:\u001b[K"
+    ],
+    [
+      0.036385,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036337,
+      "\r\u001b[K"
+    ],
+    [
+      6.9e-05,
+      "TASK [kube-audit : Test command output] **************************************************\r\n:\u001b[K"
+    ],
+    [
+      0.03662,
+      "\r\u001b[K"
+    ],
+    [
+      5.3e-05,
+      "ok: [localhost] => {\r\n:\u001b[K"
+    ],
+    [
+      0.037531,
+      "\r\u001b[K    \"msg\": [\r\n:\u001b[K"
+    ],
+    [
+      0.034735,
+      "\r\u001b[K        \" 1 - Access External HTTP Site (http://whatismyip.org): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.031568,
+      "\r\u001b[K"
+    ],
+    [
+      0.000171,
+      "        \" 2 - Access DockerHub Index (HTTPS) Site (https://index.docker.io): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.037244,
+      "\r\u001b[K"
+    ],
+    [
+      6.8e-05,
+      "        \" 3 - Access DockerHub Registry (HTTPS) Site (https://registry-1.docker.io): True\" \b:\u001b[K"
+    ],
+    [
+      0.034077,
+      "\r\u001b[K"
+    ],
+    [
+      6e-05,
+      ", \r\n:\u001b[K"
+    ],
+    [
+      0.309548,
+      "\r\u001b[K"
+    ],
+    [
+      0.00024,
+      "        \" 4 - Access Locally Mounted Kube SA Token: True\", \r\n:\u001b[K"
+    ],
+    [
+      0.213709,
+      "\r\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "        \" 5 - Access Kube API Server (https://100.64.0.1:443): False\", \r\n:\u001b[K"
+    ],
+    [
+      0.337744,
+      "\r\u001b[K        \" 6 - Access Kube API Server with Local SA Token (https://100.64.0.1:443/api/v1/na \b:\u001b[K"
+    ],
+    [
+      0.292521,
+      "\r\u001b[K"
+    ],
+    [
+      5.9e-05,
+      "mespaces): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.224636,
+      "\r\u001b[K"
+    ],
+    [
+      7.1e-05,
+      "        \" 7 - Access Kubelet on local host (https://172.20.48.188:10250/runningpods/): Tru \b:\u001b[K"
+    ],
+    [
+      0.213905,
+      "\r\u001b[K"
+    ],
+    [
+      0.000106,
+      "e\", \r\n:\u001b[K"
+    ],
+    [
+      0.19123,
+      "\r\u001b[K"
+    ],
+    [
+      7.6e-05,
+      "        \" 8 - Access Kubelet on another worker host (https://172.20.42.228:10250/runningpo \b:\u001b[K"
+    ],
+    [
+      0.190698,
+      "\r\u001b[K"
+    ],
+    [
+      0.000108,
+      "ds/): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.202328,
+      "\r\u001b[K"
+    ],
+    [
+      5.7e-05,
+      "        \" 9 - Access Kubelet on master host (https://172.20.57.249:10250/runningpods/): Tr \b:\u001b[K"
+    ],
+    [
+      0.179722,
+      "\r\u001b[K"
+    ],
+    [
+      0.000103,
+      "ue\", \r\n:\u001b[K"
+    ],
+    [
+      0.214278,
+      "\r\u001b[K"
+    ],
+    [
+      8.7e-05,
+      "        \"10 - Access Kubelet RO on local host (http://172.20.48.188:10255/metrics): True\", \b:\u001b[K"
+    ],
+    [
+      0.21337,
+      "\r\u001b[K"
+    ],
+    [
+      0.000117,
+      " \r\n:\u001b[K"
+    ],
+    [
+      0.224321,
+      "\r\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "        \"11 - Access Kubelet RO on another worker host (http://172.20.42.228:10255/metrics \b:\u001b[K"
+    ],
+    [
+      0.259725,
+      "\r\u001b[K"
+    ],
+    [
+      6.7e-05,
+      "): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.325633,
+      "\r\u001b[K        \"12 - Access Kubelet RO on master host (http://172.20.57.249:10255/metrics): True\" \b:\u001b[K"
+    ],
+    [
+      0.540086,
+      "\r\u001b[K"
+    ],
+    [
+      0.000104,
+      ", \r\n:\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K"
+    ],
+    [
+      6.2e-05,
+      "        \"20 - Access AWS EC2 API (https://ec2.us-east-1.amazonaws.com): True\", \r\n:\u001b[K"
+    ],
+    [
+      0.710095,
+      "\r\u001b[K"
+    ],
+    [
+      5.8e-05,
+      "        \"21 - Access AWS S3 API (https://ec2.us-east-1.amazonaws.com): True\", \r\n:\u001b[K"
+    ],
+    [
+      1.225107,
+      "\r\u001b[K"
+    ],
+    [
+      0.000142,
+      "        \"22 - Access EC2 Userdata (http://169.254.169.254/latest/user-data): True\", \r\n:\u001b[K"
+    ],
+    [
+      1.338526,
+      "\r\u001b[K"
+    ],
+    [
+      5.6e-05,
+      "        \"23 - Access EC2 IAM Credentials (http://169.254.169.254/latest/meta-data/iam/info \b:\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K"
+    ],
+    [
+      7.7e-05,
+      "): True\"\r\n:\u001b[K"
+    ],
+    [
+      1.326874,
+      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049l"
+    ],
+    [
+      0.041642,
+      "\u001b]0;geese@mb: ~/code/github/kubeatf\u0007\u001b[0;32m~/code/github/kubeatf\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ]
+  ]
+}

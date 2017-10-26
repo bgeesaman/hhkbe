@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 59.142474,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.262999,
+      "\u001b[?1034h\u001b]0;geese@mb: ~/code/github/kubeatf\u0007\u001b[0;32m~/code/github/kubeatf\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "./kub"
+    ],
+    [
+      7.6e-05,
+      "eatf cr"
+    ],
+    [
+      4.7e-05,
+      "e"
+    ],
+    [
+      0.000198,
+      "a"
+    ],
+    [
+      6.5e-05,
+      "te-c"
+    ],
+    [
+      3.6e-05,
+      "lu"
+    ],
+    [
+      7.7e-05,
+      "s"
+    ],
+    [
+      4.4e-05,
+      "t"
+    ],
+    [
+      0.000142,
+      "e"
+    ],
+    [
+      6.7e-05,
+      "r "
+    ],
+    [
+      4.5e-05,
+      "ko"
+    ],
+    [
+      4.6e-05,
+      "p"
+    ],
+    [
+      4.1e-05,
+      "s"
+    ],
+    [
+      0.000103,
+      "-1"
+    ],
+    [
+      4.5e-05,
+      "."
+    ],
+    [
+      0.000113,
+      "7"
+    ],
+    [
+      7.5e-05,
+      ".0-"
+    ],
+    [
+      4.2e-05,
+      "a"
+    ],
+    [
+      3.8e-05,
+      "w"
+    ],
+    [
+      9.5e-05,
+      "s"
+    ],
+    [
+      0.467518,
+      "\r\n"
+    ],
+    [
+      0.033838,
+      "Run create cluster using profile kops-1.7.0-aws\r\n"
+    ],
+    [
+      1.278995,
+      "\r\nPLAY [localhost] *************************************************************************\r\n"
+    ],
+    [
+      0.060965,
+      "\r\nTASK [kops : Perform create] *************************************************************\r\n"
+    ],
+    [
+      0.052281,
+      "\u001b[0;36mincluded: /Users/geese/code/github/kubeatf/playbooks/roles/kops/tasks/create.yml for localhost\u001b[0m\r\n"
+    ],
+    [
+      0.016179,
+      "\r\nTASK [kops : create - kops 1.7.0 aws] ****************************************************\r\n"
+    ],
+    [
+      0.049715,
+      "\u001b[0;32mok: [localhost] => {\u001b[0m\r\n\u001b[0;32m    \"msg\": \"This is create for kops version 1.7.0 on aws\"\u001b[0m\r\n\u001b[0;32m}\u001b[0m\r\n"
+    ],
+    [
+      0.010244,
+      "\r\nTASK [kops : Create S3 bucket s3://bgeesaman-kops-1.7.0-aws] *****************************\r\n"
+    ],
+    [
+      1.153532,
+      "\u001b[0;32mok: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.012428,
+      "\r\nTASK [kops : Generate cluster local dir] *************************************************\r\n"
+    ],
+    [
+      0.40752,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.010121,
+      "\r\nTASK [kops : Get profile.yml if created] *************************************************\r\n"
+    ],
+    [
+      0.3866,
+      "\u001b[0;32mok: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.008153,
+      "\r\nTASK [kops : Fail if it already exists] **************************************************\r\n"
+    ],
+    [
+      0.02707,
+      "\u001b[0;36mskipping: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.011074,
+      "\r\nTASK [kops : Copy Profile to Clusters Dir] ***********************************************\r\n"
+    ],
+    [
+      0.392923,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.010155,
+      "\r\nTASK [kops : Generate cluster config] ****************************************************\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.011437,
+      "\r\nTASK [kops : Create cluster] *************************************************************\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.012817,
+      "\r\nTASK [kops : Wait until cluster is up/running] *******************************************\r\n"
+    ],
+    [
+      0.878028,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (30 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (29 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (28 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (27 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (26 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (25 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (24 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (23 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (22 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (21 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (20 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (19 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (18 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (17 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (16 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (15 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (14 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (13 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (12 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (11 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (10 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[1;30mFAILED - RETRYING: Wait until cluster is up/running (9 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.020692,
+      "\r\nTASK [kops : Extract kubeconfig] *********************************************************\r\n"
+    ],
+    [
+      0.820598,
+      "\u001b[0;33mchanged: [localhost -> localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.003342,
+      "\r\nPLAY RECAP *******************************************************************************\r\n"
+    ],
+    [
+      0.000133,
+      "\u001b[0;33mlocalhost\u001b[0m                  : \u001b[0;32mok=10  \u001b[0m \u001b[0;33mchanged=6   \u001b[0m unreachable=0    failed=0   \r\n"
+    ],
+    [
+      0.000158,
+      "\r\n"
+    ],
+    [
+      0.161911,
+      "\u001b]0;geese@mb: ~/code/github/kubeatf\u0007\u001b[0;32m~/code/github/kubeatf\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "ku"
+    ],
+    [
+      7.8e-05,
+      "bectl g"
+    ],
+    [
+      3e-05,
+      "et"
+    ],
+    [
+      0.000191,
+      " "
+    ],
+    [
+      8.9e-05,
+      "node"
+    ],
+    [
+      4.5e-05,
+      "s "
+    ],
+    [
+      6.1e-05,
+      "-"
+    ],
+    [
+      3.6e-05,
+      "o "
+    ],
+    [
+      4.4e-05,
+      "w"
+    ],
+    [
+      3e-05,
+      "i"
+    ],
+    [
+      3.8e-05,
+      "d"
+    ],
+    [
+      3.4e-05,
+      "e"
+    ],
+    [
+      0.354721,
+      "\r\n"
+    ],
+    [
+      0.188281,
+      "NAME                            STATUS    AGE       VERSION   EXTERNAL-IP     OS-IMAGE                      KERNEL-VERSION\r\nip-172-20-42-228.ec2.internal   Ready     1m        v1.7.4    54.175.73.175   Debian GNU/Linux 8 (jessie)   4.4.78-k8s\r\nip-172-20-48-188.ec2.internal   Ready     1m        v1.7.4    54.234.59.44    Debian GNU/Linux 8 (jessie)   4.4.78-k8s\r\nip-172-20-57-249.ec2.internal   Ready     3m        v1.7.4    52.91.151.221   Debian GNU/Linux 8 (jessie)   4.4.78-k8s\r\n"
+    ],
+    [
+      0.029327,
+      "\u001b]0;geese@mb: ~/code/github/kubeatf\u0007\u001b[0;32m~/code/github/kubeatf\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ]
+  ]
+}

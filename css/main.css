@@ -1,0 +1,56 @@
+body { 
+  font-family: 'Droid Serif';
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code { 
+  font-family: 'Ubuntu Mono';
+}
+
+.remark-container {
+  background: #222;
+}
+
+.remark-slide-scaler {
+  -moz-box-shadow: 0 0 30px #333;
+  -webkit-box-shadow: 0 0 30px #333;
+  box-shadow: 0 0 30px #333;
+}
+
+.remark-slide-content {
+  background: #222;
+  color: #222;
+}
+
+.remark-slide-content h1 {
+  font-size: 3em;
+} 
+
+#slide-player pre.asciinema-terminal.font-big {
+  border-width: 1px;
+  width: 50ch;
+  height: 24em;
+}
+
+/* Two-column layout */
+.left-column {
+  width: 50%;
+  float: left;
+}
+.right-column {
+  width: 50%;
+  float: right;
+}
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  color: #ddd;
+  font-size: .5em;
+}
+.dark {
+  color: #333;
+}

@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 15.126086,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.190377,
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.520361,
+      "ssh a"
+    ],
+    [
+      7.8e-05,
+      "dmin@52.91."
+    ],
+    [
+      4.3e-05,
+      "151."
+    ],
+    [
+      9.5e-05,
+      "2"
+    ],
+    [
+      3.4e-05,
+      "21"
+    ],
+    [
+      1.547227,
+      "\r\n"
+    ],
+    [
+      0.207681,
+      "\r\nThe programs included with the Debian GNU/Linux system are free software;\r\nthe exact distribution terms for each program are described in the\r\nindividual files in /usr/share/doc/*/copyright.\r\n\r\nDebian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent\r\npermitted by applicable law.\r\nLast login: Thu Oct 26 15:34:50 2017 from 96.231.30.11\r\r\n"
+    ],
+    [
+      0.002011,
+      "\u001b]0;admin@ip-172-20-57-249: ~\u0007admin@ip-172-20-57-249:~$ "
+    ],
+    [
+      1.068148,
+      "s"
+    ],
+    [
+      0.108197,
+      "u"
+    ],
+    [
+      0.105095,
+      "d"
+    ],
+    [
+      0.044594,
+      "o"
+    ],
+    [
+      0.12469,
+      " "
+    ],
+    [
+      0.05645,
+      "b"
+    ],
+    [
+      0.101417,
+      "a"
+    ],
+    [
+      0.056851,
+      "s"
+    ],
+    [
+      0.056988,
+      "h"
+    ],
+    [
+      0.190046,
+      "\r\n"
+    ],
+    [
+      0.004501,
+      "root@ip-172-20-57-249:/home/admin# "
+    ],
+    [
+      2.0,
+      "vi /etc/kubernetes/manifests/kube-apiserver.manifest"
+    ],
+    [
+      0.359233,
+      "\r\n"
+    ],
+    [
+      0.001664,
+      "\u001b[?1049h\u001b[?1h\u001b=\u001b[2;1H▽\u001b[6n\u001b[2;1H  \u001b[1;1H"
+    ],
+    [
+      0.000786,
+      "\u001b[1;25r\u001b[?12;25h\u001b[?12l\u001b[?25h\u001b[27m\u001b[23m\u001b[m\u001b[H\u001b[2J\u001b[?25l\u001b[25;1H\"/etc/kubernetes/manifests/kube-apiserver.manifest\" 119L, 3351C\u001b[>c"
+    ],
+    [
+      0.000453,
+      "\u001b[1;1HapiVersion: v1\r\nkind: Pod\r\nmetadata:\r\n  annotations:\r\n    dns.alpha.kubernetes.io/external: api.kube.lonimbus.com\r\n    dns.alpha.kubernetes.io/internal: api.internal.kube.lonimbus.com\r\n  creationTimestamp: null\r\n  labels:\r\n    k8s-app: kube-apiserver\r\n  name: kube-apiserver\r\n  namespace: kube-system\r\nspec:\r\n  containers:\r\n  - command:\r\n    - /bin/sh\r\n    - -c\r\n    - /usr/local/bin/kube-apiserver --address=127.0.0.1 --admission-control=NamespaceLifecc\u001b[18;1Hycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,DefaultToleratioo\u001b[19;1HnSeconds,ResourceQuota\u001b[20;7H--allow-privileged=true --anonymous-auth=false --apiserver-count=1 --authorization-mm\u001b[21;1Hode=AlwaysAllow\u001b[22;7H--basic-auth-file=/srv/kubernetes/basic_auth.csv --client-ca-file=/srv/kubernetes/caa\u001b[23;1H.crt\u001b[24;7H--cloud-provider=aws --etcd-servers-overrides=/events#http://127.0.0.1:4002\u001b[25;73H1,1\u001b[11CTop\u001b[1;1H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      1.199652,
+      "\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H/\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.392699,
+      "A\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.506354,
+      "l\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.091676,
+      "w\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.412956,
+      "\r\u001b[?25l\u001b[72C18,95\u001b[9CTop\u001b[21;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.631351,
+      "\u001b[?25l\u001b[21;5H\u001b[K\u001b[25;77H4\u001b[21;4H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.180491,
+      "\u001b[?25l\u001b[25;1H\u001b[1m-- INSERT --\u001b[m\u001b[25;73H\u001b[K\u001b[25;73H18,95\u001b[9CTop\u001b[21;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.258579,
+      "\u001b[?25lR\u001b[25;77H6\u001b[21;6H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.203737,
+      "\u001b[?25lB\u001b[25;77H7\u001b[21;7H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.212971,
+      "\u001b[?25lA\u001b[25;77H8\u001b[21;8H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.179153,
+      "\u001b[?25lC\u001b[25;77H9\u001b[21;9H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.429697,
+      "\u001b[25;1H\u001b[K\u001b[21;8H"
+    ],
+    [
+      0.964589,
+      "\u001b[?25l\u001b[25;73H18,98\u001b[9CTop\u001b[21;8H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.441993,
+      "\u0007\u001b[?25l\u001b[25;73H\u001b[K\u001b[25;1H:\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.150819,
+      "q\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.185313,
+      "!\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.100914,
+      "\r\u001b[?25l\u001b[25;1H\u001b[K\u001b[25;1H\u001b[?1l\u001b>\u001b[?12l\u001b[?25h\u001b[?1049lroot@ip-172-20-57-249:/home/admin# "
+    ],
+    [
+      1.159344,
+      "exit\r\n\u001b]0;admin@ip-172-20-57-249: ~\u0007admin@ip-172-20-57-249:~$ "
+    ],
+    [
+      0.652304,
+      "logout\r\n"
+    ],
+    [
+      0.000534,
+      "Connection to 52.91.151.221 closed.\r\r\n"
+    ],
+    [
+      0.01972,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ]
+  ]
+}

