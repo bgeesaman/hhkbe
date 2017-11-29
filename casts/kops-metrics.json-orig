@@ -11,7 +11,163 @@
   },
   "stdout": [
     [
+      0.241768,
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      0.501297,
+      "ku"
+    ],
+    [
+      6e-05,
+      "be"
+    ],
+    [
+      4.2e-05,
+      "ctl"
+    ],
+    [
+      3.8e-05,
+      " e"
+    ],
+    [
+      3.8e-05,
+      "xe"
+    ],
+    [
+      4.2e-05,
+      "c"
+    ],
+    [
+      3.7e-05,
+      " -"
+    ],
+    [
+      3.9e-05,
+      "it"
+    ],
+    [
+      4.5e-05,
+      " v"
+    ],
+    [
+      4.1e-05,
+      "u"
+    ],
+    [
+      4e-05,
+      "ln"
+    ],
+    [
+      4.3e-05,
+      "we"
+    ],
+    [
+      3.7e-05,
+      "b"
+    ],
+    [
+      3.9e-05,
+      "-2"
+    ],
+    [
+      0.000113,
+      "5"
+    ],
+    [
+      4.2e-05,
+      "69941"
+    ],
+    [
+      4.4e-05,
+      "4"
+    ],
+    [
+      3.8e-05,
+      "05"
+    ],
+    [
+      3.7e-05,
+      "-"
+    ],
+    [
+      8.7e-05,
+      "q"
+    ],
+    [
+      5.2e-05,
+      "8v9r"
+    ],
+    [
+      4.3e-05,
+      " "
+    ],
+    [
+      4e-05,
+      "/"
+    ],
+    [
+      3.6e-05,
+      "b"
+    ],
+    [
+      3.9e-05,
+      "i"
+    ],
+    [
+      0.00017,
+      "n/bash"
+    ],
+    [
+      0.350521,
+      "\r\n"
+    ],
+    [
+      0.368665,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# exp"
+    ],
+    [
+      0.00017,
+      "ort TERM="
+    ],
+    [
+      0.000296,
+      "xterm"
+    ],
+    [
+      0.285234,
+      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.37472,
+      "c"
+    ],
+    [
+      0.269828,
+      "l"
+    ],
+    [
+      0.091434,
+      "e"
+    ],
+    [
+      0.044773,
+      "a"
+    ],
+    [
+      0.08933,
+      "r"
+    ],
+    [
       0.102418,
+      "\r\n"
+    ],
+    [
+      9.3e-05,
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
@@ -31,7 +187,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.0,
+      2.0,
       "curl -sk http://172.20.4"
     ],
     [
@@ -39,7 +195,7 @@
       "2.228:4194/metrics | less"
     ],
     [
-      1.0,
+      2.0,
       "\r\n"
     ],
     [
@@ -87,7 +243,7 @@
       "15aa0ccd7dc64dc232f47f7f4738 \bcf0fb4bb707a2f\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_azure-vote- \bback-4149398501-kddvx_default_5c645025-ba02-11e7-801a-06d2c9432f28_0\",namespace=\"default\", \bpod_name=\"azure-vote-back-4149398501-kddvx\"} 0\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpod850f09b298d1912e6a08cf56d141138e/966e1393196c0e79e160d612d65d764ddc10d46db3bf1e1218c006 \b5b0790c662\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-proxy-ip-1 \b72-20-42-228.ec2.internal_kube-system_850f09b298d1912e6a08cf56d141138e_0\",namespace=\"kube- \bsystem\",pod_name=\"kube-proxy-ip-172-20-42-228.ec2.internal\"} 0\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpodd430560a-b9fd-11e7-aa33-06d2c9432f28/4233b5f7476c0b6448ef8e04bd237752d8239bd599996e1ae0 \b230850f6be6630\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-dns-au \b:\u001b[K"
     ],
     [
-      0.316464,
+      1.316464,
       "\r\u001b[Ktoscaler-1818915203-6vp74_kube-system_d430560a-b9fd-11e7-aa33-06d2c9432f28_0\",namespace=\"k \bube-system\",pod_name=\"kube-dns-autoscaler-1818915203-6vp74\"} 0\r\ncontainer_fs_inodes_free{container_name=\"autoscaler\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/podd430560a-b9fd-11e7-aa33-06d2c9432f28/cd67e274f850df2d0198aef7c9af7f6dd13d757f2ea \b48d6fea5fd5ddc2c6db5d\",image=\"gcr.io/google_containers/cluster-proportional-autoscaler-amd \b64@sha256:003f98d9f411ddfa6ff6d539196355e03ddd69fa4ed38c7ffb8fec6f729afe2d\",name=\"k8s_auto \bscaler_kube-dns-autoscaler-1818915203-6vp74_kube-system_d430560a-b9fd-11e7-aa33-06d2c9432f \b28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-autoscaler-1818915203-6vp74\"} 0\r\ncontainer_fs_inodes_free{container_name=\"azure-vote-back\",device=\"/dev/xvda1\",id=\"/kubepod \bs/burstable/pod5c645025-ba02-11e7-801a-06d2c9432f28/217fc1a2e939dc4b44632dfe1d4e80739a67e2 \b8e2499c6552d371e1fa9f43a6c\",image=\"redis@sha256:07e7b6cb753f8d06a894e22af30f94e04844461ab6 \bcb002c688841873e5e5116\",name=\"k8s_azure-vote-b"
     ],
     [
@@ -115,7 +271,7 @@
       "x12\"} 0\r\n:\u001b[K"
     ],
     [
-      0.59214,
+      1.09214,
       "\r\u001b[Kcontainer_fs_inodes_free{container_name=\"sidecar\",device=\"/dev/xvda1\",id=\"/kubepods/bursta \bble/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/bfc3f4348f5d526fb8f753f9f0bb012d0383e95c35cf29 \b3fa4da57d9e7b2ce63\",image=\"gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c951 \b046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\",name=\"k8s_sidecar_kube-dns-479524 \b115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_ \bname=\"kube-dns-479524115-gwbz9\"} 0\r\n# HELP container_fs_inodes_total Number of Inodes\r\n# TYPE container_fs_inodes_total gauge\r\ncontainer_fs_inodes_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable \b/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/fc504259389ace2ce7a702931ff157686c5b158113be83170 \bc39b4f1f8406155\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_calico-nod \be-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_na \bme=\"calico-node-bl90t\"} 18\r\ncontainer_fs_inodes_total{container_n"
     ],
     [
@@ -415,12 +571,100 @@
       "v/xvda1\",id=\"/kubepods \b:\u001b[K"
     ],
     [
-      0.100367,
+      0.800367,
       "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049l"
     ],
     [
       7e-05,
       "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "curl -sk http://172.20.42.228:4194/metrics | grep dockerV \rersion"
+    ],
+    [
+      0.287449,
+      "\r\n"
+    ],
+    [
+      0.029904,
+      "cadvisor_version_info{cadvisorRevision=\"\",cadvisorVersion=\"\",dockerVersion=\"1.12.6\",kernelVersion=\"4.4.78-k8s\",osVersion=\"Debian GNU/Linux 8 (jessie)\"} 1\r\n"
+    ],
+    [
+      0.004107,
+      "root@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.256138,
+      "l"
+    ],
+    [
+      0.101926,
+      "e"
+    ],
+    [
+      0.112648,
+      "a"
+    ],
+    [
+      0.067783,
+      "r"
+    ],
+    [
+      0.118779,
+      "\r\n"
+    ],
+    [
+      0.000305,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      0.347168,
+      "curl -sk http://172.20.42.228:4194/metrics | grep running \r"
+    ],
+    [
+      0.40973,
+      "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Kg\r\n"
+    ],
+    [
+      0.029643,
+      "container_tasks_state{container_name=\"POD\",id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/fc504259389ace2ce7a702931ff157686c5b158113be83170c39b4f1f8406155\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_calico-node-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"calico-node-bl90t\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"POD\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/a20a3b94cd635c64037c422e867a061fd5927aa0d18b25596c9e9b7cad0ae123\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-479524115-gwbz9\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"POD\",id=\"/kubepods/burstable/pod4e2b253f-ba00-11e7-801a-06d2c9432f28/11ffadfb758a811c239b331bdf9cd4077ffd53b857d8257f5390fb6d901c8c6a\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kubernetes-dashb"
+    ],
+    [
+      0.000176,
+      "oard-921590658-4vx12_kube-system_4e2b253f-ba00-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kubernetes-dashboard-921590658-4vx12\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"POD\",id=\"/kubepods/burstable/pod5c645025-ba02-11e7-801a-06d2c9432f28/f61931693b2c0035fca3ab15aa0ccd7dc64dc232f47f7f4738cf0fb4bb707a2f\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_azure-vote-back-4149398501-kddvx_default_5c645025-ba02-11e7-801a-06d2c9432f28_0\",namespace=\"default\",pod_name=\"azure-vote-back-4149398501-kddvx\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"POD\",id=\"/kubepods/burstable/pod850f09b298d1912e6a08cf56d141138e/966e1393196c0e79e160d612d65d764ddc10d46db3bf1e1218c0065b0790c662\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-proxy-ip-172-20-42-228.ec2.internal_kube-system_850f09b298d1912e6a08cf56d141138e_0\",namespace=\"kube-system\",pod_name=\"kube-proxy-ip-172-20-42-228.ec2.internal\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"POD"
+    ],
+    [
+      0.000131,
+      "\",id=\"/kubepods/burstable/podd430560a-b9fd-11e7-aa33-06d2c9432f28/4233b5f7476c0b6448ef8e04bd237752d8239bd599996e1ae0230850f6be6630\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-dns-autoscaler-1818915203-6vp74_kube-system_d430560a-b9fd-11e7-aa33-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-autoscaler-1818915203-6vp74\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"autoscaler\",id=\"/kubepods/burstable/podd430560a-b9fd-11e7-aa33-06d2c9432f28/cd67e274f850df2d0198aef7c9af7f6dd13d757f2ea48d6fea5fd5ddc2c6db5d\",image=\"gcr.io/google_containers/cluster-proportional-autoscaler-amd64@sha256:003f98d9f411ddfa6ff6d539196355e03ddd69fa4ed38c7ffb8fec6f729afe2d\",name=\"k8s_autoscaler_kube-dns-autoscaler-1818915203-6vp74_kube-system_d430560a-b9fd-11e7-aa33-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-autoscaler-1818915203-6vp74\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"azure-vote-back\",id=\"/kubepods/burstable/pod5c645025-ba02-11e7-801a-06d2c9432f28/217f"
+    ],
+    [
+      0.000387,
+      "c1a2e939dc4b44632dfe1d4e80739a67e28e2499c6552d371e1fa9f43a6c\",image=\"redis@sha256:07e7b6cb753f8d06a894e22af30f94e04844461ab6cb002c688841873e5e5116\",name=\"k8s_azure-vote-back_azure-vote-back-4149398501-kddvx_default_5c645025-ba02-11e7-801a-06d2c9432f28_0\",namespace=\"default\",pod_name=\"azure-vote-back-4149398501-kddvx\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"calico-node\",id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/70997c47c9b9d308c2893face3863a75bebdbd9e01f076782f651a01968f1041\",image=\"calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\",name=\"k8s_calico-node_calico-node-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"calico-node-bl90t\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"dnsmasq\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/93ed51747104fedb11552aecbf6451eb7a8e897f03755069f29fbccfeb515003\",image=\"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:aee"
+    ],
+    [
+      0.00017,
+      "b994acbc505eabc7415187cd9edb38cbb5364dc1c2fc748154576464b3dc2\",name=\"k8s_dnsmasq_kube-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-479524115-gwbz9\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"install-cni\",id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/1d1e5bed3a56f57ccd1bf8ee57b6055d87441db1ab461467cbdb01f4a371a34c\",image=\"calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\",name=\"k8s_install-cni_calico-node-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"calico-node-bl90t\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"kube-proxy\",id=\"/kubepods/burstable/pod850f09b298d1912e6a08cf56d141138e/f671565ac81cb10f46ef8ae57dd58f6e108fb50921101b06d144ddffbcca1a46\",image=\"gcr.io/google_containers/kube-proxy@sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\",name=\"k8s_kube-proxy_kube-proxy-ip-172-20-42-228.ec2.inte"
+    ],
+    [
+      0.000211,
+      "rnal_kube-system_850f09b298d1912e6a08cf56d141138e_0\",namespace=\"kube-system\",pod_name=\"kube-proxy-ip-172-20-42-228.ec2.internal\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"kubedns\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/051df68614e0db0a4cc6c2502ed1682cd25a6e481b6ac52c4d8bd0637068474f\",image=\"gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:40790881bbe9ef4ae4ff7fe8b892498eecb7fe6dcc22661402f271e03f7de344\",name=\"k8s_kubedns_kube-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-479524115-gwbz9\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"kubernetes-dashboard\",id=\"/kubepods/burstable/pod4e2b253f-ba00-11e7-801a-06d2c9432f28/3aa686820bfade4ae427a8b7518e3612ee50de35d4ca331a5075b8d132ba8805\",image=\"gcr.io/google_containers/kubernetes-dashboard-amd64@sha256:2c4421ed80358a0ee97b44357b6cd6dc09be6ccc27dfe9d50c9bfc39a760e5fe\",name=\"k8s_kubernetes-dashboard_kubernetes-dashboard-921590658-4vx12_kube-"
+    ],
+    [
+      5.3e-05,
+      "system_4e2b253f-ba00-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kubernetes-dashboard-921590658-4vx12\",state=\"running\"} 0\r\ncontainer_tasks_state{container_name=\"sidecar\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/bfc3f4348f5d526fb8f753f9f0bb012d0383e95c35cf293fa4da57d9e7b2ce63\",image=\"gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c951046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\",name=\"k8s_sidecar_kube-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kube-dns-479524115-gwbz9\",state=\"running\"} 0\r\nroot@vulnweb-2569941405-q8v9r:/# "
+    ],
+    [
+      2.0,
+      "exit\r\n"
+    ],
+    [
+      0.020957,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }
