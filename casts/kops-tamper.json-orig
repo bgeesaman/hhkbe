@@ -15,351 +15,11 @@
       "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ],
     [
-      0.582666,
-      "ku"
-    ],
-    [
-      0.000132,
-      "bec"
-    ],
-    [
-      6.4e-05,
-      "tl exec"
-    ],
-    [
-      6.2e-05,
-      " -"
-    ],
-    [
-      4e-05,
-      "it "
-    ],
-    [
-      3.9e-05,
-      "v"
-    ],
-    [
-      4.1e-05,
-      "ul"
-    ],
-    [
-      4.1e-05,
-      "n"
-    ],
-    [
-      4.2e-05,
-      "we"
-    ],
-    [
-      0.000129,
-      "b"
-    ],
-    [
-      6e-05,
-      "-25"
-    ],
-    [
-      4.3e-05,
-      "69"
-    ],
-    [
-      4.9e-05,
-      "94"
-    ],
-    [
-      0.000131,
-      "1"
-    ],
-    [
-      4.9e-05,
-      "405-q"
-    ],
-    [
-      4.4e-05,
-      "8"
-    ],
-    [
-      3.9e-05,
-      "v9"
-    ],
-    [
-      6.9e-05,
-      "r"
-    ],
-    [
-      0.000121,
-      " "
-    ],
-    [
-      4.9e-05,
-      "/bin/b"
-    ],
-    [
-      0.00013,
-      "a"
-    ],
-    [
-      5.6e-05,
-      "sh"
-    ],
-    [
-      0.198076,
-      "\r\n"
-    ],
-    [
-      0.394546,
-      "root@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# export TERM=xterm"
-    ],
-    [
-      0.119514,
-      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      0.349873,
-      "c"
-    ],
-    [
-      0.112811,
-      "l"
-    ],
-    [
-      0.089625,
-      "e"
-    ],
-    [
-      0.079338,
-      "a"
-    ],
-    [
-      0.077342,
-      "r"
-    ],
-    [
-      0.08919,
-      "\r\n"
-    ],
-    [
-      0.000456,
-      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "apt install netcat"
-    ],
-    [
-      0.388739,
-      "\r\n"
-    ],
-    [
-      0.164509,
-      "\rReading package lists... 0%\r"
-    ],
-    [
-      0.165349,
-      "\rReading package lists... 0%\r"
-    ],
-    [
-      0.008825,
-      "\rReading package lists... 1%\r"
-    ],
-    [
-      0.700597,
-      "\rReading package lists... 76%\r"
-    ],
-    [
-      0.189054,
-      "\rReading package lists... 92%\r\rReading package lists... 92%\r"
-    ],
-    [
-      0.005712,
-      "\rReading package lists... 92%\r\rReading package lists... 92%\r"
-    ],
-    [
-      0.045649,
-      "\rReading package lists... 98%\r\rReading package lists... 98%\r"
-    ],
-    [
-      0.00945,
-      "\rReading package lists... Done\r\r\n"
-    ],
-    [
-      0.163153,
-      "\rBuilding dependency tree... 0%\r\rBuilding dependency tree... 0%\r"
-    ],
-    [
-      0.019301,
-      "\rBuilding dependency tree... 50%\r\rBuilding dependency tree... 50%\r"
-    ],
-    [
-      0.113874,
-      "\rBuilding dependency tree       \r\r\n\rReading state information... 0%\r\rReading state information... 0%\r"
-    ],
-    [
-      0.000831,
-      "\rReading state information... Done\r\r\n"
-    ],
-    [
-      0.082834,
-      "The following extra packages will be installed:\r\n  netcat-traditional\r\n"
-    ],
-    [
-      0.008733,
-      "The following NEW packages will be installed:\r\n  netcat netcat-traditional\r\n0 upgraded, 2 newly installed, 0 to remove and 25 not upgraded.\r\n"
-    ],
-    [
-      0.404019,
-      "Need to get 75.3 kB of archives.\r\nAfter this operation, 194 kB of additional disk space will be used.\r\nDo you want to continue? [Y/n] "
-    ],
-    [
-      0.857163,
-      "y"
-    ],
-    [
-      0.033165,
-      "\r\n"
-    ],
-    [
-      0.166118,
-      "\u001b[33m\r\r0% [Working]\u001b[0m"
-    ],
-    [
-      0.383173,
-      "\u001b[33m\r0% [Working]\u001b[0m\u001b[33m\r0% [Working]\u001b[0m"
-    ],
-    [
-      0.017682,
-      "\r            \rGet:1 http://deb.debian.org/debian/ jessie/main netcat-traditional amd64 1.10-41 [66.3 kB]\r\n\u001b[33m\r            \r18% [1 netcat-traditional 13.8 kB/66.3 kB 21%]\u001b[0m"
-    ],
-    [
-      0.002083,
-      "\u001b[33m\r                                              \r88% [Working]\u001b[0m"
-    ],
-    [
-      0.001767,
-      "\r             \rGet:2 http://deb.debian.org/debian/ jessie/main netcat all 1.10-41 [8962 B]\r\n\u001b[33m\r             \r88% [2 netcat 0 B/8962 B 0%]\u001b[0m"
-    ],
-    [
-      0.000295,
-      "\u001b[33m\r                            \r100% [Working]\u001b[0m\r              \rFetched 75.3 kB in 0s (186 kB/s)\r\n"
-    ],
-    [
-      0.277549,
-      "debconf: delaying package configuration, since apt-utils is not installed\r\n"
-    ],
-    [
-      0.007448,
-      "\n\u001b[s\u001b[0;24r\u001b[u\u001b[1A"
-    ],
-    [
-      0.186548,
-      "Selecting previously unselected package netcat-traditional.\r\n(Reading database ... \r"
-    ],
-    [
-      0.001339,
-      "(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r"
-    ],
-    [
-      0.00209,
-      "(Reading database ... 70%\r"
-    ],
-    [
-      0.001092,
-      "(Reading database ... 75%\r"
-    ],
-    [
-      0.001104,
-      "(Reading database ... 80%\r"
-    ],
-    [
-      0.003127,
-      "(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r"
-    ],
-    [
-      0.000762,
-      "(Reading database ... 100%\r(Reading database ... 25813 files and directories currently installed.)\r\n"
-    ],
-    [
-      0.000739,
-      "Preparing to unpack .../netcat-traditional_1.10-41_amd64.deb ...\r\n\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [  0%]\u001b[49m\u001b[39m [....................................................................] \u001b[u\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [  9%]\u001b[49m\u001b[39m [#######.............................................................] \u001b[u"
-    ],
-    [
-      0.003961,
-      "Unpacking netcat-traditional (1.10-41) ...\r\n"
-    ],
-    [
-      0.0541,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 18%]\u001b[49m\u001b[39m [#############.......................................................] \u001b[u"
-    ],
-    [
-      0.003639,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 27%]\u001b[49m\u001b[39m [###################.................................................] \u001b[u"
-    ],
-    [
-      0.014058,
-      "Selecting previously unselected package netcat.\r\n"
-    ],
-    [
-      0.002306,
-      "Preparing to unpack .../netcat_1.10-41_all.deb ...\r\n\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 36%]\u001b[49m\u001b[39m [#########################...........................................] \u001b[u"
-    ],
-    [
-      0.003758,
-      "Unpacking netcat (1.10-41) ...\r\n"
-    ],
-    [
-      0.011121,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 45%]\u001b[49m\u001b[39m [###############################.....................................] \u001b[u"
-    ],
-    [
-      0.003534,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 54%]\u001b[49m\u001b[39m [######################################..............................] \u001b[u"
-    ],
-    [
-      0.188407,
-      "Setting up netcat-traditional (1.10-41) ...\r\n"
-    ],
-    [
-      0.003551,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 63%]\u001b[49m\u001b[39m [############################################........................] \u001b[u"
-    ],
-    [
-      0.005949,
-      "update-alternatives: using /bin/nc.traditional to provide /bin/nc (nc) in auto mode\r\n"
-    ],
-    [
-      0.003454,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 72%]\u001b[49m\u001b[39m [##################################################..................] \u001b[u"
-    ],
-    [
-      0.003805,
-      "Setting up netcat (1.10-41) ...\r\n"
-    ],
-    [
-      0.003542,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 81%]\u001b[49m\u001b[39m [########################################################............] \u001b[u"
-    ],
-    [
-      0.003475,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 90%]\u001b[49m\u001b[39m [##############################################################......] \u001b[u"
-    ],
-    [
-      0.193107,
-      "\n\u001b[s\u001b[0;25r\u001b[u\u001b[1A"
-    ],
-    [
-      0.174332,
-      "\u001b[Jroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      1.850739,
+      0.5,
       "kubectl get pods -o wide"
     ],
     [
-      0.288428,
+      0.888428,
       "\r\n"
     ],
     [
@@ -371,31 +31,11 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.784302,
-      "n"
-    ],
-    [
-      0.153406,
-      "c"
-    ],
-    [
-      0.149039,
-      "\r\n"
-    ],
-    [
-      0.000738,
-      "Cmd line: "
-    ],
-    [
-      1.092489,
-      "^C\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
+      2.5,
       "kubectl get svc"
     ],
     [
-      0.320989,
+      0.820989,
       "\r\n"
     ],
     [
@@ -407,7 +47,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      2.5,
       "nmap -n -T5 -p 6379 -Pn 100.65.29.230"
     ],
     [
@@ -427,215 +67,15 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      2.5,
       "apt install redis-tools"
     ],
     [
-      0.650788,
+      0.850788,
       "\r\n"
     ],
     [
-      0.166629,
-      "\rReading package lists... 0%\r"
-    ],
-    [
-      0.164355,
-      "\rReading package lists... 0%\r"
-    ],
-    [
-      0.008558,
-      "\rReading package lists... 1%\r"
-    ],
-    [
-      0.710468,
-      "\rReading package lists... 80%\r"
-    ],
-    [
-      0.127573,
-      "\rReading package lists... 92%\r\rReading package lists... 92%\r"
-    ],
-    [
-      0.005107,
-      "\rReading package lists... 92%\r\rReading package lists... 92%\r"
-    ],
-    [
-      0.04246,
-      "\rReading package lists... 98%\r\rReading package lists... 98%\r"
-    ],
-    [
-      0.002124,
-      "\rReading package lists... Done\r\r\n"
-    ],
-    [
-      0.171648,
-      "\rBuilding dependency tree... 0%\r\rBuilding dependency tree... 0%\r"
-    ],
-    [
-      0.015706,
-      "\rBuilding dependency tree... 50%\r\rBuilding dependency tree... 50%\r"
-    ],
-    [
-      0.096487,
-      "\rBuilding dependency tree       \r\r\n\rReading state information... 0%\r\rReading state information... 0%\r"
-    ],
-    [
-      0.000929,
-      "\rReading state information... Done\r\r\n"
-    ],
-    [
-      0.076234,
-      "The following extra packages will be installed:\r\n  libjemalloc1\r\n"
-    ],
-    [
-      0.000168,
-      "The following NEW packages will be installed:\r\n  libjemalloc1 redis-tools\r\n"
-    ],
-    [
-      0.003633,
-      "0 upgraded, 2 newly installed, 0 to remove and 25 not upgraded.\r\n"
-    ],
-    [
-      0.319571,
-      "Need to get 169 kB of archives.\r\nAfter this operation, 544 kB of additional disk space will be used.\r\nDo you want to continue? [Y/n] "
-    ],
-    [
-      0.501034,
-      "y"
-    ],
-    [
-      0.096405,
-      "\r\n"
-    ],
-    [
-      0.169083,
-      "\u001b[33m\r\r0% [Working]\u001b[0m"
-    ],
-    [
-      0.196844,
-      "\u001b[33m\r0% [Working]\u001b[0m\u001b[33m\r0% [Working]\u001b[0m"
-    ],
-    [
-      0.007469,
-      "\r            \rGet:1 http://deb.debian.org/debian/ jessie/main libjemalloc1 amd64 3.6.0-3 [89.1 kB]\r\n\u001b[33m\r            \r8% [1 libjemalloc1 13.8 kB/89.1 kB 15%]\u001b[0m"
-    ],
-    [
-      0.002955,
-      "\u001b[33m\r                                       \r53% [Working]\u001b[0m"
-    ],
-    [
-      0.001942,
-      "\r             \rGet:2 http://deb.debian.org/debian/ jessie/main redis-tools amd64 2:2.8.17-1+deb8u5 [79.6 kB]\r\n\u001b[33m\r             \r62% [2 redis-tools 15.2 kB/79.6 kB 19%]\u001b[0m"
-    ],
-    [
-      0.002281,
-      "\u001b[33m\r                                       \r100% [Working]\u001b[0m\r              \rFetched 169 kB in 0s (795 kB/s)\r\n"
-    ],
-    [
-      0.327811,
-      "debconf: delaying package configuration, since apt-utils is not installed\r\n"
-    ],
-    [
-      0.007172,
-      "\n\u001b[s\u001b[0;24r\u001b[u\u001b[1A"
-    ],
-    [
-      0.202915,
-      "Selecting previously unselected package libjemalloc1.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r"
-    ],
-    [
-      0.000116,
-      "(Reading database ... 70%\r"
-    ],
-    [
-      0.001725,
-      "(Reading database ... 75%\r"
-    ],
-    [
-      0.000818,
-      "(Reading database ... 80%\r"
-    ],
-    [
-      0.001848,
-      "(Reading database ... 85%\r"
-    ],
-    [
-      0.000777,
-      "(Reading database ... 90%\r"
-    ],
-    [
-      0.000946,
-      "(Reading database ... 95%\r"
-    ],
-    [
-      0.00095,
-      "(Reading database ... 100%\r(Reading database ... 25854 files and directories currently installed.)\r\n"
-    ],
-    [
-      0.00132,
-      "Preparing to unpack .../libjemalloc1_3.6.0-3_amd64.deb ...\r\n\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [  0%]\u001b[49m\u001b[39m [....................................................................] \u001b[u\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [  9%]\u001b[49m\u001b[39m [#######.............................................................] \u001b[u"
-    ],
-    [
-      0.003884,
-      "Unpacking libjemalloc1 (3.6.0-3) ...\r\n"
-    ],
-    [
-      0.032826,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 18%]\u001b[49m\u001b[39m [#############.......................................................] \u001b[u"
-    ],
-    [
-      0.00403,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 27%]\u001b[49m\u001b[39m [###################.................................................] \u001b[u"
-    ],
-    [
-      0.016783,
-      "Selecting previously unselected package redis-tools.\r\n"
-    ],
-    [
-      0.002036,
-      "Preparing to unpack .../redis-tools_2%3a2.8.17-1+deb8u5_amd64.deb ...\r\n\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 36%]\u001b[49m\u001b[39m [#########################...........................................] \u001b[u"
-    ],
-    [
-      0.003644,
-      "Unpacking redis-tools (2:2.8.17-1+deb8u5) ...\r\n"
-    ],
-    [
-      0.027204,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 45%]\u001b[49m\u001b[39m [###############################.....................................] \u001b[u"
-    ],
-    [
-      0.003444,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 54%]\u001b[49m\u001b[39m [######################################..............................] \u001b[u"
-    ],
-    [
-      0.19031,
-      "Setting up libjemalloc1 (3.6.0-3) ...\r\n"
-    ],
-    [
-      0.003938,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 63%]\u001b[49m\u001b[39m [############################################........................] \u001b[u"
-    ],
-    [
-      0.016727,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 72%]\u001b[49m\u001b[39m [##################################################..................] \u001b[u"
-    ],
-    [
-      0.009272,
-      "Setting up redis-tools (2:2.8.17-1+deb8u5) ...\r\n"
-    ],
-    [
-      0.007614,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 81%]\u001b[49m\u001b[39m [########################################################............] \u001b[u"
-    ],
-    [
-      0.003502,
-      "\u001b[s\u001b[25;0f\u001b[42m\u001b[30mProgress: [ 90%]\u001b[49m\u001b[39m [##############################################################......] \u001b[u"
-    ],
-    [
-      0.003659,
-      "Processing triggers for libc-bin (2.19-18+deb8u10) ...\r\n"
-    ],
-    [
-      0.216724,
+      0.516724,
       "\n\u001b[s\u001b[0;25r\u001b[u\u001b[1A"
     ],
     [
@@ -651,7 +91,7 @@
       "\r\n100.65.29.230:6379> "
     ],
     [
-      1.23169,
+      0.33169,
       "\u001b[0G\u001b[0K100.65.29.230:6379> k\u001b[22G"
     ],
     [
@@ -667,11 +107,11 @@
       "\u001b[0G\u001b[0K100.65.29.230:6379> keys\u001b[25G"
     ],
     [
-      0.235728,
+      0.135728,
       "\u001b[0G\u001b[0K100.65.29.230:6379> keys \u001b[26G"
     ],
     [
-      0.585143,
+      0.285143,
       "\u001b[0G\u001b[0K100.65.29.230:6379> keys *\u001b[27G"
     ],
     [
@@ -683,7 +123,7 @@
       "1) \"Dogs\"\r\n2) \"Cats\"\r\n100.65.29.230:6379> "
     ],
     [
-      2.0,
+      2.5,
       "\u001b[0G\u001b[0K100.65.29.230:6379> s\u001b[22G"
     ],
     [
@@ -699,15 +139,15 @@
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \u001b[25G"
     ],
     [
-      0.383762,
+      0.183762,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"\u001b[26G"
     ],
     [
-      0.495486,
+      0.195486,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"C\u001b[27G"
     ],
     [
-      0.223784,
+      0.123784,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"Ca\u001b[28G"
     ],
     [
@@ -719,15 +159,15 @@
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"Cats\u001b[30G"
     ],
     [
-      1.18095,
+      0.28095,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"Cats\"\u001b[31G"
     ],
     [
-      0.472289,
+      0.272289,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"Cats\" \u001b[32G"
     ],
     [
-      1.022959,
+      0.222959,
       "\u001b[0G\u001b[0K100.65.29.230:6379> set \"Cats\" 1\u001b[33G"
     ],
     [
@@ -751,23 +191,23 @@
       "OK\r\n100.65.29.230:6379> "
     ],
     [
-      2.0,
+      1.0,
       "\u001b[0G\u001b[0K100.65.29.230:6379> e\u001b[22G"
     ],
     [
-      0.222167,
+      0.122167,
       "\u001b[0G\u001b[0K100.65.29.230:6379> ex\u001b[23G"
     ],
     [
-      0.536222,
+      0.136222,
       "\u001b[0G\u001b[0K100.65.29.230:6379> exi\u001b[24G"
     ],
     [
-      0.075159,
+      0.175159,
       "\u001b[0G\u001b[0K100.65.29.230:6379> exit\u001b[25G"
     ],
     [
-      0.824799,
+      0.224799,
       "\r\n"
     ],
     [
@@ -775,7 +215,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      1.5,
       "c"
     ],
     [
@@ -791,15 +231,15 @@
       "l"
     ],
     [
-      0.215253,
+      0.115253,
       " "
     ],
     [
-      0.528283,
+      0.128283,
       "-"
     ],
     [
-      0.225654,
+      0.125654,
       "s"
     ],
     [
@@ -807,11 +247,11 @@
       "k"
     ],
     [
-      0.315284,
+      0.215284,
       " "
     ],
     [
-      0.30481,
+      0.10481,
       "http://a5c91b916b"
     ],
     [
@@ -819,36 +259,12 @@
       "a0211e7801a06d2c9432f2-42374718 \r4.us-east-1.elb.amazonaws.com"
     ],
     [
-      1.517528,
+      1.017528,
       "\r\n"
     ],
     [
       0.04101,
       "<!DOCTYPE html>\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/default.css\">\r\n    <title>Azure Voting App</title>\r\n\r\n    <script language=\"JavaScript\">\r\n        function send(form){\r\n        }\r\n    </script>\r\n\r\n</head>\r\n<body>\r\n    <div id=\"container\">\r\n        <form id=\"form\" name=\"form\" action=\"/\"\" method=\"post\"><center>\r\n        <div id=\"logo\">Azure Voting App</div>\r\n        <div id=\"space\"></div>\r\n        <div id=\"form\">\r\n        <button name=\"vote\" value=\"Cats\" onclick=\"send()\" class=\"button button1\">Cats</button>\r\n        <button name=\"vote\" value=\"Dogs\" onclick=\"send()\" class=\"button button2\">Dogs</button>\r\n        <button name=\"vote\" value=\"reset\" onclick=\"send()\" class=\"button button3\">Reset</button>\r\n        <div id=\"space\"></div>\r\n        <div id=\"space\"></div>\r\n        <div id=\"results\"> Cats - 1000 | Dogs - 6 </div> \r\n        </form>        \r\n        </div>\r\n    </div>     \r\n</body>\r\n</html>root@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "e"
-    ],
-    [
-      0.201052,
-      "x"
-    ],
-    [
-      0.091372,
-      "i"
-    ],
-    [
-      0.099455,
-      "t"
-    ],
-    [
-      0.398407,
-      "\r\nexit\r\n"
-    ],
-    [
-      0.039062,
-      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }

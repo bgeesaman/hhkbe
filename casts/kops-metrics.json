@@ -15,7 +15,7 @@
       "\u001b[3;J\u001b[H\u001b[2Jroot@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      2.0,
+      0.5,
       "kubectl get nodes -o wide"
     ],
     [
@@ -31,7 +31,7 @@
       "root@vulnweb-2569941405-q8v9r:/# "
     ],
     [
-      1.0,
+      0.5,
       "curl -sk http://172.20.4"
     ],
     [
@@ -39,7 +39,7 @@
       "2.228:4194/metrics | less"
     ],
     [
-      1.0,
+      2.0,
       "\r\n"
     ],
     [
@@ -55,7 +55,7 @@
       "iner_cpu_cfs_throttled_seconds_total{id=\"/kubepods/burstable/pod4e2b253f-ba00-11e7-80 \b1a-06d2c9432f28\"} 16.50674821\r\n# HELP container_cpu_system_seconds_total Cumulative system cpu time consumed in seconds.\r\n# TYPE container_cpu_system_seconds_total counter\r\ncontainer_cpu_system_seconds_total{id=\"/\"} 58.74\r\ncontainer_cpu_system_seconds_total{id=\"/docker\"} 0.13\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods\"} 10.39\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/besteffort\"} 0\r\n:\u001b[K"
     ],
     [
-      1.698874,
+      0.498874,
       "\r\u001b[Kcontainer_cpu_system_seconds_total{id=\"/kubepods/burstable\"} 10.37\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2 \bc9432f28\"} 4.56\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2 \bc9432f28\"} 1.7\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/pod4e2b253f-ba00-11e7-801a-06d2 \bc9432f28\"} 0.01\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/pod5c645025-ba02-11e7-801a-06d2 \bc9432f28\"} 0.01\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/pod850f09b298d1912e6a08cf56d141 \b138e\"} 2.43\r\ncontainer_cpu_system_seconds_total{id=\"/kubepods/burstable/podd430560a-b9fd-11e7-aa33-06d2 \bc9432f28\"} 1.63\r\n# HELP container_cpu_usage_seconds_total Cumulative cpu time consumed per cpu in seconds.\r\n# TYPE container_cpu_usage_seconds_total counter\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/\"} 152.6159755\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/docker\"} 0.403313448\r\ncontainer_cpu_usage_se"
     ],
     [
@@ -63,7 +63,7 @@
       "conds_total{cpu=\"cpu00\",id=\"/kubepods\"} 49.168933693\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable\"} 49.140640628\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e \b7-801a-06d2c9432f28\"} 37.467458748\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e \b7-801a-06d2c9432f28\"} 3.78461641\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/pod4e2b253f-ba00-11e \b:\u001b[K"
     ],
     [
-      1.21591,
+      0.41591,
       "\r\u001b[K7-801a-06d2c9432f28\"} 0.428334719\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/pod5c645025-ba02-11e \b7-801a-06d2c9432f28\"} 1.107229702\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/pod850f09b298d1912e6 \ba08cf56d141138e\"} 5.909177115\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu00\",id=\"/kubepods/burstable/podd430560a-b9fd-11e \b7-aa33-06d2c9432f28\"} 0.445588918\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/\"} 154.826082963\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/docker\"} 0.390076844\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods\"} 49.2449292\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable\"} 49.213095028\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e \b7-801a-06d2c9432f28\"} 37.426331185\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e \b7-801a-06d2c9432f28\"} 3.757970877\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/"
     ],
     [
@@ -71,7 +71,7 @@
       "kubepods/burstable/pod4e2b253f-ba00-11e \b7-801a-06d2c9432f28\"} 0.364472777\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable/pod5c645025-ba02-11e \b7-801a-06d2c9432f28\"} 1.17814156\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable/pod850f09b298d1912e6 \ba08cf56d141138e\"} 5.846325107\r\ncontainer_cpu_usage_seconds_total{cpu=\"cpu01\",id=\"/kubepods/burstable/podd430560a-b9fd-11e \b7-aa33-06d2c9432f28\"} 0.526091256\r\n# HELP container_cpu_user_seconds_total Cumulative user cpu time consumed in seconds.\r\n:\u001b[K"
     ],
     [
-      0.889731,
+      0.389731,
       "\r\u001b[K# TYPE container_cpu_user_seconds_total counter\r\ncontainer_cpu_user_seconds_total{id=\"/\"} 135.78\r\ncontainer_cpu_user_seconds_total{id=\"/docker\"} 0.41\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods\"} 18.32\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/besteffort\"} 0\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable\"} 18.32\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2c9 \b432f28\"} 12.48\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9 \b432f28\"} 2.96\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/pod4e2b253f-ba00-11e7-801a-06d2c9 \b432f28\"} 0.35\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/pod5c645025-ba02-11e7-801a-06d2c9 \b432f28\"} 0\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/pod850f09b298d1912e6a08cf56d14113 \b8e\"} 1.66\r\ncontainer_cpu_user_seconds_total{id=\"/kubepods/burstable/podd430560a-b9fd-11e7-aa33-06d2c9 \b432f28\"} 0.74\r\n# HELP container_fs_inodes_free Number of availa"
     ],
     [
@@ -79,7 +79,7 @@
       "ble Inodes\r\n# TYPE container_fs_inodes_free gauge\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpod24c04d1d-b9fe-11e7-801a-06d2c9432f28/fc504259389ace2ce7a702931ff157686c5b158113be83170c \b39b4f1f8406155\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_calico-node \b-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_nam \b:\u001b[K"
     ],
     [
-      0.954876,
+      0.654876,
       "\r\u001b[Ke=\"calico-node-bl90t\"} 0\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpod38acc2f4-b9fe-11e7-801a-06d2c9432f28/a20a3b94cd635c64037c422e867a061fd5927aa0d18b25596c \b9e9b7cad0ae123\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-dns-47 \b9524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\", \bpod_name=\"kube-dns-479524115-gwbz9\"} 0\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpod4e2b253f-ba00-11e7-801a-06d2c9432f28/11ffadfb758a811c239b331bdf9cd4077ffd53b857d8257f53 \b90fb6d901c8c6a\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kubernetes- \bdashboard-921590658-4vx12_kube-system_4e2b253f-ba00-11e7-801a-06d2c9432f28_0\",namespace=\"k \bube-system\",pod_name=\"kubernetes-dashboard-921590658-4vx12\"} 0\r\ncontainer_fs_inodes_free{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/ \bpod5c645025-ba02-11e7-801a-06d2c9432f28/f61931693b2c0035fca3ab"
     ],
     [
@@ -99,7 +99,7 @@
       "-801a-06d2c9432f28_0\",namespace=\"kube-system \b:\u001b[K"
     ],
     [
-      0.95589,
+      0.45589,
       "\r\u001b[K"
     ],
     [
@@ -155,7 +155,7 @@
       "dashboard-921590658-4vx12\"} 2 \b3\r\ncontainer_fs_inodes_total{container_name=\"sidecar\",device=\"/dev/xvda1\",id=\"/kubepods/burst \bable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/bfc3f4348f5d526fb8f753f9f0bb012d0383e95c35cf2 \b93fa4da57d9e7b2ce63\",image=\"gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97074c95 \b1046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\",name=\"k8s_sidecar_kube-dns-47952 \b4115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod \b_name=\"kube-dns-479524115-gwbz9\"} 19\r\n# HELP container_fs_io_current Number of I/Os currently in progress\r\n# TYPE container_fs_io_current gauge\r\ncontainer_fs_io_current{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/p \bod24c04d1d-b9fe-11e7-801a-06d2c9432f28/fc504259389ace2ce7a702931ff157686c5b158113be83170c3 \b9b4f1f8406155\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_calico-node- \b:\u001b[K"
     ],
     [
-      0.585018,
+      0.285018,
       "\r\u001b[Kbl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name \b=\"calico-node-bl90t\"} 0\r\ncontainer_fs_io_current{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/p \bod38acc2f4-b9fe-11e7-801a-06d2c9432f28/a20a3b94cd635c64037c422e867a061fd5927aa0d18b25596c9 \be9b7cad0ae123\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-dns-479 \b524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",p \bod_name=\"kube-dns-479524115-gwbz9\"} 0\r\ncontainer_fs_io_current{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/burstable/p \bod4e2b253f-ba00-11e7-801a-06d2c9432f28/11ffadfb758a811c239b331bdf9cd4077ffd53b857d8257f539 \b0fb6d901c8c6a\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kubernetes-d \bashboard-921590658-4vx12_kube-system_4e2b253f-ba00-11e7-801a-06d2c9432f28_0\",namespace=\"ku \bbe-system\",pod_name=\"kubernetes-dashboard-921590658-4vx12\"} 0\r\ncontainer_fs_io_current{container_name=\"POD\",device=\"/dev/xvda1\","
     ],
     [
@@ -371,7 +371,7 @@
       "0f09b298d1912e6a08cf56d141138e_0\",namespace=\"kube-sy \b:\u001b[K"
     ],
     [
-      0.595572,
+      0.395572,
       "\r\u001b[K"
     ],
     [
@@ -383,7 +383,7 @@
       " \b-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"kubernetes-dashboard-921590658-4vx \b12\"} 0\r\ncontainer_fs_read_seconds_total{container_name=\"sidecar\",device=\"/dev/xvda1\",id=\"/kubepods \b/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/bfc3f4348f5d526fb8f753f9f0bb012d0383e95 \bc35cf293fa4da57d9e7b2ce63\",image=\"gcr.io/google_containers/k8s-dns-sidecar-amd64@sha256:97 \b074c951046e37d3cbb98b82ae85ed15704a290cce66a8314e7f846404edde9\",name=\"k8s_sidecar_kube-dns \b-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-syste \bm\",pod_name=\"kube-dns-479524115-gwbz9\"} 0\r\n# HELP container_fs_reads_bytes_total Cumulative count of bytes read\r\n# TYPE container_fs_reads_bytes_total counter\r\ncontainer_fs_reads_bytes_total{device=\"\",id=\"/\"} 0\r\ncontainer_fs_reads_bytes_total{device=\"/dev/xvda\",id=\"/\"} 1.55088384e+08\r\n:\u001b[K"
     ],
     [
-      0.526775,
+      0.426775,
       "\r\u001b[Kcontainer_fs_reads_bytes_total{device=\"/dev/xvda\",id=\"/docker\"} 0\r\ncontainer_fs_reads_bytes_total{device=\"/dev/xvda\",id=\"/kubepods\"} 0\r\ncontainer_fs_reads_bytes_total{device=\"/dev/xvda\",id=\"/kubepods/burstable\"} 0\r\ncontainer_fs_reads_bytes_total{device=\"/dev/xvda\",id=\"/kubepods/burstable/pod24c04d1d-b9fe \b-11e7-801a-06d2c9432f28\"} 0\r\n# HELP container_fs_reads_merged_total Cumulative count of reads merged\r\n# TYPE container_fs_reads_merged_total counter\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/fc504259389ace2ce7a702931ff157686c5b158113b \be83170c39b4f1f8406155\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_cali \bco-node-bl90t_kube-system_24c04d1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\", \bpod_name=\"calico-node-bl90t\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/a20a3b94cd635c64037c422"
     ],
     [
@@ -391,7 +391,7 @@
       "e867a061fd5927aa0d18 \bb25596c9e9b7cad0ae123\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube \b-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-s \bystem\",pod_name=\"kube-dns-479524115-gwbz9\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/pod4e2b253f-ba00-11e7-801a-06d2c9432f28/11ffadfb758a811c239b331bdf9cd4077ffd53b857d \b8257f5390fb6d901c8c6a\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube \brnetes-dashboard-921590658-4vx12_kube-system_4e2b253f-ba00-11e7-801a-06d2c9432f28_0\",names \bpace=\"kube-system\",pod_name=\"kubernetes-dashboard-921590658-4vx12\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/pod5c645025-ba02-11e7-801a-06d2c9432f28/f61931693b2c0035fca3ab15aa0ccd7dc64dc232f47 \b:\u001b[K"
     ],
     [
-      0.630091,
+      0.430091,
       "\r\u001b[Kf7f4738cf0fb4bb707a2f\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_azur \be-vote-back-4149398501-kddvx_default_5c645025-ba02-11e7-801a-06d2c9432f28_0\",namespace=\"de \bfault\",pod_name=\"azure-vote-back-4149398501-kddvx\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/pod850f09b298d1912e6a08cf56d141138e/966e1393196c0e79e160d612d65d764ddc10d46db3bf1e1 \b218c0065b0790c662\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube-pro \bxy-ip-172-20-42-228.ec2.internal_kube-system_850f09b298d1912e6a08cf56d141138e_0\",namespace \b=\"kube-system\",pod_name=\"kube-proxy-ip-172-20-42-228.ec2.internal\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"POD\",device=\"/dev/xvda1\",id=\"/kubepods/bur \bstable/podd430560a-b9fd-11e7-aa33-06d2c9432f28/4233b5f7476c0b6448ef8e04bd237752d8239bd5999 \b96e1ae0230850f6be6630\",image=\"gcr.io/google_containers/pause-amd64:3.0\",name=\"k8s_POD_kube \b-dns-autoscaler-1818915203-6vp74_kube-system_d430560a-b9fd-11e7-aa"
     ],
     [
@@ -403,7 +403,7 @@
       "645025-ba02-11e7-801a-06d2c9432f28_0\",namespace=\"default\",pod_name=\"azure-vote-b \b:\u001b[K"
     ],
     [
-      0.752906,
+      0.452906,
       "\r\u001b[Kack-4149398501-kddvx\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"calico-node\",device=\"/dev/xvda1\",id=\"/kube \bpods/burstable/pod24c04d1d-b9fe-11e7-801a-06d2c9432f28/70997c47c9b9d308c2893face3863a75beb \bdbd9e01f076782f651a01968f1041\",image=\"calico/node@sha256:347d618c90f0d6ccc0a1d8a91c8b2f67d \bcb1494c8e25bd683573c677d6e51477\",name=\"k8s_calico-node_calico-node-bl90t_kube-system_24c04 \bd1d-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube-system\",pod_name=\"calico-node-bl90t\"} 0\r\ncontainer_fs_reads_merged_total{container_name=\"dnsmasq\",device=\"/dev/xvda1\",id=\"/kubepods \b/burstable/pod38acc2f4-b9fe-11e7-801a-06d2c9432f28/93ed51747104fedb11552aecbf6451eb7a8e897 \bf03755069f29fbccfeb515003\",image=\"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64@sha \b256:aeeb994acbc505eabc7415187cd9edb38cbb5364dc1c2fc748154576464b3dc2\",name=\"k8s_dnsmasq_ku \bbe-dns-479524115-gwbz9_kube-system_38acc2f4-b9fe-11e7-801a-06d2c9432f28_0\",namespace=\"kube \b-system\",pod_name=\"kube-dns-479524115-gwbz9\"} 0\r\ncontainer_fs_reads_merged"
     ],
     [
@@ -413,14 +413,6 @@
     [
       0.000154,
       "v/xvda1\",id=\"/kubepods \b:\u001b[K"
-    ],
-    [
-      0.100367,
-      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049l"
-    ],
-    [
-      7e-05,
-      "root@vulnweb-2569941405-q8v9r:/# "
     ]
   ]
 }
